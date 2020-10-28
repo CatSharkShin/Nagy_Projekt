@@ -14,13 +14,13 @@
                 Shop
             </div>
             <div class="menu">
-                <a href="">Pénz</a>
-                <a href="">Név</a>
+                <a href="">Pénz</a> | 
+                <a href="">Név</a> | 
                 <a href="">Szint</a>
             </div>
             <div class="login-menu">
-                <a href="">Regisztráció</a>
-                <a href="">Login</a>
+                <a href="">Regisztráció</a> | 
+                <a href="">Login</a> | 
                 <a href="">Logout</a>
             </div>
         </div>

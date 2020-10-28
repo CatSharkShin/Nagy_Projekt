@@ -24,7 +24,16 @@ html,body{
     text-align: center;
 }
 .navbar div{
+    font-size: 46px;
     margin: auto;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover{
+    color: white;
+    cursor: pointer;
 }
 .navbar{
     background-color: darkgrey;
