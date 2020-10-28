@@ -1,0 +1,21 @@
+function handleBankSidebarScroll() {
+    let wrapper = $("#bank-item-wrapper");
+    let box = $("#bank-item-box");
+
+    let offsetTop = -wrapper.offset().top + $(window).scrollTop();
+    let offsetBottom = wrapper.offset().top - $(window).scrollTop() + wrapper.outerHeight() - box.outerHeight();
+
+    if (offsetBottom > 0 && offsetTop < 0) {
+        box.css({
+            top: 0,
+        });
+    } else if (offsetBottom > 0 && offsetTop > 0) {
+        box.css({
+            top: offsetTop + "px",
+        });
+    } else {
+        box.offset({
+            top: $(window).scrollTop() + offsetBottom,
+        });
+    }
+}
