@@ -15,8 +15,8 @@
     <div class="login-menu">
         <a href="index.php?p=regisztracio">Regisztráció</a>
         <span>|</span>
-        <a href="index.php?p=login">Login</a>
+        <a href="index.php?p=login">Belépés</a>
         <span>|</span>
-        <a href="index.php?p=login">Logout</a>
+        <a href="index.php?p=login">Kilépés</a>
     </div>
 </div>
