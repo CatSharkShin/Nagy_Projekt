@@ -60,7 +60,6 @@ html,body{
 }
 .app-list{
     font-size: 20px;
-    margin: 30px;
     display: grid;
     white-space: nowrap;
 }
@@ -118,4 +117,11 @@ input[type=email]{
 
 input[type=password]:focus,input[type=email]:focus,input[type=text]:focus{
     outline: none;
+}
+.message{
+    text-align: center;
+    padding: 25px;
+}
+.form-group{
+    margin: 10px;
 }
