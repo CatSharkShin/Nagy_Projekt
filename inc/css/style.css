@@ -1,4 +1,13 @@
+@font-face {
+  font-family: zorque;
+  src: url(fonts/zorque.ttf);
+}@font-face {
+  font-family: joystix;
+  src: url(fonts/joystix.ttf);
+}
+
 html,body{
+    font-family: joystix;
     margin: 0;
     height: 100%;
 }
@@ -13,18 +22,18 @@ html,body{
 }
 
 .app-container{
-    border-radius: 20px;
-    margin: 20px;
+    margin-top: 20px;
     height: 100%;
     background-color: rgb(45, 54, 64);
 }
 
 .title-box{
+    font-family: zorque;
     background-color: grey;
     text-align: center;
 }
 .navbar div{
-    font-size: 46px;
+    font-size: 24px;
     margin: auto;
 }
 .navbar a{
@@ -44,6 +53,31 @@ html,body{
 .app-field{
     background-color: grey;
 }
-.app-list{
+.app-list-container{
     background-color: darkgrey;
+    text-align: center;
+}
+.app-list{
+    font-size: 20px;
+    margin: 30px;
+    display: grid;
+}
+.app-list a{
+    text-decoration: none;
+    color: black;
+}
+.app-list a:hover{
+    color: white;
+    cursor: pointer;
+}
+.app-list a img{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.menu a{
+    padding: 10px;
+}
+.login-menu a{
+    padding: 10px;
 }

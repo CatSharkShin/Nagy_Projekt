@@ -6,13 +6,17 @@
         Shop
     </div>
     <div class="menu">
-        <a href="">Pénz</a> | 
-        <a href="">Név</a> | 
-        <a href="">Szint</a>
+        <a href="index.php?p=shop">Pénz</a>
+        <span>|</span>
+        <a href="index.php?p=profil">Név</a>
+        <span>|</span>
+        <a href="index.php?p=profil">Szint</a>
     </div>
     <div class="login-menu">
-        <a href="">Regisztráció</a> | 
-        <a href="">Login</a> | 
-        <a href="">Logout</a>
+        <a href="index.php?p=regisztracio">Regisztráció</a>
+        <span>|</span>
+        <a href="index.php?p=login">Login</a>
+        <span>|</span>
+        <a href="index.php?p=login">Logout</a>
     </div>
 </div>

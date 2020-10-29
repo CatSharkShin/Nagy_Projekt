@@ -1,4 +1,9 @@
+@font-face {
+  font-family: game-font;
+  src: url(.\zorque.ttf);
+}
 html,body{
+    font-family: game-font;
     margin: 0;
     height: 100%;
 }
@@ -20,6 +25,7 @@ html,body{
 }
 
 .title-box{
+    font-family: game-font;
     background-color: grey;
     text-align: center;
 }
