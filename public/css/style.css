@@ -1,7 +1,8 @@
 @font-face {
   font-family: zorque;
   src: url(fonts/zorque.ttf);
-}@font-face {
+}
+@font-face {
   font-family: joystix;
   src: url(fonts/joystix.ttf);
 }
@@ -84,4 +85,33 @@ html,body{
 }
 .login-menu a{
     padding: 10px;
+}
+.login-form{
+    font-size: 42px;
+    text-align: center;
+}
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px darkgrey inset !important;
+    font-size: 18px;
+    font-family: joystix;
+}
+input:-webkit-autofill::first-line {
+    font-family: joystix;
+    font-size: 18px
+}
+textarea,input[type=password],input[type=email],input[type=text]{
+    border: 0;
+    font-size: 18px;
+    background-color: darkgrey;
+    text-align: center;
+    font-family: joystix;
+    padding: 10px;
+}
+
+input[type=password]:focus,input[type=email]:focus,input[type=text]:focus{
+    outline: none;
 }

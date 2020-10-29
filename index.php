@@ -1,16 +1,16 @@
 <?php 
-    require "inc/config.php";
+    require "public/config.php";
  ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="inc/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?=PATH_CSS.'style.css'?>">
     <title>Nagy Projekt</title>
 </head>
 <body>
     <div class="container">
         <?php 
-            require PATH_PUBLIC."header.php";
+            require PATH_PRIVATE."header.php";
         ?>
         <div class="app-list-container">
             <div class="app-list">
@@ -18,7 +18,11 @@
             </div>
         </div>
         <div class="app-field">
-            <div class="app-container"></div>
+            <div class="app-container">
+                <?php 
+                    require PATH_PRIVATE.'_login.php';
+                 ?>
+            </div>
         </div>
     </div>
 

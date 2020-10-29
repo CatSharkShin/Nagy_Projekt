@@ -1,0 +1,6 @@
+<?php 
+DEFINE("PATH_PUBLIC","public/");
+DEFINE("PATH_CSS",PATH_PUBLIC."css/");
+DEFINE("PATH_JS",PATH_PUBLIC."js/");
+DEFINE("PATH_SVGS",PATH_PUBLIC."svgs/");
+DEFINE("PATH_PRIVATE","private/");
