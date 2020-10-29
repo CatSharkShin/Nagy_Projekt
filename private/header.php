@@ -13,7 +13,7 @@
         <a href="index.php?p=profil">Szint</a>
     </div>
     <div class="login-menu">
-        <a href="index.php?p=regisztracio">Regisztráció</a>
+        <a href="index.php?p=register">Regisztráció</a>
         <span>|</span>
         <a href="index.php?p=login">Belépés</a>
         <span>|</span>
