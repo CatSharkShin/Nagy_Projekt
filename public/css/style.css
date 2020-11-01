@@ -101,7 +101,7 @@ input:-webkit-autofill:active  {
 }
 input:-webkit-autofill::first-line {
     font-family: joystix;
-    font-size: 18px
+    font-size: 18px;
 }
 textarea,input[type=password],input[type=email],input[type=text]{
     border: 0;
@@ -124,4 +124,21 @@ input[type=password]:focus,input[type=email]:focus,input[type=text]:focus{
 }
 .form-group{
     margin: 10px;
+}
+form label{
+
+    font-size: 24px;    
+}
+form button{
+    font-family: joystix;
+    background-color: darkgrey;
+    font-size: 0.5em;
+    padding: 10px;
+}
+form button:hover{
+    color: white;
+    cursor: pointer;
+}
+form button:focus{
+    background-color: grey;
 }

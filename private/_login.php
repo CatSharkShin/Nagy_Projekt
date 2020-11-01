@@ -10,6 +10,6 @@
             <br>
             <input type="password" class="form-control" id="passwordinput">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Belépés</button>
     </form>
 </div>
