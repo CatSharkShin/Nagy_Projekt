@@ -1,6 +1,7 @@
 <?php session_start(); ?>
 <?php 
     require "private/config.php";
+    require PATH_MANAGERS."userManager.php";
  ?>
 <!DOCTYPE html>
 <html>

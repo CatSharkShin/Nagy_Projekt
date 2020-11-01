@@ -5,7 +5,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     'email' => $_POST['email'],
     'password' => $_POST['password']
   ];
-  require_once PATH_MANAGERS."userManager.php";
   if(empty($postData['email']) || empty($postData['password'])) {
     echo "Hiányzó adat(ok)!";
   } else if (!filter_var($postData['email'], FILTER_VALIDATE_EMAIL)) {

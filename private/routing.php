@@ -1,20 +1,15 @@
-<?php 
-    if(array_key_exists("p",$_GET)){
-        $p = $_GET['p'];
-        //Page linkerben a nav menüben megadott p értéket 
-        //kösd össze a betölteni kivant oldallal
-        $page_linker = array(
-            "login" => PATH_BASIC."_login.php",
-            "register" => PATH_BASIC."_register.php",
-            "profil" => PATH_BASIC."profil.php",
-        );
-        if(array_key_exists($p,$page_linker)){
-            require_once $page_linker[$p];
-        }else{
-            require_once PATH_BASIC."error.php";
-        }
-    }else{
-            require_once PATH_BASIC."home.php";
-    }
+<?php
+if(!array_key_exists('p', $_GET) || empty($_GET['p']))
+    $_GET['p'] = 'home';
 
- ?>
+switch ($_GET['p']) {
+    case 'home': require_once PATH_BASIC.'home.php'; break;
+
+    case 'login': !IsUserLoggedIn() ? require_once PATH_BASIC."_login.php" : header('Location: index.php'); break;
+
+    case 'register': !IsUserLoggedIn() ? require_once PATH_BASIC."_register.php" : header('Location: index.php'); break;
+
+    case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
+
+    default: require_once PATH_BASIC.'error.php'; break;
+}
