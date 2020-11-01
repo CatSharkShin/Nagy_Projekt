@@ -1,15 +1,35 @@
+<div class="message" style="color: red">
+<?php 
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
+  $postData = [
+    'email' => $_POST['email'],
+    'password' => $_POST['password']
+  ];
+  require_once PATH_MANAGERS."userManager.php";
+  if(empty($postData['email']) || empty($postData['password'])) {
+    echo "Hiányzó adat(ok)!";
+  } else if (!filter_var($postData['email'], FILTER_VALIDATE_EMAIL)) {
+    echo "Hibás email formátum!";
+  } else if(!UserLogin($postData['email'], $postData['password'])) {
+    echo "Hibás email cím vagy jelszó!";
+  }
+
+  $postData['password'] = "";
+}
+?>
+</div>
 <div class="login-form">
-    <form>
+    <form method="post">
         <div class="form-group">
-            <label for="emailinput">Email cím</label>
+            <label for="email">Email cím</label>
             <br>
-            <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp">
+            <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
-            <label for="passwordinput">Jelszó</label>
+            <label for="password">Jelszó</label>
             <br>
-            <input type="password" class="form-control" id="passwordinput">
+            <input name="password" type="password" class="form-control" id="password">
         </div>
-        <button type="submit" class="btn btn-primary">Belépés</button>
+        <button type="submit" name="login" class="btn btn-primary">Belépés</button>
     </form>
 </div>

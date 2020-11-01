@@ -10,18 +10,17 @@ function UserLogout() {
 }
 
 function UserLogin($email, $password) {
-	$query = "SELECT id, first_name, last_name, email, permission FROM users WHERE email = :email AND password = :password";
+	$query = "SELECT user_id, user_name, email, permission FROM users WHERE email = :email AND password = :password";
 	$params = [
 		':email' => $email,
 		':password' => sha1($password)
-	]; 
+	];
 
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(!empty($record)) {
-		$_SESSION['uid'] = $record['id'];
-		$_SESSION['fname'] = $record['first_name'];
-		$_SESSION['lname'] = $record['last_name'];
+		$_SESSION['uid'] = $record['user_id'];
+		$_SESSION['uname'] = $record['user_name'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['permission'] = $record['permission'];
 		header('Location: index.php');
@@ -30,7 +29,7 @@ function UserLogin($email, $password) {
 }
 
 function UserRegister($email, $password, $username) {
-	$query = "SELECT id FROM users WHERE email = :email";
+	$query = "SELECT user_id FROM users WHERE email = :email";
 	$params = [ ':email' => $email ];
 
 	require_once DATABASE_CONTROLLER;
@@ -50,7 +49,7 @@ function UserRegister($email, $password, $username) {
 }
 
 function userEdit($id, $username, $email, $permission) {
-	$query = "SELECT id FROM users WHERE email = :email AND NOT id = :id";
+	$query = "SELECT user_id FROM users WHERE email = :email AND NOT id = :id";
 	$params = [ ':email' => $email,
 				':id' => $id
 	 ];

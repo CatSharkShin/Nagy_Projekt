@@ -1,5 +1,5 @@
 <div class="title-box">
-            <h1>Bored in Quarantine</h1>
+            <h1><a href="index.php">Bored in Quarantine</a></h1>
 </div>
 <div class="navbar">
     <div class="app-title">
