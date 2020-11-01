@@ -1,10 +1,12 @@
 <?php 
     if(array_key_exists("p",$_GET)){
         $p = $_GET['p'];
+        //Page linkerhez a nav menüben megadott p értéket 
+        // kösd össze a betölteni kivant oldallal
         $page_linker = array(
-            "login" => "_login.php",
-            "register" => "_register.php",
-            "profil" => "profil.php",
+            "login" => PATH_BASIC."_login.php",
+            "register" => PATH_BASIC."_register.php",
+            "profil" => PATH_BASIC."profil.php",
         );
         if(array_key_exists($p,$page_linker)){
             require_once $page_linker[$p];

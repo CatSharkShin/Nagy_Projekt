@@ -1,5 +1,5 @@
 <?php 
-    require "public/config.php";
+    require "private/config.php";
  ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <?php 
-            require PATH_PRIVATE."header.php";
+            require PATH_BASIC."header.php";
         ?>
         <div class="app-list-container">
             <div class="app-list">

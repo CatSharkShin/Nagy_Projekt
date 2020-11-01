@@ -1,7 +1,7 @@
 <div class="message" style="color : red">
 <?php 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
-    require_once PATH_MANAGERS."userManager.php";
+    
     $postData = [
         'username' => $_POST['username'],
         'email' => $_POST['email'],
