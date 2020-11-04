@@ -11,4 +11,7 @@
     <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'swordfish.svg'?>"> <span style="color: white;vertical-align: middle;">Swordfish</span>
     <br>
     <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'koi.svg'?>"> <span style="color: white;vertical-align: middle;">Koi</span>
+    <br>
+    <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'catfish.svg'?>"> <span style="color: white;vertical-align: middle;">Catfish</span>
+    <br>
 </div>
