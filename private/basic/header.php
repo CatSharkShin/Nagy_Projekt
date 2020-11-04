@@ -30,7 +30,6 @@
         <span>|</span>
         <a href="index.php?p=register">Regisztráció</a>
     <?php else : ?>
-        <span>|</span>
         <a href="index.php?p=logout">Kilépés</a>
     <?php endif; ?>
     </div>

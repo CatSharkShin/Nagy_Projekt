@@ -16,7 +16,9 @@
         ?>
         <div class="app-list-container">
             <div class="app-list">
-                <a href=""><img src="<?=PATH_SVGS.'fish.svg'?>"> Horgászat</a>
+                <?php 
+                    require PATH_BASIC."app_list.php";
+                 ?>
             </div>
         </div>
         <div class="app-field">
