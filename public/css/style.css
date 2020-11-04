@@ -191,3 +191,10 @@ form button:focus{
 .app-item span, .app-item img{
     vertical-align: middle;
 }
+svg:hover{
+  filter: drop-shadow(0.5px 0.5px 0px rgb(255,255,255)) drop-shadow(-0.5px 0.5px 0px rgb(255,255,255)) drop-shadow(0.5px -0.5px 0px rgb(255,255,255)) drop-shadow(-0.5px -0.5px 0px rgb(255,255,255));
+}
+a:hover > img{
+  filter: drop-shadow(1px 1px 0px #FFFFFF) drop-shadow(-1px 1px 0px #FFFFFF)
+  drop-shadow(1px -1px 0px #FFFFFF) drop-shadow(-1px -1px 0px #FFFFFF);
+}
