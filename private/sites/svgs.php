@@ -14,4 +14,6 @@
     <br>
     <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'catfish.svg'?>"> <span style="color: white;vertical-align: middle;">Catfish</span>
     <br>
+    <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'catshark.svg'?>"> <span style="color: white;vertical-align: middle;">Catshark</span>
+    <br>
 </div>

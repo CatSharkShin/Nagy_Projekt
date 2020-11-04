@@ -25,7 +25,6 @@
     <?php endif; ?>
     </div>
     <div class="login-menu">
-
     <?php if(!IsUserLoggedIn()) : ?>
         <a href="index.php?p=login">Belépés</a>
         <span>|</span>

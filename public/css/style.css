@@ -100,10 +100,10 @@ html,body{
 .login-menu{
     padding: 20px;
 }
-.menu a{
+.login-menu a{
     padding: 10px;
 }
-.login-menu a{
+.menu a{
     padding: 10px;
 }
 .login-form{
@@ -195,6 +195,10 @@ svg:hover{
   filter: drop-shadow(0.5px 0.5px 0px rgb(255,255,255)) drop-shadow(-0.5px 0.5px 0px rgb(255,255,255)) drop-shadow(0.5px -0.5px 0px rgb(255,255,255)) drop-shadow(-0.5px -0.5px 0px rgb(255,255,255));
 }
 a:hover > img{
+  filter: drop-shadow(1px 1px 0px #FFFFFF) drop-shadow(-1px 1px 0px #FFFFFF)
+  drop-shadow(1px -1px 0px #FFFFFF) drop-shadow(-1px -1px 0px #FFFFFF);
+}
+img{
   filter: drop-shadow(1px 1px 0px #FFFFFF) drop-shadow(-1px 1px 0px #FFFFFF)
   drop-shadow(1px -1px 0px #FFFFFF) drop-shadow(-1px -1px 0px #FFFFFF);
 }
