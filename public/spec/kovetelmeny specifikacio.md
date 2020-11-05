@@ -31,6 +31,12 @@ az élvezetre fókuszálnak.
 - Github Desktop
 - Gitkraken
 
+#### Kódszerkesztők
+- Sublime text
+- Visual studio code
+- Atom
+- Notepad++
+
 
 ## Jelenlegi üzleti folyamatok modellje
 
