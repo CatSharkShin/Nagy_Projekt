@@ -37,6 +37,10 @@ az élvezetre fókuszálnak.
 - Atom
 - Notepad++
 
+#### Szerver
+- xampp 3.2.4
+- wamp
+
 
 ## Jelenlegi üzleti folyamatok modellje
 
