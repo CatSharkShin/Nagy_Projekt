@@ -31,6 +31,17 @@
 	Piac rendszer: 
 			Egy-egy tevékenységhez a megfelelő tárgyak vásárlása, fejlesztése. 
 			Saját megszerzett tárgyak eladása. 
+	Halászat rendszere: 
+			Adott halak folyamatos megjelenítése. 
+			Kifogásuk szinthez kötése. 
+			Fejlődés jelzése.
+			Sikeres kifogás jelzése.
+	Looting rendszere:
+			Lehetséges nyersanyag szerő helyek megjelenítése: 
+			Bolt, mások házai, emberek az utcán, szupermarket, közintézmények.
+			Sikeres fosztogatás jelzése.
+			Adott dolgok adott helyen való megtalálhatósága. 
+			(így a játékos csak egy adott helyről adott nyersanyagot tud megszerezni)
 
 
 
