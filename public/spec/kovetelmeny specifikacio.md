@@ -5,6 +5,12 @@
 ##  Áttekintés
 
 ## Jelenlegi helyzet
+A mai világban túlbonyolított szerepjátékok léteznek csak, ahol a felhasználó rá van kényszerítve, 
+hogy minden nap játsszon, ne maradjon le dolgokról, és lehetőségei le vannak korlátozva az éppen 
+legeffektívebb stratégiákra, hogy élvezze a játékát. Legtöbb játék a monetizáció miatt kényszeríti 
+a játékost napi kötelező pár óra játékra, hogy ezt egy habitussá tegye, így függő legyen és a cégnek 
+minél stabilabb jövedelme legyen. Ezek a stratégiák a felhasználó pénztárcáját célozzák, és így nem 
+az élvezetre fókuszálnak. 
 
 ## Vágyálom rendszer
 	Egy olyan webes alapú játékot szeretnénk létrehozni mely visszahozza a régi RPG stílusú játékok hangulatát, saját megvalósításunkkal egy posztapokaliptikus környezetben. 
@@ -49,6 +55,38 @@
 ## Rendszerre vonatkozó törvények, szabványok, ajánlás
 ### Rendszerszabványok:
 
+#### Kommunikáció és feladatkövetés
+- Trello
+- Discord
+- Messenger
+
+#### Verziókövetés
+- Git
+- Github
+- Github Desktop
+- Gitkraken
+
+#### Kódszerkesztők
+- Sublime text
+- Visual studio code
+- Atom
+- Notepad++
+
+#### Szerver
+- xampp 3.2.4
+- wamp
+
+#### Nyelvek és könyvtárak
+- PHP 7.4.10
+- Javascript
+- Jquery
+- Noje.js
+- HTML
+- CSS
+- Javascript
+
+#### Adatbázis
+- php.MyAdmin
 
 ## Jelenlegi üzleti folyamatok modellje
 
