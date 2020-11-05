@@ -29,25 +29,26 @@ az élvezetre fókuszálnak.
 	Szeretnénk a rendszerbe építeni egy felhasználói profilt is melyben a játékos láthatja eddig elért teljesítményeit és adott területen elért fejlődését is, a pénzét és tapasztalati pontjait.
 
 ## Funkcionális követelmények
-	Profil rendszer: 
-			Megtekinthetőek a felhasználók adatai. 
-			Játékban eltöltött ideje.
-			Adott tevékenységekben elért szintjei, eszközei. 
-			A játékos rendelkezésre álló pénze.
-	Piac rendszer: 
-			Egy-egy tevékenységhez a megfelelő tárgyak vásárlása, fejlesztése. 
-			Saját megszerzett tárgyak eladása. 
-	Halászat rendszere: 
+	
+###Profil rendszer: 
+		Megtekinthetőek a felhasználók adatai. 
+		Játékban eltöltött ideje.
+		Adott tevékenységekben elért szintjei, eszközei. 
+		A játékos rendelkezésre álló pénze.
+###Piac rendszer: 
+		Egy-egy tevékenységhez a megfelelő tárgyak vásárlása, fejlesztése. 
+		Saját megszerzett tárgyak eladása. 
+###Halászat rendszere: 
 			Adott halak folyamatos megjelenítése. 
 			Kifogásuk szinthez kötése. 
 			Fejlődés jelzése.
 			Sikeres kifogás jelzése.
-	Looting rendszere:
-			Lehetséges nyersanyag szerő helyek megjelenítése: 
-			Bolt, mások házai, emberek az utcán, szupermarket, közintézmények.
-			Sikeres fosztogatás jelzése.
-			Adott dolgok adott helyen való megtalálhatósága. 
-			(így a játékos csak egy adott helyről adott nyersanyagot tud megszerezni)
+###Looting rendszere:
+		Lehetséges nyersanyag szerő helyek megjelenítése: 
+		Bolt, mások házai, emberek az utcán, szupermarket, közintézmények.
+		Sikeres fosztogatás jelzése.
+		Adott dolgok adott helyen való megtalálhatósága. 
+		(így a játékos csak egy adott helyről adott nyersanyagot tud megszerezni)
 
 
 
@@ -101,5 +102,10 @@ az élvezetre fókuszálnak.
 ## Riportok
 
 ## Fogalomtár
+
 ### Fogalmak:
+ - RPG: Role Playing Game Egy adott stílusú szerepjáték meghatározására használt kifejezés.
+ - Monetizáció: A mostani játékokba beépített pénzorientáltság. Mely nem a játék élményre fúkuszál,
+ 				hanem a játékos pénzköltésére.
+ - Looting: Az ilyen típusú játékok egyik eleme, a közből vagy másoktól erőszakkal elvett dolgokat jelenti.
 	
