@@ -41,6 +41,15 @@ az élvezetre fókuszálnak.
 - xampp 3.2.4
 - wamp
 
+#### Nyelvek és könyvtárak
+- PHP 7.4.10
+- Javascript
+- Jquery
+- Noje.js
+- HTML
+- CSS
+- Javascript
+
 
 ## Jelenlegi üzleti folyamatok modellje
 
