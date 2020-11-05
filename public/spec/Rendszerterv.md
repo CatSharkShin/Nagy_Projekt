@@ -3,6 +3,35 @@
 ##  A rendszer
 
 ## Projektterv
+### Szerepkörök
+- Designer & Developer: Csontos Dominik
+- Senior Designer: Palotai Martin
+- Designer & Developer: Kóder László
+- Designer & Developer: Sirák Norbert
+
+### Egyéni Projekt Munkálatok
+- Design elkészítése: Csontos Dominik
+- Keretrendszer elkészítése: Palotai Martin
+- Halász applikáció: Sirák Norbert
+- Pálinkafőző applikáció: Kóder László
+- 
+- 
+- 
+
+### Közös feladatok
+- Követelmény Specifikáció megírásában történő közreműködés
+- Funkcionális Specifikáció megírásában történő közreműködés
+- Rendszerterv megírásában történő közreműködés
+
+### Mérföldkövek
+1. Keretrendszer elkészítése
+2. Applikációk elkészítése
+	- Halász applikáció elkészítése
+	- Pálinkafőző applikáció elkészítése
+	- 
+	- 
+	- 
+3. Design elkészítése
 
 ## Üzleti folyamatok modellje
 
