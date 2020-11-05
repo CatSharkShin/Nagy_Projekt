@@ -50,6 +50,8 @@ az élvezetre fókuszálnak.
 - CSS
 - Javascript
 
+#### Adatbázis
+- php.MyAdmin
 
 ## Jelenlegi üzleti folyamatok modellje
 
