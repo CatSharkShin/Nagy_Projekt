@@ -25,6 +25,12 @@ az élvezetre fókuszálnak.
 - Discord
 - Messenger
 
+#### Verziókövetés
+- Git
+- Github
+- Github Desktop
+- Gitkraken
+
 
 ## Jelenlegi üzleti folyamatok modellje
 
