@@ -1,6 +1,9 @@
 # Rendszerterv
 
-##  A rendszer
+##  A rendszer célja
+A felhasználó egy olyan rpg (role playing game, avagy szerepjáték) játékkal játszhasson, amely a tipikus magyar szokásokat és jellegzetességeket eleveníti meg különböző tevékenységek formájában.
+A felhasználónak lehetősége lesz a játék egyes elemeinek elsajátítására, amellyel az adott feladatban fejlődik és elvégzésében egyre jobb lesz.
+A rendszer fejlesztése nagyrészt Javascriptben fog megvalósulni.
 
 ## Projektterv
 ### Szerepkörök

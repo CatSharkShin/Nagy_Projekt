@@ -3,7 +3,17 @@
 # Követelmény specifikáció
 
 ##  Áttekintés
-
+Egy olyan webalkalmazást fejlesztünk melyben a felhasználó több mesterséget próbálhat ki egy virtuális világban, 
+tárgyakat szerezhet melyekkel kereskedhet, vagy felhasználhatja azokat új tárgyak létrehozásához. A webalkalmazás 
+egy virtuális világon alapuló játék lesz, melyben a cél a felhasználótól függ, lehet az pénz szerzés, vagy a 
+mesterségek fejlesztése. A mesterségek fejlesztésével egyre ügyesebb lesz a felhasználó, és egyre jobb tárgyakat 
+tud szerezni és használni. A felhasználónak szükséges lesz a regisztráció a játék eléréséhez. A felhasználó a 
+bejelentkezés után bal oldalt választhat, hogy melyik mesterséggel szeretne éppen foglalkozni, felül pedig elérheti 
+a boltot, a saját profilját, emellett láthatja a vagyonát, és ki is tud jelentkezni.
+A felhasználónak lehetősége lesz horgászni, ahol horgászbotot és csalit kell használnia, hogy kifogjon halakat. 
+A kifogott halakat fel lehet a játék más területein használni, vagy el lehet adni. A horgászáskor lesz esély a 
+hal sikertelen kifogására is, emellett a felhasználó tapasztalatot gyűjt a horgászás közben, így növelve mesterségét. 
+A horgászbotok minősége a halak kifogásának esélyét növelik, míg a csalik minősége 
 ## Jelenlegi helyzet
 A mai világban túlbonyolított szerepjátékok léteznek csak, ahol a felhasználó rá van kényszerítve, 
 hogy minden nap játsszon, ne maradjon le dolgokról, és lehetőségei le vannak korlátozva az éppen 
@@ -90,6 +100,23 @@ az élvezetre fókuszálnak.
 - php.MyAdmin
 
 ## Jelenlegi üzleti folyamatok modellje
+### Feliratkozás alapú rendszerek
+- A felhasználó fizet egy meghatározott játékidőért -> Játszik a játékkal -> A játékmodell miatt egyfajta napi szokássá fejlődik a játék -> A fizetett játékidő lejár
+- A szokás erőssége miatt nagy eséllyel megújítja a feliratkozást
+- **Előny:** Általában játékon belüli valutával beváltható a feliratkozás. Folytonos támogatottsága van a játéknak míg a cég reputációja megfelelő.
+- **Hátrány:** Nagyon drága lehet hosszú távon ha nem fektet bele elég időt a felhasználó. Egyfajta dependenciát válthat ki a játékmodell, mely kényszeríti a minden napos játékra.
+
+### Megvétel alapú rendszerek
+- A felhasználó fizet az alap játékért -> Annyi ideig játszik vele ameddig kíván
+- Általában plusz tartalmat szoktak ezek a játékokhoz gyártani, melyet újabb fizetés után érhet el a felhasználó
+- **Előny:** Megadott ár egyszeri fizetése, előre tudjuk miért fizetünk.
+- **Hátrány:** A játék támogatottsága nem hosszú idejű.
+
+###  Ingyenes rendszerek
+- A felhasználó ingyen elérheti a játékot.
+- Monetizációra három lehetőség gyakori: kinézetek eladása, gambling, pay-to-win elemek.
+- **Előny:** A felhasználótól függ a költött összeg. Hosszú támogatottság a jó monetizáció miatt.
+- **Hátrány:** Ha pay-to-win elemekkel rendelkezik a játék költekezés nélkül nem olyan élvezetes. Gambling függőséget okozhat ami komoly probléma.
 
 ## Igényelt üzleti folyamatok
 
