@@ -4,24 +4,29 @@
 
 ## Projektterv
 
-## �zleti folyamatok modellje
+## Üzleti folyamatok modellje
 
-## K�vetelm�nyek
+## Követelmények
 
-## Funkcion�lis terv
+## Funkcionális terv
 
-## Fizikai k�rnyezet
-
+## Fizikai környezet
+A teszt webes környezetben és minden böngészőben reszponzívnak készül el.
+Nincsenek megvásárolt komponenseink.
+Fejlesztői eszközök:
+    Sublime text
+    Visual studio code
+    
 ## Absztrakt domain modell
 
-## Architektur�lis terv
+## Architekturális terv
 
-## Adatb�zis terv
+## Adatbázis terv
 
-## Implement�ci�s terv
+## Implementációs terv
 
 ## Tesztterv
 
-## Telep�t�si terv
+## Telepítési terv
 
-## Karbantart�si terv
+## Karbantartási terv
