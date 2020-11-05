@@ -20,6 +20,11 @@ az élvezetre fókuszálnak.
 ## Rendszerre vonatkozó törvények, szabványok, ajánlás
 ### Rendszerszabványok:
 
+#### Kommunikáció és feladatkövetés
+- Trello
+- Discord
+- Messenger
+
 
 ## Jelenlegi üzleti folyamatok modellje
 
