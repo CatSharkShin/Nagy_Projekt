@@ -1,6 +1,10 @@
 <div class="title-box">
             <h1><a href="index.php">Bored in Quarantine</a></h1>
 </div>
+<?php 
+    //Belépett uid alapján lekérni nvetoryt pénzt meg kb mindent
+    
+ ?>
 <div class="navbar">
     <div class="app-title">
         <?php 
@@ -11,17 +15,18 @@
                 case 'register' : echo "Regisztráció" ; break;
                 case 'login' : echo "Bejelentkezés" ; break;
                 case 'svgs' : echo "Ikonok" ; break;
+                case 'admin' : echo "Admin panel" ; break;
                 default : echo "Error" ; break;
             }
          ?>
     </div>
     <div class="menu">
     <?php if(IsUserLoggedIn()) : ?>
-        <a href="index.php?p=shop">Pénz</a>
+        <a href="index.php?p=shop" class="money">Pénz</a>
         <span>|</span>
-        <a href="index.php?p=profil">Név</a>
+        <a href="index.php?p=profil"><?=$_SESSION['uname']?></a>
         <span>|</span>
-        <a href="index.php?p=profil">Szint</a>
+        <a href="index.php?p=profil" class="level">Szint</a>
     <?php endif; ?>
     </div>
     <div class="login-menu">
@@ -30,6 +35,10 @@
         <span>|</span>
         <a href="index.php?p=register">Regisztráció</a>
     <?php else : ?>
+        <?php if($_SESSION['permission'] > 0): ?>
+            <a href="index.php?p=admin">Admin</a>
+            <span>|</span>
+        <?php endif; ?>
         <a href="index.php?p=logout">Kilépés</a>
     <?php endif; ?>
     </div>
