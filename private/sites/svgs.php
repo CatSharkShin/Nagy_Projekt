@@ -16,4 +16,14 @@
     <br>
     <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'catshark.svg'?>"> <span style="color: white;vertical-align: middle;">Catshark</span>
     <br>
+    <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'shark.svg'?>"> <span style="color: white;vertical-align: middle;">Shark</span>
+    <br>
+    <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'tin_can.svg'?>"> <span style="color: white;vertical-align: middle;">Tin can</span>
+    <br>
+    <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'old_boots.svg'?>"> <span style="color: white;vertical-align: middle;">Old boots</span>
+    <br>
+    <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'angler_fish.svg'?>"> <span style="color: white;vertical-align: middle;">Angler fish</span>
+    <br>
+    <img style="width:50px;vertical-align: middle;"  src="<?=PATH_SVGS.'clown_fish.svg'?>"> <span style="color: white;vertical-align: middle;">Clown fish</span>
+    <br>
 </div>

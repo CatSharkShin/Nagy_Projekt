@@ -124,7 +124,7 @@ input:-webkit-autofill::first-line {
     font-family: joystix;
     font-size: 18px;
 }
-textarea,input[type=password],input[type=email],input[type=text]{
+textarea,input[type=password],input[type=number],input[type=email],input[type=text]{
     border: 0;
     font-size: 18px;
     background-color: darkgrey;
@@ -136,7 +136,7 @@ input[type=email]{
     width: 340px;
 }
 
-input[type=password]:focus,input[type=email]:focus,input[type=text]:focus{
+input[type=password]:focus,,input[type=number]:focus,input[type=email]:focus,input[type=text]:focus{
     outline: none;
 }
 .message{
@@ -201,4 +201,44 @@ a:hover > img{
 img{
   filter: drop-shadow(1px 1px 0px #FFFFFF) drop-shadow(-1px 1px 0px #FFFFFF)
   drop-shadow(1px -1px 0px #FFFFFF) drop-shadow(-1px -1px 0px #FFFFFF);
+}
+table{
+    margin: auto;
+}
+th{
+    padding: 10px;
+}
+.btn{
+    font-family: joystix;
+    background-color: darkgrey;
+}
+.btn:hover{
+    color: white;
+    cursor: pointer;
+}
+.btn:focus{
+    background-color: grey;
+}
+.btn-danger{
+    font-size: 1em;
+    padding: 10px;
+    border-color: #a12731;
+    background-color: #f54251;
+}
+.btn-primary{
+    font-size: 1em;
+    padding: 10px;
+    border-color: #33629c;
+    background-color: #3278cf;
+}
+.btn-success{
+    border-color: #87ed72;
+    background-color: #5acf42;
+}
+
+table{
+    border-spacing: 0;
+}
+td,th{
+    border: 1px solid white;
 }
