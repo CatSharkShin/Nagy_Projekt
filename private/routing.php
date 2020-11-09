@@ -12,5 +12,7 @@ switch ($_GET['p']) {
 
     case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
+    case 'admin': IsUserLoggedIn() ? require_once PATH_SITES."admin.php" : header('Location: index.php'); break;
+
     default: require_once PATH_BASIC.'error.php'; break;
 }

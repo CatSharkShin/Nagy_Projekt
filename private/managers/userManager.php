@@ -8,7 +8,25 @@ function UserLogout() {
 	session_destroy();
 	header('Location: index.php');
 }
+function updateInventory(){
+	$query = "SELECT money FROM users WHERE user_id = :user_id";
+	$params = [
+		':user_id' => $_SESSION['uid'],
+	];
+	require_once DATABASE_CONTROLLER;
+	$record = getRecord($query, $params);
+	$_SESSION['money'] = $record['money'];
+	
+	$query = "SELECT money FROM users WHERE user_id = :user_id";
+	$params = [
+		':user_id' => $_SESSION['uid'],
+	];
+	if(!empty($record)) {
+		return true;
+	}
+	return false;
 
+}
 function UserLogin($email, $password) {
 	$query = "SELECT user_id, user_name, email, permission FROM users WHERE email = :email AND password = :password";
 	$params = [
@@ -48,31 +66,30 @@ function UserRegister($email, $password, $username) {
 	return false;
 }
 
-function userEdit($id, $username, $email, $permission) {
-	$query = "SELECT user_id FROM users WHERE email = :email AND NOT id = :id";
+function userEdit($user_id, $username, $email, $permission) {
+	$query = "SELECT user_id FROM users WHERE email = :email AND NOT user_id = :user_id";
 	$params = [ ':email' => $email,
-				':id' => $id
+				':user_id' => $user_id
 	 ];
 
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(empty($record)) {
-		$query = "UPDATE users SET first_name = :fname, last_name = :lname, email = :email, permission = :permission WHERE id = :id";
+		$query = "UPDATE users SET user_name = :user_name,  email = :email, permission = :permission WHERE user_id = :user_id";
 		$params = [
-			":fname" => $fname,
-			":lname" => $lname,
+			":user_name" => $username,
 			":email" => $email,
 			":permission" => $permission,
-			":id" => $id
+			":user_id" => $user_id
 		];
 		return executeDML($query,$params);
 	} 
 	return false;
 }
-	function delUser($id){
+	function delUser($user_id){
 		require_once DATABASE_CONTROLLER;
-		$query = "DELETE FROM users WHERE id = :id";
-		$params = [ ':id' => $id];
+		$query = "DELETE FROM users WHERE user_id = :user_id";
+		$params = [ ':user_id' => $user_id];
 		return executeDML($query,$params);
 	}
 ?>
