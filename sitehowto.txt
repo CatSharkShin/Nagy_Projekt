@@ -1,0 +1,14 @@
+1. Kell egy site file a sites mappába
+- private/sites/fishing.php
+2. Kell egy oda vezető link az app listben
+- private/basic/app_list.php -ba:
+
+<a href="?p=phpfilename" class="app-item">
+    <img src="<?=PATH_SVGS.'catshark.svg'?>"><span> Ikonok</span>
+</a>
+3. Routingba bele kell tenni:
+- private/routing.php
+4. Headerbe betenni egy app title case-t:
+- private/basic/header.php
+
+Amit irtok a site fileba az középen jelenik meg

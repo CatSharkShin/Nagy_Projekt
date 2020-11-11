@@ -8,6 +8,7 @@ define("PATH_SVGS",PATH_PUBLIC."svgs/");
 define("PATH_BASIC",PATH_PRIVATE."basic/");
 define("PATH_MANAGERS",PATH_PRIVATE."managers/");
 define("PATH_SITES",PATH_PRIVATE."sites/");
+define("PATH_ACTIONS",PATH_PRIVATE."actions/");
 define("DATABASE_CONTROLLER",PATH_MANAGERS."database.php");
     
 define('DB_TYPE', 'mysql');
