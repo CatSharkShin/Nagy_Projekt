@@ -63,7 +63,7 @@ html,body{
     color: black;
 }
 .navbar a:hover{
-    color: white;
+    color: #4a596b;
     cursor: pointer;
 }
 .navbar{
@@ -241,4 +241,29 @@ table{
 }
 td,th{
     border: 1px solid white;
+}
+.admin-navbar{
+    background-color: #4a596b;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 15px #5b6e85 solid;
+}
+.admin-navbar a{
+    text-decoration: none;
+    color: black;
+}
+.admin-navbar a:hover{
+    color: white;
+}
+.money{
+    color: #ffc20a !important;
+}
+.money:hover{
+    color: #ffdb6e !important;
+}
+.level{
+    color: #00bfff !important;
+}
+.level:hover{
+    color: #8ae2ff !important;
 }
