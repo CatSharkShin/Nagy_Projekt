@@ -93,6 +93,21 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére, vagy ak�
 - Reszponzív megjelenítés.
 
 ## Funkcionális terv
+	Rendszerszereplők:
+		Admin.
+		Felhasználó.
+	Rendszerhasználati esetek:
+		Admin:
+			Bejelentkezés
+			módosítani tudja a felhasználók nevét 
+			módosítani tudja a felhasználók jelszavát.
+        	módosítani tudja a felhasználók  minden játékban szerzett eredményét. 
+		Felhasználó: 
+			Bejelentkezés
+			Regisztráció
+
+
+
 
 ## Fizikai környezet
 A teszt webes környezetben és minden böngészőben reszponzívnak készül el.
