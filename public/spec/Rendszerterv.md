@@ -84,6 +84,13 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére, vagy ak�
 - Profil: a felhasználó itt a felhasználói fiókkal kapcsolatos beállításokat végezheti el.
 - Játékmenet: az erőforrások beszerzését, azok hasznosítását, illetve a játékos szintjének növelését a játék ehhez kapcsolódó alfunkcióiban lehetséges kivitelezni, például pecázni a pecázós appban lehet, pálinkát főzni pedig a pálinkafőzdében. Ezen-appokhoz fűződnek a készségi szintek is.
 - Looting: a looting vagy fosztogatás a játék egy fontos eleme lesz, mellyel bármilyen nyersanyagot, fémet, pénzt vagy ételt meg tud szerezni, de ezeket az utcán, boltokból kell másoktól elvennie. A szerzett dolgokat felhasználhatja eladásra vagy egyéb, máshogyan nem megszerezhető dolgok elkészítésére, hiszen a túlélésért mindent meg kell tennie.
+### Nem funkcionális követelmények
+- Ikonok használata az egyes erőforrások leltárban és boltban való reprezentálására.
+- Leltár megjelenítése, a leltárban mindig az adott tevékenységhez valamilyen módon köthető dolgok jelennek meg
+- Felhasználóbarát grafikus interface kialakítása, melyet könnyű átlátni és kezelni.
+- Progress bar az egyes mesterségekhez, szintek jelöléséhez
+- Poszt-apokaliptikus hangulat megteremtése a design egyes elemeit illetően, illetve egyedi, játékelemmel kapcsolatos kinézet kialakítása al-applikációnként.
+- Reszponzív megjelenítés.
 
 ## Funkcionális terv
 
