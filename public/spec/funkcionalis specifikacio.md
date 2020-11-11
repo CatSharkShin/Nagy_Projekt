@@ -21,7 +21,11 @@
             Játék és minden funkciójának tesztelése.
             Játékos/Alap felhasználó: Bejelentkezés regisztráció.
             Teljes játékélmény minden funkciója.
-
+2.Modifikáció:
+    1.1 Admin modifikációk:
+            Az admin módosítani tudja a felhasználók nevét jelszavát.
+            Valamint minden játékban szerzett eredményét. Ez egyaránt használható 
+            büntetésre és jutalmazásra is.
 
 
 ## Jelenlegi üzleti folyamatok modellje
