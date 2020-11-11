@@ -42,6 +42,14 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
 
 ## Használati esetek
 
+### Ábra
+- A felhasználó a bejelentkezést követően eljut a kezdőképernyőre
+- Adminként szintű felhasználóként hozzáférhet az admin panelhez
+- Normál szintű felhasználóként hozzáférhet a bolthoz és a profiljához
+- Normál szintű felhasználóként hozzáférhet a játékmenet appjaihoz
+- Ha be van jelentkezve, akkor megjelenik a kijelentkezés fül
+![Használati esetek](hasznalati_esetek.png)
+
 ## Megfeleltetés
 
 ## Képernyő tervek
