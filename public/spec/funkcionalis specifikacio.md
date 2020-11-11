@@ -96,3 +96,11 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
     A halászat mint játék szekció funkciói.
 
 ## Fogalomszótár
+ Admin:
+ A felhasználók fölött álló vezető profil
+ Platform:
+ A felület szakkifejezésére használt szakszó.
+ Website:
+ A felület neve ahol az aplikáció futni fog.
+ Profil:
+ A felhasználó adatlapja.
