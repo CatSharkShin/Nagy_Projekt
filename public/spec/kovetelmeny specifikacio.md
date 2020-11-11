@@ -129,7 +129,11 @@ az élvezetre fókuszálnak.
 - Profil: a felhasználó itt a felhasználói fiókkal kapcsolatos beállításokat végezheti el.
 - Játékmenet: az erőforrások beszerzését, azok hasznosítását, illetve a játékos szintjének növelését a játék ehhez kapcsolódó alfunkcióiban lehetséges kivitelezni, például pecázni a pecázós appban lehet, pálinkát főzni pedig a pálinkafőzdében. Ezen-appokhoz fűződnek a készségi szintek is.
 
-### Nem Funkcionális követelmények:
+### Nem funkcionális követelmények
+- Ikonok használata az egyes erőforrások leltárban és boltban való reprezentálására.
+- Felhasználóbarát grafikus interface kialakítása, melyet könnyű átlátni és kezelni.
+- Poszt-apokaliptikus hangulat megteremtése a design egyes elemeit illetően, illetve egyedi, játékelemmel kapcsolatos kinézet kialakítása al-applikációnként.
+- Reszponzív megjelenítés.
 
 ## Riportok
 
