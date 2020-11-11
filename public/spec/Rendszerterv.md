@@ -93,6 +93,9 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére, vagy ak�
 - Reszponzív megjelenítés.
 
 ## Funkcionális terv
+	Rendszerszereplők:
+	Admin.
+	Felhasználó.
 
 ## Fizikai környezet
 A teszt webes környezetben és minden böngészőben reszponzívnak készül el.
