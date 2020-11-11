@@ -88,6 +88,11 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
 
 ## Forgatókönyv
 
-## Funkció
+## Funkció - követelmény megfeleltetés
+    Jelenlegi követelményeinket megfeleltető funkciók:
+    A felhasználói regisztáció funkció.
+    A felhasználói bejelentkezés funkció.
+    A jogusultsági rendszer funkciói.
+    A halászat mint játék szekció funkciói.
 
 ## Fogalomszótár
