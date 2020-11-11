@@ -26,7 +26,17 @@
             Az admin módosítani tudja a felhasználók nevét jelszavát.
             Valamint minden játékban szerzett eredményét. Ez egyaránt használható 
             büntetésre és jutalmazásra is.
-
+3.Felület:
+    3.1: Pénz: 
+            Megmutatja a játékos pénzét, hogy mire használhatja fel.
+    3.2: Profil:
+            Megmutatja a játékos profilját és minden eddig elért mesterségét és eredményét.
+    3.3: Szint:
+            Megmutatja a játékos szintjét és az ezzel járó bónuszokat.
+    3.4: Kijelentkezés:
+            Kijelentkezik a felhasználó profiljából
+    3.5: Egyes játékszekciók:
+            A játék egy egy funkciójához vezető oldalra lép.
 
 ## Jelenlegi üzleti folyamatok modellje
 
