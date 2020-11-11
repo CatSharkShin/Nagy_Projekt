@@ -5,6 +5,13 @@
 ## Jelenlegi helyzet
 
 ## Követelmény lista
+1. Jogosultság: 
+    1.1 Regisztrációs felület: 
+            A felhasználó a nevének és jelszavának megadásával regisztrálja
+            magát. Ha valamelyik adat ezek közül hiányzik vagy nem
+            felel meg a követelményeknek, akkor a rendszer értesítét küld.
+    1.2  Bejelentkezési felület: 
+
 
 ## Jelenlegi üzleti folyamatok modellje
 
