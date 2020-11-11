@@ -59,6 +59,22 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére, vagy ak�
 - Új előfizetési csomagok lehetősége
 - Nagyobb profit elérése
 - A játék jellegéből adódóan: népszerűség internetes tartalomgyártók körében
+### Rendszerek
+#### Feliratkozás alapú rendszerek
+- A felhasználó fizet egy meghatározott játékidőért -> Játszik a játékkal -> A játékmodell miatt egyfajta napi szokássá fejlődik a játék -> A fizetett játékidő lejár
+- A szokás erőssége miatt nagy eséllyel megújítja a feliratkozást
+- Előny: Általában játékon belüli valutával beváltható a feliratkozás. Folytonos támogatottsága van a játéknak míg a cég reputációja megfelelő.
+- Hátrány: Nagyon drága lehet hosszú távon ha nem fektet bele elég időt a felhasználó. Egyfajta dependenciát válthat ki a játékmodell, mely kényszeríti a minden napos játékra.
+#### Megvétel alapú rendszerek
+- A felhasználó fizet az alap játékért -> Annyi ideig játszik vele ameddig kíván
+- Általában plusz tartalmat szoktak ezek a játékokhoz gyártani, melyet újabb fizetés után érhet el a felhasználó
+- Előny: Megadott ár egyszeri fizetése, előre tudjuk miért fizetünk.
+- Hátrány: A játék támogatottsága nem hosszú idejű.
+#### Ingyenes rendszerek
+- A felhasználó ingyen elérheti a játékot.
+- Monetizációra három lehetőség gyakori: kinézetek eladása, gambling, pay-to-win elemek.
+- Előny: A felhasználótól függ a költött összeg. Hosszú támogatottság a jó monetizáció miatt.
+- Hátrány: Ha pay-to-win elemekkel rendelkezik a játék költekezés nélkül nem olyan élvezetes. Gambling függőséget okozhat ami komoly probléma.
 
 ## Követelmények
 
