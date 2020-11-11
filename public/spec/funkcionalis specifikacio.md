@@ -37,6 +37,8 @@
             Kijelentkezik a felhasználó profiljából
     3.5: Egyes játékszekciók:
             A játék egy egy funkciójához vezető oldalra lép.
+    3.6: Admin panel:
+            csak az admin szintű felhasználó számára jelenik meg ez a fül, a lényege, hogy az admin be tud állítani magának bizonyos szinteket és értékeket a játékon belül
 
 ## Jelenlegi üzleti folyamatok modellje
 
@@ -90,7 +92,7 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
 
 ## Funkció - követelmény megfeleltetés
     Jelenlegi követelményeinket megfeleltető funkciók:
-    A felhasználói regisztáció funkció.
+    A felhasználói regisztráció funkció.
     A felhasználói bejelentkezés funkció.
     A jogusultsági rendszer funkciói.
     A halászat mint játék szekció funkciói.
