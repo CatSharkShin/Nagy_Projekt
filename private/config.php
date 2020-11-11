@@ -9,6 +9,7 @@ define("PATH_BASIC",PATH_PRIVATE."basic/");
 define("PATH_MANAGERS",PATH_PRIVATE."managers/");
 define("PATH_SITES",PATH_PRIVATE."sites/");
 define("PATH_ACTIONS",PATH_PRIVATE."actions/");
+define("PATH_ADMIN",PATH_PRIVATE."admin/");
 define("DATABASE_CONTROLLER",PATH_MANAGERS."database.php");
     
 define('DB_TYPE', 'mysql');
