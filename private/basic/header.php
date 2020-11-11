@@ -4,7 +4,7 @@
 <?php 
     //Belépett uid alapján lekérni nvetoryt pénzt meg kb mindent
     
- ?>
+?>
 <div class="navbar">
     <div class="app-title">
         <?php 
