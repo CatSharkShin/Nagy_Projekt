@@ -37,6 +37,28 @@ A rendszer fejlesztése nagyrészt Javascriptben fog megvalósulni.
 3. Design elkészítése
 
 ## Üzleti folyamatok modellje
+A játékokkal kapcsolatos elvárások és igények kielégítésére az ügyfél website-ja már kevésbé alkalmas, mint korábban,
+aminek következtében csökkent az aktív felhasználóinak száma. Az emberek manapság sokkal inkább érdeklődnek az RPG
+jellegű játékok felé, épp ezért a cél egy ilyen jellegű játék létrehozása, mely alkalmazkodik az eddigi üzleti folyamatokhoz: 
+van benne pénzszerzési lehetőség, illetve a régi felhasználók fiókjaiból is lehet használni a játékot, ezáltal egy újabb,
+szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére, vagy akár az előfizetés fedezésére.
+### Célok
+- Átlátható felhasználói felület készítése a játékhoz
+- Élvezetes játékmenet megvalósítása
+- Az aktivitás általános felpezsdítése az ügyfél website-ján
+- Nagyob, közösségre alapuló projektek lehetőségeinek megteremtése (pl.: fórum)
+- Többféle eszközről is játszható játék, ami növeli a népszerűséget
+- Kompatibilitás az előfizetői rendszerrel
+- Kizárólag előfizetett fiókok támogatása az ajándékok beváltását illetően, ami növeli a nyilvántarthatóságot
+- Korábbi felhasználói fiókokkal való kompatibilitás
+### Előnyök
+- Új játékosbázis
+- Régi játékosok visszacsábítása a platformra
+- Új promóciós lehetőségek
+- Új ajándékok
+- Új előfizetési csomagok lehetősége
+- Nagyobb profit elérése
+- A játék jellegéből adódóan: népszerűség internetes tartalomgyártók körében
 
 ## Követelmények
 
