@@ -11,6 +11,17 @@
             magát. Ha valamelyik adat ezek közül hiányzik vagy nem
             felel meg a követelményeknek, akkor a rendszer értesítét küld.
     1.2  Bejelentkezési felület: 
+            A felhasználó az email címe és a jelszava
+            segítségével bejelentkezhet.
+            Ha a megadott email cím vagy jelszó nem
+            egyezik a felhasználóéval, akkor hibaüzenet jelenik meg.
+    1.3 Jogosultsági szintek:
+            Admin: Bejelentkezés regisztráció. 
+            Felhasználók módósítása törlése felülírása. 
+            Játék és minden funkciójának tesztelése.
+            Játékos/Alap felhasználó: Bejelentkezés regisztráció.
+            Teljes játékélmény minden funkciója.
+
 
 
 ## Jelenlegi üzleti folyamatok modellje
