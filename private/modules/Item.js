@@ -22,4 +22,8 @@ export default class Item {
 	function getPurchasePrice() {
 		return this.buy;
 	}
+
+	function getSellingPrice() {
+		return this.sell;
+	}
 }
