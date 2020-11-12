@@ -18,4 +18,8 @@ export default class Item {
 	function getName() {
 		return this.name;
 	}
+
+	function getPurchasePrice() {
+		return this.buy;
+	}
 }
