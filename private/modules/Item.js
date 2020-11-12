@@ -34,4 +34,8 @@ export default class Item {
 	function increaseAmount(value) {
 		// value értékével növeli a táblában az amount értéket, ahol egyezik a name
 	}
+
+	function increaseAmount() {
+		// 1-el növeli a táblában az amount értéket
+	}
 }
