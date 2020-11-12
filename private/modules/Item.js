@@ -26,4 +26,8 @@ export default class Item {
 	function getSellingPrice() {
 		return this.sell;
 	}
+
+	function getImage() {
+		return this.image;
+	}
 }
