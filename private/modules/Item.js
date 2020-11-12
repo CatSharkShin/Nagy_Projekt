@@ -30,4 +30,8 @@ export default class Item {
 	function getImage() {
 		return this.image;
 	}
+
+	function increaseAmount(value) {
+		// value értékével növeli a táblában az amount értéket, ahol egyezik a name
+	}
 }
