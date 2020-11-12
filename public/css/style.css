@@ -267,3 +267,36 @@ td,th{
 .level:hover{
     color: #8ae2ff !important;
 }
+
+/*
+Fishing App Design
+*/
+.fishing-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.9fr 1.1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "exp exp exp exp"
+    "fishing fishing fishing inventory"
+    "fishing fishing fishing inventory";
+}
+.exp-bar {
+    background-color: #696969;
+    grid-area: exp;
+}
+.fishing-inventory {
+    background-color: #DEB887;
+    grid-area: inventory;
+}
+.fishing {
+    text-align: center;
+    background-color: #7FFFD4;
+    grid-area: fishing;
+}
+.exp-fill{
+    height: 100%;
+    width: 20%;
+    background-color: #7FFF00;
+}
