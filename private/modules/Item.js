@@ -14,4 +14,8 @@ export default class Item {
 			}
 		*/
 	}
+
+	function getName() {
+		return this.name;
+	}
 }
