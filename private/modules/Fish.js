@@ -19,4 +19,8 @@ export default class Fish extends Item {
 	function getLevel() {
 		return this.level;
 	}
+
+	function getNutrition() {
+		return this.level;
+	}
 }
