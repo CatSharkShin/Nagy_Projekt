@@ -15,4 +15,8 @@ export default class Junk extends Item {
 			}
 		*/
 	}
+
+	function getExp() {
+		return this.exp;
+	}
 }
