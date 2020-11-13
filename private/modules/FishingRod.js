@@ -21,4 +21,9 @@ export default class FishingRod extends Item {
 	function getLevel() {
 		return this.level;
 	}
+
+	// Ez a tartósság, hogy még mennyit lehet a bottal pecázni
+	function getDurability() {
+		return this.durability;
+	}
 }
