@@ -15,4 +15,8 @@ export default class Fish extends Item {
 			}
 		*/
 	}
+
+	function getLevel() {
+		return this.level;
+	}
 }
