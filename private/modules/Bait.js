@@ -13,4 +13,8 @@ export default class Bait extends Item {
 			}
 		*/
 	}
+
+	function getLevel() {
+		return this.level;
+	}
 }
