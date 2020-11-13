@@ -17,4 +17,8 @@ export default class FishingRod extends Item {
 			}
 		*/
 	}
+
+	function getLevel() {
+		return this.level;
+	}
 }
