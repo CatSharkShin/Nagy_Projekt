@@ -1,5 +1,8 @@
 import Item from '/Item.js';
 
+// (!)FONTOS, hogy ugyanabból a szintű pecabotból egyszerre csak egy lehet a játékosnál
+// VAGY: egyesével kerülnek be a leltárba, mert mindegyiknek más a durability-je
+
 export default class FishingRod extends Item {
 	constructor(rod_name) {
 		// SQL lekérdezéssel megnézi, hogy van-e ilyen nevű pecabot az adatbázisban (Pecabot 1, Pecabot 2, ...) .
