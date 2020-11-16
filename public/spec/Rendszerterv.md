@@ -17,9 +17,7 @@ A rendszer fejlesztése nagyrészt Javascriptben fog megvalósulni.
 - Keretrendszer elkészítése: Palotai Martin
 - Halász applikáció: Sirák Norbert
 - Pálinkafőző applikáció: Kóder László
-- 
-- 
-- 
+- Fosztogatás applikáció: Csontos Dominik
 
 ### Közös feladatok
 - Követelmény Specifikáció megírásában történő közreműködés
@@ -31,9 +29,7 @@ A rendszer fejlesztése nagyrészt Javascriptben fog megvalósulni.
 2. Applikációk elkészítése
 	- Halász applikáció elkészítése
 	- Pálinkafőző applikáció elkészítése
-	- 
-	- 
-	- 
+	- Fosztogatás applikáció elkészítése
 3. Design elkészítése
 
 ## Üzleti folyamatok modellje
