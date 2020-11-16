@@ -136,6 +136,16 @@ az élvezetre fókuszálnak.
 - Reszponzív megjelenítés.
 
 ## Riportok
+- Kivitelező: Kérem, mondja el mit szeretne!
+- Megrendelő: Néha azon gondolkodom, hogyan lehetne a magyar szokásokat és jellegzetességeket megismertetni a fiatalokkal is.
+- Kivitelező: Miért szeretné ezt?
+- Megrendelő: Mert úgy gondolom, fontos, hogy tisztában legyünk a mivoltunkkal.
+- Kivitelező: Vannak tervei a megvalósítást illetően?
+- Megrendelő: Igen, egy szerepjátékot szeretnék a magyar emberekről, jellegzetességeikről és szokásaikról.
+- Kivitelező: Mindezt egy webalkalmazással lenne a legjobb elkészíteni, ahol több játékos is játszhatna.
+- Megrendelő: Igen, ez talán megkönnyíthetné a játék elterjedését.
+- Megrendelő: Azt szeretném, ha az eddigi játékfejlesztésből eredő tapasztalatainak a legjobbjait használná fel az applikáció elkészítése során.
+- Kivitelező: Rendben, a legjobb tudásunk szerint fogunk cselekedni.
 
 ## Fogalomtár
 
