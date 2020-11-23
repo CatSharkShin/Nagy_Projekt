@@ -112,9 +112,11 @@ Fejlesztői eszközök:
     Sublime text
     Visual studio code
     
-## Absztrakt domain modell
-
 ## Architekturális terv
+Adatbázis szerverre van szükségünk: MySQL használata.
+A programok egy rest API-val kommunikálnak.
+A webalkalmazás JS keretrendszer használatával készül.
+A webalkalmazáson belüli modulok JS-ben íródnak.
 
 ## Adatbázis terv
 
