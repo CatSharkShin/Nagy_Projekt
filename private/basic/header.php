@@ -12,6 +12,7 @@
                 $_GET['p'] = 'home';
             switch ($_GET['p']) {
                 case 'home' : echo "Főoldal" ; break;
+                case 'brewing' : echo "Pálinkafőzés" ; break;
                 case 'register' : echo "Regisztráció" ; break;
                 case 'login' : echo "Bejelentkezés" ; break;
                 case 'svgs' : echo "Ikonok" ; break;
