@@ -302,3 +302,32 @@ Fishing App Design
     width: 20%;
     background-color: #7FFF00;
 }
+
+/* .brewing .brewingpicture img {
+    width: 50%;
+    height: auto;
+    padding: 0;
+  }
+
+.brewing{
+    display: inline-block;
+  }
+
+.brewing button {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+.items button:hover {
+    background-color: black;
+  }
+  */
