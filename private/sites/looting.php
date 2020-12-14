@@ -4,7 +4,8 @@
     <body>
         <div class="looting-container">
             <div class="items">
-               Items
+                Items
+               <br></br> 
                <!--
                 itt szeretném megjeleníteni az adott itemeket 
                 amiket a karakter kap a looting során
@@ -34,9 +35,11 @@
                     </tr>
                 </tbody>
                 </table>
+                <br></br>
             </div>
             <div class="looting">
                 Looting
+                <br></br> 
                 <table>
                 <tbody>
                     <tr>
@@ -62,6 +65,7 @@
                     </tr>
                 </tbody>
                 </table>
+                <br></br> 
             </div>
         </div>
     </body>
