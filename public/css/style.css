@@ -347,16 +347,16 @@ Looting design
     grid-template-rows: 0.3fr 1.7fr;
     gap: 0px 0px;
     grid-template-areas:
-      "bar bar"
+      "items items"
       "looting looting"
       "looting looting";
   }
-  .bar {
-    background-color: #696969;
-    grid-area: bar;
+.items {
+    background-color: #26A4BA;
+    grid-area: items;
 }
 .looting {
     text-align: center;
-    background-color: #7FFFD4;
+    background-color: #1D7874;
     grid-area: looting;
 }

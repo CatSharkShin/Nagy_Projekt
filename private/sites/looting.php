@@ -3,11 +3,15 @@
     <head></head>
     <body>
         <div class="looting-container">
-            <div class="bar">
-                bar
+            <div class="items">
+               Items
+               <!--
+                itt szeretném megjeleníteni az adott itemeket 
+                amiket a karakter kap a looting során
+               -->
             </div>
             <div class="looting">
-                loot
+                Loot
             </div>
         </div>
     </body>
