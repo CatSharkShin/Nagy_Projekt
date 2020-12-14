@@ -15,7 +15,7 @@
         'permission' => $_POST['permission']
       ];
 
-      if(empty($postData['user_name']) || empty($postData['permission']) || empty($postData['email']) || empty($postData['money'])) {
+      if(empty($postData['user_name']) || empty($postData['email'])) {
         echo "Missing information!";
       } else if(!filter_var($postData['email'], FILTER_VALIDATE_EMAIL)) {
         echo "Wrong email format!";
