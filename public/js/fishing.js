@@ -51,6 +51,26 @@ function {
 }
 */
 
+/* BAIT fel-és leszerelése
+DRAG EVENT: ha a bait_button-ra drag-elünk valamit a leltárból, lefut a következő:
+function {
+	// Le kéne kérni a drag-elt item image-e alapján, hogy a CSALIK táblában van-e
+	let inBaitTable = valami
+	if (!inBaitTable) {
+		serverMessage("red", "msg_class", "Ide csak csalit tehetsz!");
+	} else {
+		baitEquipped = true;
+	}
+
+	// Ha fel van szerelve valami, arról tájékoztat a serverMessage
+	// Ha leveszi a user a csalit, akkor: baitEquipped = false;
+
+	// A bedragelt csali nevét tároljuk, amit az image alapján szerzünk meg az adatbázisból:
+	bait_name = valami
+	currentBait = new Bait(bait_name);
+}
+*/
+
 // Itt zajlik le a pecázás az elejétől a végéig (csali bedobásától a hal kifogásáig):
 function fishingProcedure() {
 	serverMessage("gray", "msg_class", "Csali bedobva...");
