@@ -75,10 +75,10 @@ function {
 function fishingProcedure() {
 	serverMessage("gray", "msg_class", "Csali bedobva...");
 	isCurrentlyFishing(true);
-	let fishLevel = decidingHookedFishLevel(fishingLevel, bait);
+	let fishLevel = decidingHookedFishLevel(fishingLevel, currentBait);
 	waitingForFish(fishLevel);
 	serverMessage("gray", "msg_class", "Valami horogra akadt...");
-    catchingFish(fishingRod, fishLevel);
+    catchingFish(currentFishingRod, fishLevel);
     isCurrentlyFishing(false);
 }
 
@@ -182,7 +182,23 @@ function catchingFish(fishingRod, fishLevel) {
 
 // Exp szerzése hal szintje alapján:
 function gainExp(fishLevel) {
-	// Ez még ki lesz majd kalkulálva hardcode-al (a hal szintje alapján)...
+	
+	// Szükséges exp kövi szinthez: mindig 2x annyi, mint az előzőhöz, első szint: 1000 (kb. 1 óra); uccsó: 512000
+	let expToGain = 0;
+
+	if (fishLevel + 2 == fishingLevel) {
+		expToGain = 20;
+	} else if (fishLevel + 1 == fishingLevel) {
+		expToGain = 30;
+	} else if (fishLevel == fishingLevel) {
+		expToGain = 50;
+	} else if (fishLevel - 1 == fishingLevel) {
+		expToGain = 150;
+	} else {
+		expToGain = 350;
+	}
+
+	fishingExp += expToGain;
 }
 
 // Szerver üzenetek a felhasználó számára:
