@@ -88,3 +88,19 @@ function decidingHookedFishLevel(fishingLevel, bait) {
 
 	return fishLevel;
 }
+
+// Minél nagyobb szintű hal akad majd horogra, annál több mp-et kell rá várni:
+function waitingForFish(fishLevel) {
+	
+	let rnd = 0;
+
+	if (fishLevel < 0) {
+		rnd = Math.floor(Math.random() * (9 - 5) ) + 5;
+	} else if (fishLevel == 0) {
+		rnd = Math.floor(Math.random() * (16 - 10) ) + 10;
+	} else {
+		rnd = Math.floor(Math.random() * (26 - 18) ) + 18;
+	}
+
+	// Varakozik(rnd);
+}
