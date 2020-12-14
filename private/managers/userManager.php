@@ -1,4 +1,5 @@
 <?php 
+require_once "database.php";
 function IsUserLoggedIn() {
 	return $_SESSION  != null && array_key_exists('uid', $_SESSION) && is_numeric($_SESSION['uid']);
 }
@@ -33,10 +34,10 @@ function UserLogin($email, $password) {
 		':email' => $email,
 		':password' => sha1($password)
 	];
-
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(!empty($record)) {
+		setcookie("uid", $record['user_id']);
 		$_SESSION['uid'] = $record['user_id'];
 		$_SESSION['uname'] = $record['user_name'];
 		$_SESSION['email'] = $record['email'];
@@ -66,7 +67,7 @@ function UserRegister($email, $password, $username) {
 	return false;
 }
 
-function userEdit($user_id, $username, $email, $permission) {
+function userEdit($user_id, $username, $email, $money, $permission) {
 	$query = "SELECT user_id FROM users WHERE email = :email AND NOT user_id = :user_id";
 	$params = [ ':email' => $email,
 				':user_id' => $user_id
@@ -75,8 +76,9 @@ function userEdit($user_id, $username, $email, $permission) {
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(empty($record)) {
-		$query = "UPDATE users SET user_name = :user_name,  email = :email, permission = :permission WHERE user_id = :user_id";
+		$query = "UPDATE users SET user_name = :user_name,  email = :email, money = :money, permission = :permission WHERE user_id = :user_id";
 		$params = [
+			":money" => $money,
 			":user_name" => $username,
 			":email" => $email,
 			":permission" => $permission,

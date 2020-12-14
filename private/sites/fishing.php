@@ -1,6 +1,6 @@
 <div class="fishing-container">
     <div class="exp-bar">
-        <div class="exp-fill">
+        <div class="exp-fill" id="exp-fill">
         Experience bar</div>
     </div>
     <div class="fishing">

@@ -13,6 +13,7 @@
 
       switch ($_GET['a']) {
           case 'users': require_once PATH_ADMIN.'users.php'; break;
+          case 'user': require_once PATH_ADMIN.'user.php'; break;
           case 'item': require_once PATH_ADMIN.'item.php'; break;
           case 'home': require_once PATH_ADMIN.'users.php'; break;
 
