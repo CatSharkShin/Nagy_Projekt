@@ -61,3 +61,30 @@ function isCurrentlyFishing(isFishing) {
 	*/
 	}
 }
+
+// Itt dől el, mekkora szintű hal akad majd horogra -- utóbbi értékkel tér vissza:
+function decidingHookedFishLevel(fishingLevel, bait) {
+	/* function műküdése:
+	 - Megegyező csali és pecázási szintél halak horogra akadása kisebbtől nagyobb szintűig: (37%, 29%, 22%, 8%, 4%)
+	 - Kisebb szintű csalinál esélyek változása szintkülönbségekként (+3%, +2%, +1%, -4%, -2%)
+	 - Nagyobb szintű csalinál ugyanígy, csak fordított előjelekkel (-3%, -2%, -1%, +4%, +2%)
+	 */
+
+	let rnd = Math.floor(Math.random() * 1001);
+	let lvlDiff = bait.getLevel - fishingLevel;
+	let fishLevel = 0; 
+
+	if ((630 + lvlDiff * 30) < rnd && rnd < 1000) {
+		fishLevel = fishingLevel - 2;
+	} else if ((340 + lvlDiff * 50) < rnd && rnd < (630 + lvlDiff * 30)) {
+		fishLevel = fishingLevel - 1;
+	} else if ((120 + lvlDiff * 60) < rnd && rnd < (340 + lvlDiff * 50)) {
+		fishLevel = fishingLevel;
+	} else if ((40 + lvlDiff * 20) < rnd && rnd < (120 + lvlDiff * 60)) {
+		fishLevel = fishingLevel + 1;
+	} else {
+		fishLevel = fishingLevel + 2;
+	}
+
+	return fishLevel;
+}
