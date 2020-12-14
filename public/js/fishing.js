@@ -144,3 +144,14 @@ function catchingFish(fishingRod, fishLevel) {
 function gainExp(fishLevel) {
 	// Ez még ki lesz majd kalkulálva hardcode-al (a hal szintje alapján)...
 }
+
+// Szerver üzenetek:
+function serverMessage(color, cssClassName, message) {
+	if (color != "gray" && color != "green" && color != "red") {
+		// exception: nem megfelelő szín!
+	} else {
+		htmlElement = document.getElementByClassName(cssClassName);
+		htmlElement.style.color = color;
+		// htmlElement-ben feljön az üzenet, majd kifadel
+	}
+}
