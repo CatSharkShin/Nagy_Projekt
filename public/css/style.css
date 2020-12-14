@@ -303,16 +303,19 @@ Fishing App Design
     background-color: #7FFF00;
 }
 
-.brewingpicture img {
+/* .brewing .brewingpicture img {
     width: 50%;
     height: auto;
     padding: 0;
   }
 
-.brewingpicture button {
+.brewing{
+    display: inline-block;
+  }
+
+.brewing button {
     position: absolute;
-     top: 50%;
-    left: 50%;
+
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -324,6 +327,7 @@ Fishing App Design
     border-radius: 5px;
   }
 
-.brewingpicture button:hover {
+.items button:hover {
     background-color: black;
   }
+  */

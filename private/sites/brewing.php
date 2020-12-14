@@ -6,11 +6,15 @@
     </head>
     <body>
         <script src="public/js/brewings.js"></script>
-        <div class="brewingpicture">
-            <img src="public/images/brewing.jpg">
-        </div>
-        <div class="items">
 
+        <div class="brewing">
+            <div class="brewingpicture">
+                <img src="public/images/brewing.jpg">
+             </div>
+
+            <div class="items">
+                
+            </div>
         </div>
     </body>
 </html>
