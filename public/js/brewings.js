@@ -55,5 +55,5 @@ if (date.getHours >= brewFinishDate){
 
 var btn = document.createElement("BUTTON");
 btn.innerHTML = "Főzés!";
-document.body.appendChild(btn); 
+document.getElementById("picture").appendChild(btn);
 btn.addEventListener("click", Time);
