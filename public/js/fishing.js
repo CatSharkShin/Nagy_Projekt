@@ -17,6 +17,10 @@ let fishing_button = document.getElementByClassName("fishing_button");
 let fish_rod_button = document.getElementByClassName("fish_rod_button");
 let bait_button = document.getElementByClassName("bait_button");
 
+// Segédváltozók:
+// let fishingExp = session fishingExp
+// let fishingLevel = session fishingLevel
+
 // Ha fel van szerelve a horgászbot és a csali akkor kattintásra elindul a pecázás:
 fishing_button.addEventListener('click', function() {
     if (!fishingRodEquipped || !baitEquipped) {
