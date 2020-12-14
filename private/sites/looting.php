@@ -5,7 +5,6 @@
         <div class="looting-container">
             <div class="items">
                 Items
-               <br></br> 
                <!--
                 itt szeretném megjeleníteni az adott itemeket 
                 amiket a karakter kap a looting során
@@ -35,37 +34,34 @@
                     </tr>
                 </tbody>
                 </table>
-                <br></br>
             </div>
             <div class="looting">
                 Looting
-                <br></br> 
                 <table>
                 <tbody>
                     <tr>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
-                        <td><button class="btn"></button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
+                        <td><button class="btn">loot</button></td>
                     </tr>
                 </tbody>
                 </table>
-                <br></br> 
             </div>
         </div>
     </body>
