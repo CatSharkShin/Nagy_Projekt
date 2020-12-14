@@ -88,6 +88,9 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
 
 ## Képernyő tervek
 
+### Horgászós app
+![Használati esetek](../images/FishingScreen.png)
+
 ## Forgatókönyv
 
 ## Funkció - követelmény megfeleltetés
