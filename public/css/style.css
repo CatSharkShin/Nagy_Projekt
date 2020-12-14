@@ -302,7 +302,13 @@ Fishing App Design
     width: 20%;
     background-color: #7FFF00;
 }
-
+.brewing{
+    display: flex;
+}
+.brewing .items{
+    position: relative;
+    left: 20%;
+}
 /* .brewing .brewingpicture img {
     width: 50%;
     height: auto;

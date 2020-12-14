@@ -82,7 +82,7 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
 - Normál szintű felhasználóként hozzáférhet a bolthoz és a profiljához
 - Normál szintű felhasználóként hozzáférhet a játékmenet appjaihoz
 - Ha be van jelentkezve, akkor megjelenik a kijelentkezés fül
-![Használati esetek](hasznalati_esetek.png)
+![Használati esetek](../images/hasznalati_esetek.png)
 
 ## Megfeleltetés
 
