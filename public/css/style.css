@@ -337,3 +337,26 @@ Fishing App Design
     background-color: black;
   }
   */
+  /*
+Looting design
+*/
+.looting-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "bar bar"
+      "looting looting"
+      "looting looting";
+  }
+  .bar {
+    background-color: #696969;
+    grid-area: bar;
+}
+.looting {
+    text-align: center;
+    background-color: #7FFFD4;
+    grid-area: looting;
+}
