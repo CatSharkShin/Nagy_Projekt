@@ -30,3 +30,14 @@ fishing_button.addEventListener('click', function() {
 		fishingProcedure();
 	}
 });
+
+// Itt zajlik le a pecázás az elejétől a végéig (csali bedobásától a hal kifogásáig):
+function fishingProcedure() {
+	serverMessage("gray", "msg_class", "Csali bedobva...");
+	isCurrentlyFishing(true);
+	let fishLevel = decidingHookedFishLevel(fishingLevel, bait);
+	waitingForFish(fishLevel);
+	serverMessage("gray", "msg_class", "Valami horogra akadt...");
+    catchingFish(fishingRod, fishLevel);
+    isCurrentlyFishing(false);
+}
