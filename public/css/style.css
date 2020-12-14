@@ -357,11 +357,12 @@ Looting design
       "looting looting";
   }
 .items {
+    text-align: center;
     background-color: #26A4BA;
     grid-area: items;
 }
 .looting {
     text-align: center;
-    background-color: #1D7874;
+    background-color: #30C5BB;
     grid-area: looting;
 }
