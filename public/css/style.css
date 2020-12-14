@@ -304,15 +304,20 @@ Fishing App Design
 }
 .brewing{
     display: flex;
+    align-items: center;
 }
 .brewing .brewingitems{
     position: relative;
-    left: 20%;
 }
 .brewing .box{
+    display: flex;
     height: 100px;
     width: 100px;
     background-color: white;
+    
+}
+.brewing .brewingpicture{
+    
 }
 /* .brewing .brewingpicture img {
     width: 50%;
