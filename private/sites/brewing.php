@@ -76,7 +76,9 @@
 
             <div class="brewingitems">
                 <div class="box">1</div>
+                <br>
                 <div class="box">2</div>
+                <br>
                 <div class="box">3</div>
                 <button class="brewbtn" onclick="Time()">Főzés</button>
             </div>
