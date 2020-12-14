@@ -11,6 +11,8 @@ switch ($_GET['p']) {
 
     case 'brewing': IsUserLoggedIn() ? require_once PATH_SITES.'brewing.php' : header('Location: index.php?p=login'); break;
 
+    case 'looting': IsUserLoggedIn() ? require_once PATH_SITES.'looting.php' : header('Location: index.php?p=login'); break;
+
     case 'login': !IsUserLoggedIn() ? require_once PATH_BASIC."_login.php" : header('Location: index.php'); break;
 
     case 'register': !IsUserLoggedIn() ? require_once PATH_BASIC."_register.php" : header('Location: index.php'); break;
