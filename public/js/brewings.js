@@ -38,22 +38,22 @@ function Time() {
         }
         distance--;
 
-        btn.innerHTML = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("brewbtn").innerHTML = hours + ":" + minutes + ":" + seconds;
     
         if (distance <= 0) {
           clearInterval(x);
-          btn.innerHTML = "Kész!";
+          document.getElementById("brewbtn").innerHTML = "Kész!";
         }
     }, 1000);
 
-    btn.setAttribute('disabled','disabled');
+    document.getElementById("brewbtn").setAttribute('disabled','disabled');
 }
 
 if (date.getHours >= brewFinishDate){
-    btn.setAttribute('enabled','enabled');
+    document.getElementById("brewbtn").setAttribute('enabled','enabled');
 }
 
-var btn = document.createElement("BUTTON");
-btn.innerHTML = "Főzés!";
-document.body.appendChild(btn);
-btn.addEventListener("click", Time);
+//var btn = document.createElement("BUTTON");
+//btn.innerHTML = "Főzés!";
+//document.body.appendChild(btn);
+document.getElementById("brewbtn").addEventListener("click", Time);
