@@ -41,3 +41,23 @@ function fishingProcedure() {
     catchingFish(fishingRod, fishLevel);
     isCurrentlyFishing(false);
 }
+
+// Grafikus interface megfelelő megjelenítése attól függően, hogy épp be van-e dobva a csali:
+function isCurrentlyFishing(isFishing) {
+	if (isFishing) {
+	/*
+		"Pecabot" dragged eventes buttont egy EVENT NÉLKÜLI sötétebb "Pecabot" buttonra váltja
+			(magyarul a pecabot nem cserélhető)
+		"Csali" dragged eventes buttont egy EVENT NÉLKÜLI sötétebb "Csali" buttonra váltja
+			(csali nem cserélhető)
+		"Pecázás" click eventes buttont egy EVENT NÉLKÜLI sötétebb "Kifog" buttonra váltja
+			(horogra akadás után lesz kattintható)
+	*/
+	} else {
+	/*
+		"Pecabot" draggelhető (be lehet húzni egy szintnek megfelelő pecabotot, de más objektumot nem)
+		"Csali" draggelhető (be lehet húzni egy szintnek megfelelő csalit, de más objektumot nem)
+		"Kifog" gomb helyett kattintható "Pecázás" gomb
+	*/
+	}
+}
