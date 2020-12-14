@@ -29,6 +29,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             <br>
             <input name="password" type="password" class="form-control" id="password">
         </div>
-        <button type="submit" name="login">Belépés</button>
+        <button type="submit" name="login" class="btn-grey">Belépés</button>
     </form>
 </div>

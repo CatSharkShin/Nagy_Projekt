@@ -46,6 +46,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
             <br>
             <input name="password2" type="password" class="form-control" id="password2">
         </div>
-        <button type="submit" name="register">Regisztráció</button>
+        <button type="submit" name="register" class="btn-grey">Regisztráció</button>
     </form>
 </div>
