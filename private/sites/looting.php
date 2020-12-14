@@ -12,31 +12,56 @@
                <table>
                 <tbody>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
                     </tr>
                 </tbody>
                 </table>
             </div>
             <div class="looting">
-                Loot
+                Looting
+                <table>
+                <tbody>
+                    <tr>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                        <td><button class="btn"></button></td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
         </div>
     </body>
