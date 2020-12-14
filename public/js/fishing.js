@@ -142,7 +142,7 @@ function waitingForFish(fishLevel) {
 		rnd = Math.floor(Math.random() * (26 - 18) ) + 18;
 	}
 
-	// Varakozik(rnd);
+	sleep(rnd * 1000);
 }
 
 // Hal kifogása:
@@ -187,11 +187,7 @@ function gainExp(fishLevel) {
 
 // Szerver üzenetek a felhasználó számára:
 function serverMessage(color, cssClassName, message) {
-	if (color != "gray" && color != "green" && color != "red") {
-		// exception: nem megfelelő szín!
-	} else {
-		htmlElement = document.getElementByClassName(cssClassName);
-		htmlElement.style.color = color;
-		// htmlElement-ben feljön az üzenet, majd kifadel
-	}
+	htmlElement = document.getElementByClassName(cssClassName);
+	htmlElement.style.color = color;
+	// htmlElement-ben feljön az üzenet, majd kifadel
 }
