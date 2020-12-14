@@ -104,3 +104,38 @@ function waitingForFish(fishLevel) {
 
 	// Varakozik(rnd);
 }
+
+// Hal kifogása:
+function catchingFish(fishingRod, fishLevel) {
+	/* Funkció műküdése:
+	 - Horogra akadt halak kifogási esélyei a legkissebtől a legnagyobb szintűig (90%, 70%, 50%, 20%, 10%)
+	 - A pecabot rádob még ezekre pecabot-szintenként 5%-ot
+	 */
+
+	let rnd = Math.floor(Math.random() * 101);
+	let fishingRodLevel = fishingRod.getLevel;
+	let catchChance = 0;
+
+	// Kisebb esélytől a nagyobbig (az első ág pl.: 100-90 = 10% esély, a második ág 100-70 = 30% esély...):
+	if (fishLevel + 2 == fishingLevel) {
+		catchChance = 90;
+	} else if (fishLevel + 1 == fishingLevel) {
+		catchChance = 70;
+	} else if (fishLevel == fishingLevel) {
+		catchChance = 50;
+	} else if (fishLevel - 1 == fishingLevel) {
+		catchChance = 20;
+	} else {
+		catchChance = 10;
+	}
+	
+	if (rnd <= (catchChance + fishingRodLevel * 5)) {
+		// let fishName = "valami"; - Adatbázisból lekéri a hal nevét, ahol egyezik az itteni fishLevel-el a szint
+		let fish = new Fish(fishName);
+		serverMessage("green", "msg_class", fish.getName + " kifogva!");
+		fish.increaseAmount();
+		gainFishingExp(fishLevel);
+	} else {
+		serverMessage("gray", "msg_class", "Couldn't catch the fish...");
+	}
+}
