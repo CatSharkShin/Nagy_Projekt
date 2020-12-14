@@ -31,6 +31,26 @@ fishing_button.addEventListener('click', function() {
 	}
 });
 
+/* FISHING ROD fel-és leszerelése
+DRAG EVENT: ha a fishing_rod_button-ra drag-elünk valamit a leltárból, lefut a következő:
+function {
+	// Le kéne kérni a drag-elt item image-e alapján, hogy a PECAPOTOK táblában van-e
+	let inFishingRodTable = valami
+	if (!inFishingRodTable) {
+		serverMessage("red", "msg_class", "Ide csak pecabotot tehetsz!");
+	} else {
+		fishingRodEquipped = true;
+	}
+
+	// Ha fel van szerelve valami, arról tájékoztat a serverMessage
+	// Ha leveszi a user a pecabotot, akkor: fishingRodEquipped = false;
+
+	// A bedragelt pecabot nevét tároljuk, amit az image alapján szerzünk meg az adatbázisból:
+	rod_name = valami
+	currentFishingRod = new FishingRod(rod_name);
+}
+*/
+
 // Itt zajlik le a pecázás az elejétől a végéig (csali bedobásától a hal kifogásáig):
 function fishingProcedure() {
 	serverMessage("gray", "msg_class", "Csali bedobva...");
