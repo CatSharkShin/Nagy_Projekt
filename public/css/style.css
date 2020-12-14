@@ -351,3 +351,12 @@ Looting design
       "looting looting"
       "looting looting";
   }
+  .bar {
+    background-color: #696969;
+    grid-area: bar;
+}
+.looting {
+    text-align: center;
+    background-color: #7FFFD4;
+    grid-area: looting;
+}
