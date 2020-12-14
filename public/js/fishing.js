@@ -139,3 +139,8 @@ function catchingFish(fishingRod, fishLevel) {
 		serverMessage("gray", "msg_class", "Couldn't catch the fish...");
 	}
 }
+
+// Exp szerzése:
+function gainExp(fishLevel) {
+	// Ez még ki lesz majd kalkulálva hardcode-al (a hal szintje alapján)...
+}
