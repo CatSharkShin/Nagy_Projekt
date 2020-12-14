@@ -5,12 +5,12 @@
         <link rel="stylesheet" href="brewing.css">
     </head>
     <body>
-        <script src="../../public/js/brewings.js"></script>
+        <script src="public/js/brewings.js"></script>
         <div class="picture">
-            <img src="../../public/images/brewing.jpg">
+            <img src="public/images/brewing.jpg">
         </div>
         <div class="items">
-            
+
         </div>
     </body>
 </html>
