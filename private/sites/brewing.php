@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="/public/css/style.css">
     </head>
     <body>
-        <script src="public/js/brewings.js"></script>
+        <!--<script src="public/js/brewings.js"></script> -->
 
         <script>
             var brewSkill = 5;
@@ -66,7 +66,7 @@
             //var btn = document.createElement("BUTTON");
             //btn.innerHTML = "Főzés!";
             //document.body.appendChild(btn);
-            document.getElementById("brewbtn").addEventListener("click", Time);
+            //document.getElementById("brewbtn").addEventListener("click", Time);
         </script>
 
         <div class="brewing">
@@ -80,7 +80,7 @@
                 <div class="box">2</div>
                 <br>
                 <div class="box">3</div>
-                <button class="brewbtn" onclick="Time()">Főzés</button>
+                <button id="brewbtn" class="brewbtn" onclick="Time()">Főzés</button>
             </div>
         </div>
     </body>
