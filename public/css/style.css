@@ -355,6 +355,7 @@ Fishing App Design
 Looting design
 */
 .looting-container {
+    padding: 10% !important;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
