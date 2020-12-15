@@ -24,12 +24,12 @@
                 if(hours == 0 && time <= 59){
                     minutes = time;
                 }
-                else minutes = 59;
+                else minutes = 0;
                 
                 if (minutes == 0 && distance < 59){
                     seconds = distance;
                 }
-                else seconds = 59;
+                else seconds = 0;
 
                var x = setInterval(function() {
     
