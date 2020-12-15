@@ -184,6 +184,11 @@ function serverMessage(color, cssClassName, message) {
 	htmlElement.innerHTML = message.toString();
 }
 
+// Itemek számának megjelenítése:
+function displayItems() {
+	
+}
+
 // Oldal betöltésekor:
 document.onload = function() {
 	displayExpBarAndLevel(fishingExp);

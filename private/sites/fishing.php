@@ -15,39 +15,46 @@
         <table>
             <tbody>
                 <tr>
-                    <td>X</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'fish1.svg'?>"><span id="fid1">0</span></a>
+                    </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'fish2.svg'?>"><span id="fid2">0</span></a>
+                    </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'clown_fish.svg'?>"><span id="fid3">0</span></a>
+                    </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'ballfish.svg'?>"><span id="fid4">0</span></a>
+                    </td>
                 </tr>
                 <tr>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'koi.svg'?>"><span id="fid5">0</span></a>
+                    </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'angler_fish.svg'?>"><span id="fid6">0</span></a>
+                    </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'catfish.svg'?>"><span id="fid7">0</span></a>
+                    </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'catshark.svg'?>"><span id="fid8">0</span></a>
+                    </td>
                 </tr>
                 <tr>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                     <td>
+                        <a><img src="<?=PATH_SVGS.'swordfish.svg'?>"><span id="fid9">0</span></a>
+                    </td>
+                    <td>
+                        <a><img src="<?=PATH_SVGS.'shark.svg'?>"><span id="fid10">0</span></a>
+                    </td>
+                     <td>
+                        <a><img src="<?=PATH_SVGS.'old_boots.svg'?>"><span id="fid11">0</span></a>
+                    </td>
+                     <td>
+                        <a><img src="<?=PATH_SVGS.'tin_can.svg'?>"><span id="fid12">0</span></a>
+                    </td>
                 </tr>
             </tbody>
         </table>
