@@ -3,7 +3,6 @@
     <head></head>
     <body>
     <script>
-            var lootskill = 5;
             var date = new Date();
             var lootfinishdate = new Date();
 
@@ -11,7 +10,7 @@
             var minutes = 0;
             var seconds = 0;
 
-            function Time(time) {
+            function Time(time, btnid) {
                 //lootfinishdate = date.GetHours() + time / 60;
 
                 distance = time * 60;
@@ -44,19 +43,19 @@
                    }
                    distance--;
 
-                   document.getElementById("btn_loot_1").innerHTML = hours + ":" + minutes + ":" + seconds;
+                   document.getElementById(btnid).innerHTML = hours + ":" + minutes + ":" + seconds;
     
                    if (distance <= 0) {
                      clearInterval(x);
-                     document.getElementById("btn_loot_1").innerHTML = "Kész!";
+                     document.getElementById(btnid).innerHTML = "Kész!";
                    }
               }, 1000);
 
-             document.getElementById("btn_loot_1").setAttribute('disabled','disabled');
+             document.getElementById(btnid).setAttribute('disabled','disabled');
             }
 
             if (date.getHours >= lootfinishdate){
-               document.getElementById("btn_loot_1").setAttribute('enabled','enabled');
+               document.getElementById(btnid).setAttribute('enabled','enabled');
             }
             
     </script>
@@ -162,14 +161,14 @@
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <span> bolt 1</span>
                         </a>
-                        <button id="btn_loot_1" class="btn" onclick="Time(10)">loot</button>
+                        <button id="btn_loot_1" class="btn" onclick="Time(5,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
                         <span> bolt 2</span>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_2" class="btn" onclick="Time(10,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
