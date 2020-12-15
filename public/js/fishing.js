@@ -4,15 +4,9 @@ import Junk from '/../modules/Junk.js';
 import FishingRod from '/../modules/FishingRod.js';
 import Bait from '/../modules/Bait.js';
 
-// Drag eventekhez:
-let fishingRodEquipped = false;
-let baitEquipped = false;
-let currentFishingRod = "";
-let currentBait = "";
-
 // Szükséges html elemek eltárolása változóban:
-let exp_bar = document.getElementByClassName("exp_bar"); // betöltéskor session alapján kiírja
-let fishing_level = document.getElementByClassName("fishing_level"); // ez is session, dinamikusan változik majd 
+let exp_bar = document.getElementByClassName("exp_bar");
+let fishing_level = document.getElementByClassName("fishing_level");
 let fishing_button = document.getElementByClassName("fishing_button"); 
 let fish_rod_button = document.getElementByClassName("fish_rod_button");
 let bait_button = document.getElementByClassName("bait_button");
@@ -22,60 +16,13 @@ let fishingExp = "<?php echo $_SESSION['fishing_exp']; ?>";
 let fishingLevel = 0;
 let expBarSegments = 0;
 let expGainedCurrentLevel = 0;
+let currentFishingRod = "";
+let currentBait = "";
 
 // Ha fel van szerelve a horgászbot és a csali akkor kattintásra elindul a pecázás:
 fishing_button.addEventListener('click', function() {
-    if (!fishingRodEquipped || !baitEquipped) {
-	   if (!fishingRodEquipped) {
-	      serverMessage("red", "msg_class", "Nincs kiválasztva horgászbot!");
-	   }
-	   if (!baitEquipped) {
-	      serverMessage("red", "msg_class", "Nincs kiválasztva csali!");
-	   }
-	} else {
-		fishingProcedure();
-	}
+    fishingProcedure();
 });
-
-/* FISHING ROD fel-és leszerelése
-DRAG EVENT: ha a fishing_rod_button-ra drag-elünk valamit a leltárból, lefut a következő:
-function {
-	// Le kéne kérni a drag-elt item image-e alapján, hogy a PECAPOTOK táblában van-e
-	let inFishingRodTable = valami
-	if (!inFishingRodTable) {
-		serverMessage("red", "msg_class", "Ide csak pecabotot tehetsz!");
-	} else {
-		fishingRodEquipped = true;
-	}
-
-	// Ha fel van szerelve valami, arról tájékoztat a serverMessage
-	// Ha leveszi a user a pecabotot, akkor: fishingRodEquipped = false;
-
-	// A bedragelt pecabot nevét tároljuk, amit az image alapján szerzünk meg az adatbázisból:
-	rod_name = valami
-	currentFishingRod = new FishingRod(rod_name);
-}
-*/
-
-/* BAIT fel-és leszerelése
-DRAG EVENT: ha a bait_button-ra drag-elünk valamit a leltárból, lefut a következő:
-function {
-	// Le kéne kérni a drag-elt item image-e alapján, hogy a CSALIK táblában van-e
-	let inBaitTable = valami
-	if (!inBaitTable) {
-		serverMessage("red", "msg_class", "Ide csak csalit tehetsz!");
-	} else {
-		baitEquipped = true;
-	}
-
-	// Ha fel van szerelve valami, arról tájékoztat a serverMessage
-	// Ha leveszi a user a csalit, akkor: baitEquipped = false;
-
-	// A bedragelt csali nevét tároljuk, amit az image alapján szerzünk meg az adatbázisból:
-	bait_name = valami
-	currentBait = new Bait(bait_name);
-}
-*/
 
 // Itt zajlik le a pecázás az elejétől a végéig (csali bedobásától a hal kifogásáig):
 function fishingProcedure() {
@@ -110,16 +57,13 @@ function isCurrentlyFishing(isFishing) {
 
 // Itt dől el, mekkora szintű hal akad majd horogra -- utóbbi értékkel tér vissza:
 function decidingHookedFishLevel(fishingLevel, bait) {
-	/* function műküdése:
-	 - Megegyező csali és pecázási szintél halak horogra akadása kisebbtől nagyobb szintűig: (37%, 29%, 22%, 8%, 4%)
-	 - Kisebb szintű csalinál esélyek változása szintkülönbségekként (+3%, +2%, +1%, -4%, -2%)
-	 - Nagyobb szintű csalinál ugyanígy, csak fordított előjelekkel (-3%, -2%, -1%, +4%, +2%)
-	 */
-
+	
+	// Megegyező csali és pecázási szintél halak horogra akadása kisebbtől nagyobb szintűig: (37%, 29%, 22%, 8%, 4%)
 	let rnd = Math.floor(Math.random() * 1001);
 	let lvlDiff = bait.getLevel - fishingLevel;
 	let fishLevel = 0; 
 
+	// Kisebb szintű csalinál esélyek változása szintkülönbségekként (+3%, +2%, +1%, -4%, -2%) -- vice versa
 	if ((630 + lvlDiff * 30) < rnd && rnd < 1000) {
 		fishLevel = fishingLevel - 2;
 	} else if ((340 + lvlDiff * 50) < rnd && rnd < (630 + lvlDiff * 30)) {
@@ -153,10 +97,7 @@ function waitingForFish(fishLevel) {
 
 // Hal kifogása:
 function catchingFish(fishingRod, fishLevel) {
-	/* Funkció műküdése:
-	 - Horogra akadt halak kifogási esélyei a legkissebtől a legnagyobb szintűig (90%, 70%, 50%, 20%, 10%)
-	 - A pecabot rádob még ezekre pecabot-szintenként 5%-ot
-	 */
+	 // Horogra akadt halak kifogási esélyei a legkissebtől a legnagyobb szintűig (90%, 70%, 50%, 20%, 10%)
 
 	let rnd = Math.floor(Math.random() * 101);
 	let fishingRodLevel = fishingRod.getLevel;
@@ -175,6 +116,7 @@ function catchingFish(fishingRod, fishLevel) {
 		catchChance = 10;
 	}
 	
+	// Pecabot szintentként +5%:
 	if (rnd <= (catchChance + fishingRodLevel * 5)) {
 		// let fishName = "valami"; - Adatbázisból lekéri a hal nevét, ahol egyezik az itteni fishLevel-el a szint
 		let fish = new Fish(fishName);
@@ -245,5 +187,7 @@ function serverMessage(color, cssClassName, message) {
 // Oldal betöltésekor:
 document.onload = function() {
 	displayExpBarAndLevel(fishingExp);
-	//displayInventory();
+	// displayItems();
+	// currentFishingRod = pecázási szinttel megegyező fishing rod
+	// currentBait = pecázási szinttel megegyező bait
 }
