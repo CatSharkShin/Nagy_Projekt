@@ -13,12 +13,26 @@
                 <tbody>
                     <tr>
                         <td>
-                        item
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 1</span>
+                        </a>
                         </td>
-                        <td>item</td>
-                        <td>item</td>
-                        <td>item</td>
-                        <td>item</td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 2</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 3</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 4</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 5</span>
+                        </a></td>
                     </tr>
                     <tr>
                         <td>item</td>
