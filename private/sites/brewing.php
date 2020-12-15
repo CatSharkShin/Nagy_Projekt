@@ -71,7 +71,7 @@
 
         <div class="brewing">
             <div class="brewingpicture">
-                <img src="public/images/brewing.jpg">
+                <img class="brewimg" src="public/images/brewing.jpg">
              </div>
 
             <div class="brewingitems">
