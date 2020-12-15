@@ -68,27 +68,32 @@
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 1</span>
                         </a>
                         </td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 2</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 3</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 4</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 5</span>
                         </a></td>
                     </tr>
@@ -96,27 +101,32 @@
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 6</span>
                         </a>
                         </td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 7</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 8</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 9</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 10</span>
                         </a></td>
                     </tr>
@@ -124,27 +134,32 @@
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 11</span>
                         </a>
                         </td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 12</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 13</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 14</span>
                         </a></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <br>
                         <span> looted item 15</span>
                         </a></td>
                     </tr>
@@ -200,6 +215,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
                         <span> bolt 6</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button>
                         </td>
@@ -207,6 +223,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
                         <span> bolt 7</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button>
                         </td>
@@ -214,6 +231,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
                         <span> bolt 8</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button>
                         </td>
@@ -221,12 +239,14 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
                         <span> bolt 9</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
                         <span> bolt 10</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button></td>
                     </tr>
@@ -235,6 +255,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
                         <span> bolt 11</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button>
                         </td>
@@ -242,6 +263,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
                         <span> bolt 12</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button>
                         </td>
@@ -249,6 +271,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
                         <span> bolt 13</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button>
                         </td>
@@ -256,12 +279,14 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
                         <span> bolt 14</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
                         <span> bolt 15</span>
+                        <br>
                         </a>
                         <button class="btn">loot</button></td>
                     </tr>
