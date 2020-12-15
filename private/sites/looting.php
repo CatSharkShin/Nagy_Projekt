@@ -25,8 +25,7 @@
                     minutes = time;
                 }
                 else minutes = 59;
-            
-
+                
                 if (minutes == 0 && distance < 59){
                     seconds = distance;
                 }
