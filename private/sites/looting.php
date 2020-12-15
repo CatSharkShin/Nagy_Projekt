@@ -7,20 +7,22 @@
             var date = new Date();
             var lootfinishdate = new Date();
 
+            var hours = 0;
+            var minutes = 0;
+            var seconds = 0;
 
             function Time(var time) {
-                var hours = time/60;
-                var minutes = time;
-                var seconds = time*60;
-                distance = time*60;
+                lootfinishdate = date.GetHours() + time / 60;
 
-                if  ((hours - 1) > 0){
+                distance = time * 60;
+
+                if  (((time/60) - 1) > 0){
                     hours = hours - 1;
                 }
                 else hours = 0;
 
-                if (hours == 0 && (distance / 60) < 59){
-                    minutes = distance / 60;
+                if ((time/60) == 0 && (distance / 60) < 59){
+                    minutes = time;
                 }
                 else minutes = 59;
 
@@ -56,7 +58,7 @@
             if (date.getHours >= lootfinishdate){
                document.getElementById("btn_loot_1").setAttribute('enabled','enabled');
             }
-        </script>
+    </script>
         <div class="looting-container">
             <div class="items">
                 Items
@@ -115,7 +117,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> bolt 1</span>
                         </a>
-                        <button id="btn_loot_1" class="btn" onclick="Time(10)">loot</button>
+                        <button id="btn_loot_1" class="btn" onclick="Time('10')">loot</button>
                         </td>
                         <td>
                         <a>
