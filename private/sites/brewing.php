@@ -63,6 +63,9 @@
                document.getElementById("brewbtn").setAttribute('enabled','enabled');
             }
 
+            function ButtonOne() {
+
+            }
         </script>
 
         <div class="brewing">
@@ -73,7 +76,7 @@
             <div class="brewingitems">
                 <div class="box">
                     <a>
-                        <img onclick="Time()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img onclick="ButtonOne()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <br>
