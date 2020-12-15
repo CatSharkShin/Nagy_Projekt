@@ -318,20 +318,29 @@ Fishing App Design
     height: 100px;
     width: 100px;
     background-color: white;
-    left: 200%;
+    left: 100%;
 }
 .brewing .btn{
     margin-top: 20%;
     position: relative;
-    left: 205%;
+    left: 105%;
+}
+.brewing .brewingitems .box a img{
+    height: 100px;
+    width: auto;
+    
+}
+.brewing .brewingitems .box a img:hover{
+    border: 3px solid black; 
+    
 }
 
-/* .brewing .brewingpicture img {
-    width: 50%;
+.brewing .brewingpicture img {
+    width: 80%;
     height: auto;
     padding: 0;
   }
-
+/*
 .brewing{
     display: inline-block;
   }

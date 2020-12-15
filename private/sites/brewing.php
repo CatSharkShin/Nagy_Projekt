@@ -63,10 +63,6 @@
                document.getElementById("brewbtn").setAttribute('enabled','enabled');
             }
 
-            //var btn = document.createElement("BUTTON");
-            //btn.innerHTML = "Főzés!";
-            //document.body.appendChild(btn);
-            //document.getElementById("brewbtn").addEventListener("click", Time);
         </script>
 
         <div class="brewing">
@@ -75,11 +71,23 @@
              </div>
 
             <div class="brewingitems">
-                <div class="box">1</div>
+                <div class="box">
+                    <a>
+                        <img onclick="Time()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                    </a>
+                </div>
                 <br>
-                <div class="box">2</div>
+                <div class="box">
+                     <a>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                    </a>
+                </div>
                 <br>
-                <div class="box">3</div>
+                <div class="box">
+                    <a>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                    </a>
+                </div>
                 <button id="brewbtn" class="btn" onclick="Time()">Főzés</button>
             </div>
         </div>
