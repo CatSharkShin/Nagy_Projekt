@@ -12,7 +12,9 @@
                <table>
                 <tbody>
                     <tr>
-                        <td>item</td>
+                        <td>
+                        item
+                        </td>
                         <td>item</td>
                         <td>item</td>
                         <td>item</td>
@@ -42,19 +44,32 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> item1</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> bolt 1</span>
                         </a>
                         <button class="btn">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingitem2.svg'?>"><span> item1</span>
+                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>"><span> bolt 2</span>
                         </a>
                         <button class="btn">loot</button>
                         </td>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>"><span> bolt 3</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>"><span> bolt 4</span>
+                        </a>
+                        <button class="btn">loot</button></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>"><span> bolt 5</span>
+                        </a>
+                        <button class="btn">loot</button></td>
                     </tr>
                     <tr>
                         <td><button class="btn">loot</button></td>
