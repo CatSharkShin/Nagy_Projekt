@@ -72,11 +72,34 @@
                         <button class="btn">loot</button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> bolt 6</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>"><span> bolt 7</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>"><span> bolt 8</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>"><span> bolt 9</span>
+                        </a>
+                        <button class="btn">loot</button></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>"><span> bolt 10</span>
+                        </a>
+                        <button class="btn">loot</button></td>
                     </tr>
                     <tr>
                         <td><button class="btn">loot</button></td>
