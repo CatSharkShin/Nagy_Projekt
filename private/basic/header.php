@@ -14,6 +14,7 @@
                 case 'home' : echo "Főoldal" ; break;
                 case 'brewing' : echo "Pálinkafőzés" ; break;
                 case 'looting' : echo "Looting" ; break;
+                case 'fishing' : echo "Horgászat" ; break;
                 case 'register' : echo "Regisztráció" ; break;
                 case 'login' : echo "Bejelentkezés" ; break;
                 case 'svgs' : echo "Ikonok" ; break;
