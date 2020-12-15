@@ -57,6 +57,25 @@
                     </td>
                 </tr>
 
+
+                <!-- Korábbi HTML struktúra:
+                <div class="fishing-container">
+                    <div class="exp-bar">
+                        <div class="exp-fill" id="exp-fill">
+                        Experience bar</div>
+                    </div>
+                    <div class="fishing">
+                        <div style="margin: auto;">
+                            Fishing stuff
+                        </div>
+                    </div>
+                    <div class="fishing-inventory">
+                        Inventory
+                    </div>
+                </div>
+                -->
+
+
                 <script>
                     // Szükséges html elemek eltárolása változóban:
                     let exp_bar = document.getElementByClassName("exp_bar");
@@ -70,8 +89,8 @@
                     let fishingLevel = 0;
                     let expBarSegments = 0;
                     let expGainedCurrentLevel = 0;
-                    let currentFishingRod = "";
-                    let currentBait = "";
+                    let currentFishingRod = 0;
+                    let currentBait = 0;
 
                     // Ha fel van szerelve a horgászbot és a csali akkor kattintásra elindul a pecázás:
                     fishing_button.addEventListener('click', function() {
@@ -114,7 +133,7 @@
                         
                         // Megegyező csali és pecázási szintél halak horogra akadása kisebbtől nagyobb szintűig: (37%, 29%, 22%, 8%, 4%)
                         let rnd = Math.floor(Math.random() * 1001);
-                        let lvlDiff = bait.getLevel - fishingLevel;
+                        let lvlDiff = bait - fishingLevel;
                         let fishLevel = 0; 
 
                         // Kisebb szintű csalinál esélyek változása szintkülönbségekként (+3%, +2%, +1%, -4%, -2%) -- vice versa
@@ -154,7 +173,6 @@
                          // Horogra akadt halak kifogási esélyei a legkissebtől a legnagyobb szintűig (90%, 70%, 50%, 20%, 10%)
 
                         let rnd = Math.floor(Math.random() * 101);
-                        let fishingRodLevel = fishingRod.getLevel;
                         let catchChance = 0;
 
                         // Kisebb esélytől a nagyobbig (az első ág pl.: 100-90 = 10% esély, a második ág 100-70 = 30% esély...):
@@ -171,7 +189,7 @@
                         }
                         
                         // Pecabot szintentként +5%:
-                        if (rnd <= (catchChance + fishingRodLevel * 5)) {
+                        if (rnd <= (catchChance + fishingRod * 5)) {
                             // let fishName = "valami"; - Adatbázisból lekéri a hal nevét, ahol egyezik az itteni fishLevel-el a szint
                             // addPlusOneItem(fishLevel);
                             // displayItems();
@@ -241,15 +259,15 @@
 
                     // Itemek számának megjelenítése:
                     function displayItems() {
-                        fish_rod.innerHTML = currentFishingRod.getLevel();
-                        bait.innerHTML = currentBait.getLevel();
+                        fish_rod.innerHTML = currentFishingRod;
+                        bait.innerHTML = currentBait;
                     }
 
                     // Oldal betöltésekor:
                     document.onload = function() {
                         displayExpBarAndLevel(fishingExp);
-                        currentFishingRod = new FishingRod(fishingLevel);
-                        currentBait = new FishingRod(fishingLevel);
+                        currentFishingRod = fishingLevel;
+                        currentBait = fishingLevel;
                         displayItems();
                     }
                 </script>
@@ -257,21 +275,3 @@
         </table>
     </body>
 </html>
-
-
-<!-- Korábbi HTML struktúra:
-<div class="fishing-container">
-    <div class="exp-bar">
-        <div class="exp-fill" id="exp-fill">
-        Experience bar</div>
-    </div>
-    <div class="fishing">
-        <div style="margin: auto;">
-            Fishing stuff
-        </div>
-    </div>
-    <div class="fishing-inventory">
-        Inventory
-    </div>
-</div>
--->
