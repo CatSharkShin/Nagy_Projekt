@@ -6,13 +6,6 @@
     <body>
         <script>
             // Oldal betöltésekor:
-            document.onload = function() {
-                console.log("Ez lefutott!");
-                displayExpBarAndLevel(fishingExp);
-                currentFishingRod = fishingLevel;
-                currentBait = fishingLevel;
-                displayItems();
-            }
 
             // Szükséges html elemek eltárolása változóban:
             let exp_bar = document.getElementById("exp_bar");
@@ -28,6 +21,12 @@
             let expGainedCurrentLevel = 0;
             let currentFishingRod = 0;
             let currentBait = 0;
+            
+            console.log("Ez lefutott!");
+            displayExpBarAndLevel(fishingExp);
+            currentFishingRod = fishingLevel;
+            currentBait = fishingLevel;
+            displayItems();
 
             // Ha fel van szerelve a horgászbot és a csali akkor kattintásra elindul a pecázás:
             fishing_button.addEventListener('click', function() {
@@ -183,8 +182,8 @@
 
                 expBarSegments = diff;
                 expGainedCurrentLvl = fishingExp - min;
-                exp_bar.innerHTML = "Segments: " + diff.toString() + " Exp to next level: " + max.toString() + "/" + expGainedCurrentLvl.toString();
-                fishing_level.innerHTML = "Pecázási szint: " + fishingLevel.toString();;
+                exp_bar.innerHTML = "Segments: " + diff + " Exp to next level: " + max + "/" + expGainedCurrentLvl;
+                fishing_level.innerHTML = "Pecázási szint: " + fishingLevel.toString();
             }
 
             // Szerver üzenetek a felhasználó számára:
