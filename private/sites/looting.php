@@ -61,6 +61,7 @@
     </script>
         <div class="looting-container">
             <div class="items">
+                <br>
                 Items
                <table>
                 <tbody>
@@ -74,25 +75,25 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 2</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 3</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 4</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 5</span>
                         </a></td>
@@ -100,32 +101,32 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 6</span>
                         </a>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 7</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 8</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 9</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 10</span>
                         </a></td>
@@ -133,32 +134,32 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 11</span>
                         </a>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 12</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 13</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 14</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <br>
                         <span> looted item 15</span>
                         </a></td>
@@ -167,6 +168,7 @@
                 </table>
             </div>
             <div class="looting">
+                <br>
                 Looting
                 <table>
                 <tbody>
@@ -217,7 +219,7 @@
                         <span> bolt 6</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_6" class="btn" onclick="Time(20,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
@@ -225,7 +227,7 @@
                         <span> bolt 7</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_7" class="btn" onclick="Time(22,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
@@ -233,7 +235,7 @@
                         <span> bolt 8</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_8" class="btn" onclick="Time(25,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
@@ -241,14 +243,14 @@
                         <span> bolt 9</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_9" class="btn" onclick="Time(28,this.id)">loot</button></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
                         <span> bolt 10</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_10" class="btn" onclick="Time(30,this.id)">loot</button></td>
                     </tr>
                     <tr>
                         <td>
@@ -257,7 +259,7 @@
                         <span> bolt 11</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_11" class="btn" onclick="Time(33,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
@@ -265,7 +267,7 @@
                         <span> bolt 12</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_12" class="btn" onclick="Time(35,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
@@ -273,7 +275,7 @@
                         <span> bolt 13</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_13" class="btn" onclick="Time(40,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
@@ -281,14 +283,14 @@
                         <span> bolt 14</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_14" class="btn" onclick="Time(45,this.id)">loot</button></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
                         <span> bolt 15</span>
                         <br>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_15" class="btn" onclick="Time(50,this.id)">loot</button></td>
                     </tr>
                 </tbody>
                 </table>
