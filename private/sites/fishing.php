@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
     </head>
     <body>
-         <div id="fishing_level">Fishing level</div>
+
+        <!-- Alapstruktúra: -->
+        <div id="fishing_level">Fishing level</div>
         <div id="exp_bar">Exp bar</div>
         <div id="msg">Messages</div>
         <button class="btn" id="fishing_button">Fishing</button>
@@ -12,6 +14,8 @@
         <div id="fish_rod">0</div>
         <div>Bait lvl:</div>
         <div id="bait">0</div>
+
+        <!-- Inventory: -->
         <table>
             <tbody>
                 <tr>
@@ -59,7 +63,7 @@
             </tbody>
         </table>
 
-        <!-- Korábbi HTML struktúra:
+        <!-- Korábbi HTML struktúra (a CSS átírásához):
         <div class="fishing-container">
             <div class="exp-bar">
                 <div class="exp-fill" id="exp-fill">
@@ -85,7 +89,7 @@
             let bait = document.getElementById("bait");
 
             // Segédváltozók:
-            let fishingExp = 28000;
+            let fishingExp = 28000; // ezt a session-ből kell majd lekérni, teszt jellegű szám
             let fishingLevel = 0;
             let expBarSegments = 0;
             let expGainedCurrentLevel = 0;
@@ -98,15 +102,15 @@
             currentBait = fishingLevel;
             displayItems();
 
-            // Ha fel van szerelve a horgászbot és a csali akkor kattintásra elindul a pecázás:
+            // Kattintásra elindul a pecázás:
             fishing_button.addEventListener('click', function() {
                 fishingProcedure();
             });
 
             // Itt zajlik le a pecázás az elejétől a végéig (csali bedobásától a hal kifogásáig):
             function fishingProcedure() {
-                serverMessage("gray", "msg", "Csali bedobva...");
                 isCurrentlyFishing(true);
+                serverMessage("gray", "msg", "Csali bedobva...");
                 let fishLevel = decidingHookedFishLevel(fishingLevel, currentBait);
                 let waitingTime = waitingForFish(fishLevel);
                 sleep(3 * (waitingTime / 4)).then(() => {
@@ -167,7 +171,7 @@
                 return rnd * 1000;
             }
 
-            // sleep time expects milliseconds
+            // Várakozás function (ms):
             function sleep (time) {
                 return new Promise((resolve) => setTimeout(resolve, time));
             }
@@ -194,11 +198,10 @@
                 
                 // Pecabot szintentként +5%:
                 if (rnd <= (catchChance + fishingRod * 5)) {
-                    // let fishName = "valami"; - Adatbázisból lekéri a hal nevét, ahol egyezik az itteni fishLevel-el a szint
-                    // addPlusOneItem(fishLevel);
-                    // displayItems();
-                    serverMessage("green", "msg", fishLevel + " szintű kifogva!");
+                    // Kifogott szintű hal számának növelése 1-el az adatbázis inventoryban
                     gainFishingExp(fishLevel);
+                    displayItems();
+                    serverMessage("green", "msg", fishLevel + ". szintű kifogva!");
                 } else {
                     serverMessage("gray", "msg", "Couldn't catch the fish...");
                 }
@@ -264,6 +267,8 @@
             function displayItems() {
                 fish_rod.innerHTML = currentFishingRod;
                 bait.innerHTML = currentBait;
+
+                // Minden td elementnek van külön id-je, amikbe bele lehet tölteni az adatbázisból a számokat (simán id.innerHTML = sessionszám mindre)
             }
         </script>
     </body>
