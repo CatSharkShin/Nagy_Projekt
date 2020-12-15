@@ -160,6 +160,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>">
                         <span> bolt 1</span>
+                        <br>
                         </a>
                         <button id="btn_loot_1" class="btn" onclick="Time(5,this.id)">loot</button>
                         </td>
@@ -167,6 +168,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
                         <span> bolt 2</span>
+                        <br>
                         </a>
                         <button id="btn_loot_2" class="btn" onclick="Time(10,this.id)">loot</button>
                         </td>
@@ -174,19 +176,22 @@
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
                         <span> bolt 3</span>
+                        <br>
                         </a>
                         <button id="btn_loot_3" class="btn" onclick="Time(12,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
-                        <span> bolt 4</span>
+                        <span>bolt 4</span>
+                        <br>
                         </a>
                         <button id="btn_loot_4" class="btn" onclick="Time(15,this.id)">loot</button></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
                         <span> bolt 5</span>
+                        <br>
                         </a>
                         <button id="btn_loot_5" class="btn" onclick="Time(18,this.id)">loot</button></td>
                     </tr>
