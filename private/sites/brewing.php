@@ -75,15 +75,23 @@
             if (date.getHours >= brewFinishDate){
                document.getElementById("brewbtn").setAttribute('enabled','enabled');
             }
+            function Disable(){
+                document.getElementById("Apricot").setAttribute('disabled','disabled');
+                document.getElementById("Pear").setAttribute('disabled','disabled');
+                document.getElementById("Plum").setAttribute('disabled','disabled');
+            }
 
             function Apricot() {
                 apricot = true;
+                Disable();
             }
             function Pear() {
                 pear = true;
+                Disable();
             }
             function Plum() {
                 plum = true;
+                Disable();
             }
         </script>
 
@@ -95,19 +103,19 @@
             <div class="brewingitems">
                 <div class="box">
                     <a>
-                        <img onclick="Apricot()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img id="Apricot" onclick="Apricot()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <br>
                 <div class="box">
                      <a>
-                        <img onclick="Pear()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img id="Pear" onclick="Pear()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <br>
                 <div class="box">
                     <a>
-                        <img onclick="Plum()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img id="Plum" onclick="Plum()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <button id="brewbtn" class="btn" onclick="Time()">Főzés</button>
