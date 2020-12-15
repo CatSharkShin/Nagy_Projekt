@@ -7,12 +7,12 @@ import Bait from '/../modules/Bait.js';
 // Szükséges html elemek eltárolása változóban:
 let exp_bar = document.getElementByClassName("exp_bar");
 let fishing_level = document.getElementByClassName("fishing_level");
-let fishing_button = document.getElementByClassName("fishing_button"); 
-let fish_rod_button = document.getElementByClassName("fish_rod_button");
-let bait_button = document.getElementByClassName("bait_button");
+let fishing_button = document.getElementById("fishing_button"); 
+let fish_rod = document.getElementByClassName("fish_rod");
+let bait = document.getElementByClassName("bait");
 
 // Segédváltozók:
-let fishingExp = "<?php echo $_SESSION['fishing_exp']; ?>";
+let fishingExp = 28000; //"<?php echo $_SESSION['fishing_exp']; ?>";
 let fishingLevel = 0;
 let expBarSegments = 0;
 let expGainedCurrentLevel = 0;
@@ -119,7 +119,8 @@ function catchingFish(fishingRod, fishLevel) {
 	// Pecabot szintentként +5%:
 	if (rnd <= (catchChance + fishingRodLevel * 5)) {
 		// let fishName = "valami"; - Adatbázisból lekéri a hal nevét, ahol egyezik az itteni fishLevel-el a szint
-		let fish = new Fish(fishName);
+		// addPlusOneItem(fishLevel);
+		// displayItems();
 		serverMessage("green", "msg_class", fish.getName + " kifogva!");
 		fish.increaseAmount();
 		gainFishingExp(fishLevel);
@@ -186,13 +187,14 @@ function serverMessage(color, cssClassName, message) {
 
 // Itemek számának megjelenítése:
 function displayItems() {
-	
+	fish_rod.innerHTML = currentFishingRod.getLevel();
+	bait.innerHTML = currentBait.getLevel();
 }
 
 // Oldal betöltésekor:
 document.onload = function() {
 	displayExpBarAndLevel(fishingExp);
-	// displayItems();
-	// currentFishingRod = pecázási szinttel megegyező fishing rod
-	// currentBait = pecázási szinttel megegyező bait
+	currentFishingRod = new FishingRod(fishingLevel);
+	currentBait = new FishingRod(fishingLevel);
+	displayItems();
 }

@@ -9,9 +9,11 @@
         <div class="fishing_level">Fishing level</div>
         <div class="exp_bar">Exp bar</div>
         <div class="msg_class">Messages</div>
-        <button class="fishing_button">Fishing</button>
-        <div class="fish_rod_button">Fishing Rod</div>
-        <div class="bait_button">Bait</div>
+        <button class="btn" id="fishing_button">Fishing</button>
+        <div>Fishing Rod lvl:</div>
+        <div class="fish_rod">0</div>
+        <div>Bait lvl:</div>
+        <div class="bait">0</div>
         <table>
             <tbody>
                 <tr>
