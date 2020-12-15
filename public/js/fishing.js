@@ -241,3 +241,9 @@ function serverMessage(color, cssClassName, message) {
 	htmlElement.style.color = color;
 	htmlElement.innerHTML = message.toString();
 }
+
+// Oldal betöltésekor:
+document.onload = function() {
+	displayExpBarAndLevel(fishingExp);
+	//displayInventory();
+}
