@@ -11,20 +11,21 @@
             var minutes = 0;
             var seconds = 0;
 
-            function Time(var time) {
-                lootfinishdate = date.GetHours() + time / 60;
+            function Time(time) {
+                //lootfinishdate = date.GetHours() + time / 60;
 
                 distance = time * 60;
 
-                if  (((time/60) - 1) > 0){
-                    hours = hours - 1;
+                if(time > 60){
+                    hours = time / 60;
                 }
                 else hours = 0;
 
-                if ((time/60) == 0 && (distance / 60) < 59){
+                if(hours == 0 && (time <= 59){
                     minutes = time;
                 }
                 else minutes = 59;
+            
 
                 if (minutes == 0 && distance < 59){
                     seconds = distance;
