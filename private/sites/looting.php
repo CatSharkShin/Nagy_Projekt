@@ -74,7 +74,7 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> bolt 6</span>
+                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>"><span> bolt 6</span>
                         </a>
                         <button class="btn">loot</button>
                         </td>
@@ -102,11 +102,34 @@
                         <button class="btn">loot</button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>"><span> bolt 11</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>"><span> bolt 12</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>"><span> bolt 13</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>"><span> bolt 14</span>
+                        </a>
+                        <button class="btn">loot</button></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>"><span> bolt 15</span>
+                        </a>
+                        <button class="btn">loot</button></td>
                     </tr>
                 </tbody>
                 </table>
