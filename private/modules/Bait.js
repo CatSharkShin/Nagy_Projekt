@@ -14,6 +14,10 @@ export default class Bait extends Item {
 		*/
 	}
 
+	constructor(level) {
+		this.level = level;
+	}
+
 	function getLevel() {
 		return this.level;
 	}
