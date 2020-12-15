@@ -2,6 +2,61 @@
 <html>
     <head></head>
     <body>
+    <script>
+            var lootskill = 5;
+            var date = new Date();
+            var lootfinishdate = new Date();
+
+
+            function Time(var time) {
+                var hours = time/60;
+                var minutes = time;
+                var seconds = time*60;
+                distance = time*60;
+
+                if  ((hours - 1) > 0){
+                    hours = hours - 1;
+                }
+                else hours = 0;
+
+                if (hours == 0 && (distance / 60) < 59){
+                    minutes = distance / 60;
+                }
+                else minutes = 59;
+
+                if (minutes == 0 && distance < 59){
+                    seconds = distance;
+                }
+                else seconds = 59;
+
+               var x = setInterval(function() {
+    
+                 seconds--;
+                    if (seconds <= 0){
+                        seconds = 59;
+                        minutes--;
+                       if (minutes <= 0) {
+                           minutes = 59;
+                           hours--;
+                       }
+                   }
+                   distance--;
+
+                   document.getElementById("btn_loot_1").innerHTML = hours + ":" + minutes + ":" + seconds;
+    
+                   if (distance <= 0) {
+                     clearInterval(x);
+                     document.getElementById("btn_loot_1").innerHTML = "Kész!";
+                   }
+              }, 1000);
+
+             document.getElementById("btn_loot_1").setAttribute('disabled','disabled');
+            }
+
+            if (date.getHours >= lootfinishdate){
+               document.getElementById("btn_loot_1").setAttribute('enabled','enabled');
+            }
+        </script>
         <div class="looting-container">
             <div class="items">
                 Items
@@ -60,7 +115,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> bolt 1</span>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_1" class="btn" onclick="Time(10)">loot</button>
                         </td>
                         <td>
                         <a>
