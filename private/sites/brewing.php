@@ -94,8 +94,14 @@
                 plum = true;
                 Disable();
             }
-        </script>
 
+            function playAudio() {
+                var audio = new Audio("public/sounds/brewingsound.mp3");
+                audio.play();
+            }
+
+        </script>
+        
         <div class="brewing">
             <div class="brewingpicture">
                 <img class="brewimg" src="public/images/brewing.jpg">
@@ -119,7 +125,7 @@
                         <img id="Plum" onclick="Plum()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
-                <button id="brewbtn" class="btn" onclick="Time()">Főzés</button>
+                <button id="brewbtn" class="btn" onclick="Time(); playAudio();">Főzés</button>
             </div>
         </div>
     </body>
