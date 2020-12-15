@@ -11,7 +11,6 @@
             var seconds = 0;
 
             function Time(time, btnid) {
-                //lootfinishdate = date.GetHours() + time / 60;
 
                 distance = time * 60;
 
@@ -176,6 +175,7 @@
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 1</span>
                         <br>
                         </a>
@@ -183,7 +183,8 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 2</span>
                         <br>
                         </a>
@@ -191,7 +192,8 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 3</span>
                         <br>
                         </a>
@@ -199,14 +201,16 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span>bolt 4</span>
                         <br>
                         </a>
                         <button id="btn_loot_4" class="btn" onclick="Time(15,this.id)">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 5</span>
                         <br>
                         </a>
@@ -215,7 +219,8 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 6</span>
                         <br>
                         </a>
@@ -223,7 +228,8 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 7</span>
                         <br>
                         </a>
@@ -231,7 +237,8 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 8</span>
                         <br>
                         </a>
@@ -239,14 +246,16 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 9</span>
                         <br>
                         </a>
                         <button id="btn_loot_9" class="btn" onclick="Time(28,this.id)">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 10</span>
                         <br>
                         </a>
@@ -255,7 +264,8 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 11</span>
                         <br>
                         </a>
@@ -263,7 +273,8 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 12</span>
                         <br>
                         </a>
@@ -271,7 +282,8 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 13</span>
                         <br>
                         </a>
@@ -279,14 +291,16 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 14</span>
                         <br>
                         </a>
                         <button id="btn_loot_14" class="btn" onclick="Time(45,this.id)">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> bolt 15</span>
                         <br>
                         </a>
