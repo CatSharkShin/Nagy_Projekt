@@ -18,8 +18,10 @@ let fish_rod_button = document.getElementByClassName("fish_rod_button");
 let bait_button = document.getElementByClassName("bait_button");
 
 // Segédváltozók:
-// let fishingExp = session fishingExp
-// let fishingLevel = session fishingLevel
+let fishingExp = "<?php echo $_SESSION['fishing_exp']; ?>";
+let fishingLevel = 0;
+let expBarSegments = 0;
+let expGainedCurrentLevel = 0;
 
 // Ha fel van szerelve a horgászbot és a csali akkor kattintásra elindul a pecázás:
 fishing_button.addEventListener('click', function() {
@@ -185,7 +187,7 @@ function catchingFish(fishingRod, fishLevel) {
 }
 
 // Exp szerzése hal szintje alapján:
-function gainExp(fishLevel) {
+function gainFishingExp(fishLevel) {
 	
 	// Szükséges exp kövi szinthez: mindig 2x annyi, mint az előzőhöz, első szint: 1000 (kb. 1 óra); uccsó: 512000
 	let expToGain = 0;
@@ -203,6 +205,32 @@ function gainExp(fishLevel) {
 	}
 
 	fishingExp += expToGain;
+	displayExpBarAndLevel(fishingExp);
+}
+
+// Exp bar megjelenítése és fishing level beállítása:
+function displayExpBarAndLevel(fishingExp) {
+	
+	let min = 0;
+	let max = 1000;
+	let diff = 1000;
+	fishingLevel = 1;
+
+	// 511000 a maximum elérhető exp
+	if (!(fishingExp > 511000)) {
+		while(fishingExp > max) {
+			min = max;
+			max += max * 2; // Az exp bar intervalluma mindig az előző kétszerese
+			diff = max - min;
+			fishingLevel++;
+		}
+	} else {
+		fishingLevel = 10;
+		diff = "Maxed out!";
+	}
+
+	expBarSegments = diff;
+	expGainedCurrentLevel = fishingExp - min;
 }
 
 // Szerver üzenetek a felhasználó számára:
