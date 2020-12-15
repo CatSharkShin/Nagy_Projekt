@@ -8,7 +8,27 @@
 
             var hours = 0;
             var minutes = 0;
-            var seconds = 0;
+            var seconds = 0;   
+
+            function Loot(id){
+                //alert(id);
+                $.ajax({
+                    type: "POST",
+                    url: 'private/actions/async.php',
+                    dataType: 'json', // type of response data
+                    data: {
+                            action: 'loot',
+                            boltid: id,
+                        },
+                    success: function (data,status,xhr) {
+                    
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) {
+                        var parsedErrorMEssage = $.parseJSON(errorMessage); 
+                        console.log('Error: ' + parsedErrorMEssage);
+                    },
+                });
+            }
 
             function Time(time, btnid) {
 
@@ -179,7 +199,7 @@
                         <span> bolt 1</span>
                         <br>
                         </a>
-                        <button id="btn_loot_1" class="btn" onclick="Time(5,this.id)">loot</button>
+                        <button id="btn_loot_1" class="btn" onclick="Time(5,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
