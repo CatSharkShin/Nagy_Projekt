@@ -13,6 +13,10 @@
             var brewFinishDate = new Date();
             var distance = brewSkill * 60 * 60;
 
+            var apricot = false;
+            var pear = false;
+            var plum = false;
+
             var hours = 0;
             var minutes = 0;
             var seconds = 0;
@@ -63,8 +67,8 @@
                document.getElementById("brewbtn").setAttribute('enabled','enabled');
             }
 
-            function ButtonOne() {
-
+            function Apricot() {
+                Apricot = true;
             }
         </script>
 
@@ -76,7 +80,7 @@
             <div class="brewingitems">
                 <div class="box">
                     <a>
-                        <img onclick="ButtonOne()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img onclick="Apricot()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <br>
