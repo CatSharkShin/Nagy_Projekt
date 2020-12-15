@@ -92,18 +92,50 @@
                         </a></td>
                     </tr>
                     <tr>
-                        <td>item</td>
-                        <td>item</td>
-                        <td>item</td>
-                        <td>item</td>
-                        <td>item</td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 6</span>
+                        </a>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 7</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 8</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 9</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 10</span>
+                        </a></td>
                     </tr>
                     <tr>
-                        <td>item</td>
-                        <td>item</td>
-                        <td>item</td>
-                        <td>item</td>
-                        <td>item</td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 11</span>
+                        </a>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 12</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 13</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 14</span>
+                        </a></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'looteditem.svg'?>"><span> looted item 15</span>
+                        </a></td>
                     </tr>
                 </tbody>
                 </table>
@@ -117,7 +149,7 @@
                         <a>
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> bolt 1</span>
                         </a>
-                        <button id="btn_loot_1" class="btn" onclick="Time('10')">loot</button>
+                        <button id="btn_loot_1" class="btn" onclick="Time(10)">loot</button>
                         </td>
                         <td>
                         <a>
