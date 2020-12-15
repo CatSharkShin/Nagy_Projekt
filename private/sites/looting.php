@@ -21,7 +21,7 @@
                 }
                 else hours = 0;
 
-                if(hours == 0 && (time <= 59){
+                if(hours == 0 && time <= 59){
                     minutes = time;
                 }
                 else minutes = 59;
@@ -59,6 +59,7 @@
             if (date.getHours >= lootfinishdate){
                document.getElementById("btn_loot_1").setAttribute('enabled','enabled');
             }
+            
     </script>
         <div class="looting-container">
             <div class="items">
