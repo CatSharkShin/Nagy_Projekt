@@ -75,6 +75,7 @@
             if (date.getHours >= brewFinishDate){
                document.getElementById("brewbtn").setAttribute('enabled','enabled');
             }
+            
             function Disable(){
                 document.getElementById("Apricot").setAttribute('disabled','disabled');
                 document.getElementById("Pear").setAttribute('disabled','disabled');
