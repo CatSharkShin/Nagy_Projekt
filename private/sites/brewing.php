@@ -13,6 +13,10 @@
             var brewFinishDate = new Date();
             var distance = brewSkill * 60 * 60;
 
+            var apricot = false;
+            var pear = false;
+            var plum = false;
+
             var hours = 0;
             var minutes = 0;
             var seconds = 0;
@@ -53,6 +57,15 @@
                    if (distance <= 0) {
                      clearInterval(x);
                      document.getElementById("brewbtn").innerHTML = "Kész!";
+                     if(apricot){
+                        alert("Barackpálinkát kaptál!");
+                     }
+                     if(pear){
+                         alert("Körtepálinkát kaptál!");
+                     }
+                     if(plum){
+                         alert("Szilvapálinkát kaptál!");
+                     }
                    }
               }, 1000);
 
@@ -63,8 +76,14 @@
                document.getElementById("brewbtn").setAttribute('enabled','enabled');
             }
 
-            function ButtonOne() {
-
+            function Apricot() {
+                apricot = true;
+            }
+            function Pear() {
+                pear = true;
+            }
+            function Plum() {
+                plum = true;
             }
         </script>
 
@@ -76,19 +95,19 @@
             <div class="brewingitems">
                 <div class="box">
                     <a>
-                        <img onclick="ButtonOne()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img onclick="Apricot()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <br>
                 <div class="box">
                      <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img onclick="Pear()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <br>
                 <div class="box">
                     <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img onclick="Plum()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <button id="brewbtn" class="btn" onclick="Time()">Főzés</button>
