@@ -27,7 +27,77 @@
             'btn_loot_1' => 
             [
                 'id' => '1',
-                'amount' => '2'
+                'amount' => '1'
+            ],
+            'btn_loot_2' => 
+            [
+                'id' => '2',
+                'amount' => '1'
+            ],
+            'btn_loot_3' => 
+            [
+                'id' => '3',
+                'amount' => '1'
+            ],
+            'btn_loot_4' => 
+            [
+                'id' => '4',
+                'amount' => '1'
+            ],
+            'btn_loot_5' => 
+            [
+                'id' => '5',
+                'amount' => '1'
+            ],
+            'btn_loot_6' => 
+            [
+                'id' => '1',
+                'amount' => '10'
+            ],
+            'btn_loot_7' => 
+            [
+                'id' => '2',
+                'amount' => '10'
+            ],
+            'btn_loot_8' => 
+            [
+                'id' => '3',
+                'amount' => '10'
+            ],
+            'btn_loot_9' => 
+            [
+                'id' => '4',
+                'amount' => '10'
+            ],
+            'btn_loot_10' => 
+            [
+                'id' => '5',
+                'amount' => '10'
+            ],
+            'btn_loot_11' => 
+            [
+                'id' => '1',
+                'amount' => '30'
+            ],
+            'btn_loot_12' => 
+            [
+                'id' => '2',
+                'amount' => '30'
+            ],
+            'btn_loot_13' => 
+            [
+                'id' => '3',
+                'amount' => '30'
+            ],
+            'btn_loot_14' => 
+            [
+                'id' => '4',
+                'amount' => '30'
+            ],
+            'btn_loot_15' => 
+            [
+                'id' => '5',
+                'amount' => '30'
             ],
         ];
         $item = $loot_pool[$bolt_gomb_id];
