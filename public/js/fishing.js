@@ -226,7 +226,7 @@ function displayExpBarAndLevel(fishingExp) {
 		}
 	} else {
 		fishingLevel = 10;
-		diff = "Maxed out!";
+		diff = 1;
 	}
 
 	expBarSegments = diff;
@@ -239,5 +239,5 @@ function displayExpBarAndLevel(fishingExp) {
 function serverMessage(color, cssClassName, message) {
 	htmlElement = document.getElementByClassName(cssClassName);
 	htmlElement.style.color = color;
-	// htmlElement-ben feljön az üzenet, majd kifadel
+	htmlElement.innerHTML = message.toString();
 }
