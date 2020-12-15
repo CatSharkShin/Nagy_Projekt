@@ -16,7 +16,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <a><img src="<?=PATH_SVGS.'fish1.svg'?>"><span id="fid1">0</span></a>
+                        <a><img src="<?=PATH_SVGS.'fish.svg'?>"><span id="fid1">0</span></a>
                     </td>
                     <td>
                         <a><img src="<?=PATH_SVGS.'fish2.svg'?>"><span id="fid2">0</span></a>
