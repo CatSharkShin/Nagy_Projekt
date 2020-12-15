@@ -201,6 +201,10 @@ img{
   filter: drop-shadow(1px 1px 0px #FFFFFF) drop-shadow(-1px 1px 0px #FFFFFF)
   drop-shadow(1px -1px 0px #FFFFFF) drop-shadow(-1px -1px 0px #FFFFFF);
 }
+.brewimg{
+    filter: drop-shadow(0px 0px 0px #FFFFFF) drop-shadow(0px 0px 0px #FFFFFF)
+  drop-shadow(0px 0px 0px #FFFFFF) drop-shadow(0px 0px 0px #FFFFFF);
+}
 table{
     margin: auto;
 }
@@ -316,13 +320,12 @@ Fishing App Design
     background-color: white;
     left: 200%;
 }
-.brewing .brewbtn{
+.brewing .btn{
+    margin-top: 20%;
     position: relative;
-    left: 200%;
+    left: 205%;
 }
-.brewing .brewingpicture{
-    
-}
+
 /* .brewing .brewingpicture img {
     width: 50%;
     height: auto;

@@ -71,7 +71,7 @@
 
         <div class="brewing">
             <div class="brewingpicture">
-                <img src="public/images/brewing.jpg">
+                <img class="brewimg" src="public/images/brewing.jpg">
              </div>
 
             <div class="brewingitems">
@@ -80,7 +80,7 @@
                 <div class="box">2</div>
                 <br>
                 <div class="box">3</div>
-                <button id="brewbtn" class="brewbtn" onclick="Time()">Főzés</button>
+                <button id="brewbtn" class="btn" onclick="Time()">Főzés</button>
             </div>
         </div>
     </body>
