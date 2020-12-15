@@ -269,6 +269,7 @@
                         currentFishingRod = fishingLevel;
                         currentBait = fishingLevel;
                         displayItems();
+
                     }
                 </script>
             </tbody>

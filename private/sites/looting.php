@@ -175,20 +175,20 @@
                         <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
                         <span> bolt 3</span>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_3" class="btn" onclick="Time(12,this.id)">loot</button>
                         </td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
                         <span> bolt 4</span>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_4" class="btn" onclick="Time(15,this.id)">loot</button></td>
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
                         <span> bolt 5</span>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_5" class="btn" onclick="Time(18,this.id)">loot</button></td>
                     </tr>
                     <tr>
                         <td>
