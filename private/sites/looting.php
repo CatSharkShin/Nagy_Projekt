@@ -40,8 +40,18 @@
                 <table>
                 <tbody>
                     <tr>
-                        <td><button class="btn">loot</button></td>
-                        <td><button class="btn">loot</button></td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> item1</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
+                        <td>
+                        <a>
+                        <img src="<?=PATH_SVGS.'lootingitem2.svg'?>"><span> item1</span>
+                        </a>
+                        <button class="btn">loot</button>
+                        </td>
                         <td><button class="btn">loot</button></td>
                         <td><button class="btn">loot</button></td>
                         <td><button class="btn">loot</button></td>
