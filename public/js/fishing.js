@@ -230,7 +230,9 @@ function displayExpBarAndLevel(fishingExp) {
 	}
 
 	expBarSegments = diff;
-	expGainedCurrentLevel = fishingExp - min;
+	expGainedCurrentLvl = fishingExp - min;
+	exp_bar.innerHTML = "Segments: " + diff.toString() + " Exp to next level: " + max.toString() + "/" + expGainedCurrentLvl.toString();
+	fishing_level.innerHTML = "Pecázási szint: " + fishingLevel.toString();;
 }
 
 // Szerver üzenetek a felhasználó számára:
