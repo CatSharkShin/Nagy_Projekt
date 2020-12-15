@@ -10,15 +10,17 @@
             var minutes = 0;
             var seconds = 0;   
 
-            function Loot(id){
+            function Loot(boltid){
                 //alert(id);
+                var uid = getCookie("uid");
                 $.ajax({
                     type: "POST",
                     url: 'private/actions/async.php',
                     dataType: 'json', // type of response data
                     data: {
                             action: 'loot',
-                            boltid: id,
+                            id: uid,
+                            boltid: boltid,
                         },
                     success: function (data,status,xhr) {
                     
