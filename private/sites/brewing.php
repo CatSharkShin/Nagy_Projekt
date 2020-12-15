@@ -57,6 +57,15 @@
                    if (distance <= 0) {
                      clearInterval(x);
                      document.getElementById("brewbtn").innerHTML = "Kész!";
+                     if(apricot){
+                        alert("Barackpálinkát kaptál!");
+                     }
+                     if(pear){
+                         alert("Körtepálinkát kaptál!");
+                     }
+                     if(plum){
+                         alert("Szilvapálinkát kaptál!");
+                     }
                    }
               }, 1000);
 
@@ -68,7 +77,13 @@
             }
 
             function Apricot() {
-                Apricot = true;
+                apricot = true;
+            }
+            function Pear() {
+                pear = true;
+            }
+            function Plum() {
+                plum = true;
             }
         </script>
 
@@ -86,13 +101,13 @@
                 <br>
                 <div class="box">
                      <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img onclick="Pear()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <br>
                 <div class="box">
                     <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img onclick="Plum()" src="<?=PATH_SVGS.'tin_can.svg'?>">
                     </a>
                 </div>
                 <button id="brewbtn" class="btn" onclick="Time()">Főzés</button>
