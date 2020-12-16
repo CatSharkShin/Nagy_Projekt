@@ -99,6 +99,8 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
     A felhasználói bejelentkezés funkció.
     A jogusultsági rendszer funkciói.
     A halászat mint játék szekció funkciói.
+    Pálinkafőzés játék szekció funkciói.
+    Looting játék szekció funkciói.
 
 ## Fogalomszótár
  Admin:
