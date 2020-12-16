@@ -13,7 +13,7 @@ a boltot, a saját profilját, emellett láthatja a vagyonát, és ki is tud jel
 A felhasználónak lehetősége lesz horgászni, ahol horgászbotot és csalit kell használnia, hogy kifogjon halakat. 
 A kifogott halakat fel lehet a játék más területein használni, vagy el lehet adni. A horgászáskor lesz esély a 
 hal sikertelen kifogására is, emellett a felhasználó tapasztalatot gyűjt a horgászás közben, így növelve mesterségét. 
-A horgászbotok minősége a halak kifogásának esélyét növelik, míg a csalik minősége 
+A horgászbotok minősége a halak kifogásának esélyét növelik, míg a csalik minősége.
 ## Jelenlegi helyzet
 A mai világban túlbonyolított szerepjátékok léteznek csak, ahol a felhasználó rá van kényszerítve, 
 hogy minden nap játsszon, ne maradjon le dolgokról, és lehetőségei le vannak korlátozva az éppen 
