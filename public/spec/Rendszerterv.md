@@ -130,6 +130,7 @@ A webalkalmazás JS keretrendszer használatával készül.
 A webalkalmazáson belüli modulok JS-ben íródnak.
 
 ## Adatbázis terv
+![Adatbázis terv](../images/dbterv.png)
 
 ## Implementációs terv
 
