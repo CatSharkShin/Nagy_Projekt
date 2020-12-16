@@ -49,10 +49,18 @@ az élvezetre fókuszálnak.
 		Egy-egy tevékenységhez a megfelelő tárgyak vásárlása, fejlesztése. 
 		Saját megszerzett tárgyak eladása. 
 ###Halászat rendszere: 
-			Adott halak folyamatos megjelenítése. 
-			Kifogásuk szinthez kötése. 
-			Fejlődés jelzése.
-			Sikeres kifogás jelzése.
+		Adott halak folyamatos megjelenítése. 
+		Kifogásuk szinthez kötése. 
+		Fejlődés jelzése.
+		Sikeres kifogás jelzése.
+###Pálinkafőzés rendszer:
+		3 féle pálinka elkészítése:
+			- Barack
+			- Körte
+			- Szilva
+		Sikeres pálinkafőzés jelzése
+		Hangeffektusok főzés közben
+		Főzési idő szinthez kötése
 ###Looting rendszere:
 		Lehetséges nyersanyag szerő helyek megjelenítése: 
 		Bolt, mások házai, emberek az utcán, szupermarket, közintézmények.
