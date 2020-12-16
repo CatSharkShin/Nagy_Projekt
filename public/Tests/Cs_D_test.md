@@ -1,6 +1,5 @@
 | Tesztelő: Csontos Dominik 	| 2020.12.16 22.26      	| Böngésző: Opera Gx 	|                                                                 	|   	|
 |:-------------------------:	|-----------------------	|--------------------	|-----------------------------------------------------------------	|---	|
-|                           	|                       	|                    	|                                                                 	|   	|
 | Időpont                   	| Teszt                 	| Eredmény           	| Megjegyzés                                                      	|   	|
 | 22:28                     	| Regisztrációs gomb    	| Sikeres            	| Behozta a regisztrációs felületet                               	|   	|
 | 22:30                     	| E-mail megadása       	| Sikeres            	| Nem megfelelő e-mail megadása során  nem fogadja el             	|   	|
@@ -36,6 +35,5 @@
 | 23:16                     	| Zsákmányolás 12. bolt 	| Sikeres            	| A gomb megnyomására elindul a zsákmányolás a boltban            	|   	|
 | 23:17                     	| Zsákmányolás 13. bolt 	| Sikeres            	| A gomb megnyomására elindul a zsákmányolás a boltban            	|   	|
 | 23:18                     	| Zsákmányolás 14. bolt 	| Sikeres            	| A gomb megnyomására elindul a zsákmányolás a boltban            	|   	|
-| 23:19                     	| Zsákmányolás 15. bolt 	| Sikeres            	| A gomb megnyomására elindul a zsákmányolás a boltban            	|   	|
-|                           	|                       	|                    	|                                                                 	|   	|
+| 23:19                     	| Zsákmányolás 15. bolt 	| Sikeres            	| A gomb megnyomására elindul a zsákmányolás a boltban            	|   	|                  	
 | Teszt eredménye:          	| Sikeres               	|                    	|                                                                 	|   	|
