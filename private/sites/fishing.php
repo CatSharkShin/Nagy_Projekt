@@ -96,7 +96,7 @@
             let exp_fill = document.getElementById("exp-fill");
 
             // Segédváltozók:
-            let fishingExp = 700; // ezt a session-ből kell majd lekérni, teszt jellegű szám
+            let fishingExp = 900; // ezt a session-ből kell majd lekérni, teszt jellegű szám
             let fishingLevel = 0;
             let expBarSegments = 0;
             let expGainedCurrentLevel = 0;
@@ -227,15 +227,15 @@
                 let expToGain = 0;
 
                 if (fishLevel + 2 == fishingLevel) {
-                    expToGain = 20;
+                    expToGain = 22;
                 } else if (fishLevel + 1 == fishingLevel) {
-                    expToGain = 30;
+                    expToGain = 33;
                 } else if (fishLevel == fishingLevel) {
-                    expToGain = 50;
+                    expToGain = 55;
                 } else if (fishLevel - 1 == fishingLevel) {
-                    expToGain = 150;
+                    expToGain = 155;
                 } else {
-                    expToGain = 350;
+                    expToGain = 355;
                 }
 
                 fishingExp += expToGain;
@@ -266,7 +266,7 @@
                 expBarSegments = diff;
                 expGainedCurrentLvl = fishingExp - min;
                 expPerCent = (expGainedCurrentLvl / expBarSegments) * 100;
-                exp_fill.innerHTML = "Segments: " + diff.toString() + " Exp to next level: " + max.toString() + "/" + expGainedCurrentLvl;
+                exp_fill.innerHTML = "Exp to next level: " + max.toString() + "/" + expGainedCurrentLvl;
                 fishing_level.innerHTML = "Pecázási szint: " + fishingLevel.toString();
                 
                 exp_fill.style.width = `${expPerCent}%`;
@@ -281,6 +281,8 @@
 
             // Itemek számának megjelenítése:
             function displayItems() {
+                currentFishingRod = fishingLevel;
+                currentBait = fishingLevel;
                 fish_rod.innerHTML = currentFishingRod;
                 bait.innerHTML = currentBait;
 
