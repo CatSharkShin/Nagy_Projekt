@@ -123,6 +123,9 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
 ### Pálinkafőző app
 ![Használati esetek](../images/palinkafozo_kepernyoterv.png)
 
+### Zsákmányolós app
+![Használati esetek](../images/LootingScreen.png)
+
 ## Forgatókönyv
 
 ## Funkció - követelmény megfeleltetés
