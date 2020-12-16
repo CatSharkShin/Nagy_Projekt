@@ -7,7 +7,7 @@
     <img src="<?=PATH_SVGS.'brandy.svg'?>"><span> Pálinkafőzés</span>
 </a>
 <a href="?p=looting" class="app-item">
-    <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> Looting</span>
+    <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> Zsákmányolás</span>
 </a>
 <?php  else: ?>
     <a href="?p=login" style="">A játék eléréséhez be kell lépni</a>

@@ -13,7 +13,7 @@
             switch ($_GET['p']) {
                 case 'home' : echo "Főoldal" ; break;
                 case 'brewing' : echo "Pálinkafőzés" ; break;
-                case 'looting' : echo "Looting" ; break;
+                case 'looting' : echo "Zsákmányolás" ; break;
                 case 'fishing' : echo "Horgászat" ; break;
                 case 'register' : echo "Regisztráció" ; break;
                 case 'login' : echo "Bejelentkezés" ; break;

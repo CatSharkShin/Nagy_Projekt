@@ -124,10 +124,19 @@ Fejlesztői eszközök:
     Visual studio code
     
 ## Architekturális terv
-Adatbázis szerverre van szükségünk: MySQL használata.
-A programok egy rest API-val kommunikálnak.
-A webalkalmazás JS keretrendszer használatával készül.
-A webalkalmazáson belüli modulok JS-ben íródnak.
+
+Backend:
+
+A rendszerhez szükség van egy adatbázis szerverre, mely a mi esetünkben
+MySQl-t használunk. A kliens oldali programokat egy php alapú REST api
+egítségével valósítjuk meg, ez csatlakozik az adatbázis szerverhez. 
+A kliensekkel ajax kérésekkel kommunikál.
+
+Web Kliens:
+
+A web alkalmazás JS keretrendszer használatával készül el.
+Javascript modulok segyítségével.
+
 
 ## Adatbázis terv
 ![Adatbázis terv](../images/dbterv.png)
