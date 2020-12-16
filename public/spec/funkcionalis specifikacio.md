@@ -90,6 +90,8 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
 
 ### Horgászós app
 ![Használati esetek](../images/FishingScreen.png)
+
+### Pálinkafőző app
 ![Használati esetek](../images/palinkafozo_kepernyoterv.png)
 
 ## Forgatókönyv
