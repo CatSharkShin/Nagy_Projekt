@@ -1,9 +1,25 @@
+
 # Funkcionális specifikáció
 
 ##  Áttekintés
-
+Egy olyan webalkalmazást fejlesztünk melyben a felhasználó több mesterséget próbálhat ki egy virtuális világban, 
+tárgyakat szerezhet melyekkel kereskedhet, vagy felhasználhatja azokat új tárgyak létrehozásához. A webalkalmazás 
+egy virtuális világon alapuló játék lesz, melyben a cél a felhasználótól függ, lehet az pénz szerzés, vagy a 
+mesterségek fejlesztése. A mesterségek fejlesztésével egyre ügyesebb lesz a felhasználó, és egyre jobb tárgyakat 
+tud szerezni és használni. A felhasználónak szükséges lesz a regisztráció a játék eléréséhez. A felhasználó a 
+bejelentkezés után bal oldalt választhat, hogy melyik mesterséggel szeretne éppen foglalkozni, felül pedig elérheti 
+a boltot, a saját profilját, emellett láthatja a vagyonát, és ki is tud jelentkezni.
+A felhasználónak lehetősége lesz horgászni, ahol horgászbotot és csalit kell használnia, hogy kifogjon halakat. 
+A kifogott halakat fel lehet a játék más területein használni, vagy el lehet adni. A horgászáskor lesz esély a 
+hal sikertelen kifogására is, emellett a felhasználó tapasztalatot gyűjt a horgászás közben, így növelve mesterségét. 
+A horgászbotok minősége a halak kifogásának esélyét növelik, míg a csalik minősége.
 ## Jelenlegi helyzet
-
+A mai világban túlbonyolított szerepjátékok léteznek csak, ahol a felhasználó rá van kényszerítve, 
+hogy minden nap játsszon, ne maradjon le dolgokról, és lehetőségei le vannak korlátozva az éppen 
+legeffektívebb stratégiákra, hogy élvezze a játékát. Legtöbb játék a monetizáció miatt kényszeríti 
+a játékost napi kötelező pár óra játékra, hogy ezt egy habitussá tegye, így függő legyen és a cégnek 
+minél stabilabb jövedelme legyen. Ezek a stratégiák a felhasználó pénztárcáját célozzák, és így nem 
+az élvezetre fókuszálnak. 
 ## Követelmény lista
 1. Jogosultság: 
     1.1 Regisztrációs felület: 
