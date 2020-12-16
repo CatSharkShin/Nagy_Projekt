@@ -135,6 +135,50 @@ A webalkalmazáson belüli modulok JS-ben íródnak.
 ## Implementációs terv
 
 ## Tesztterv
+A teszteléseink célja a teljes rendszer és annak minden játékmódja és azok minden komponensei 
+funkcionalitásának hiánytalan vizsgálata, ellenőrzése.
+A rendszerbéli hiányosságok feltárása és javítása.
+A tesztelésink metódusait három fő komponensre tudjuk bontani melyek:
+Az első minden egyes funkció megírásakor az a fejleszés akkori szakaszában valósul meg 
+amikor a fejlesztő előszőr lefuttatja az adott funkciót és megnézi a kapott választ.
+A második amikor az adott funkció böngészőben megvalósított formában kerül futtatható formátumban.
+Ekkor a fejlesztő mint egyszerű játékos próbálja ki a funkciót minden lehetséges módon és az ezekből kapott válaszokat 
+nézi a webalkalmazás console felületén. Ezen válaszok alapján tudja értékelni, hogy az adott funkció tökéletesen működik, 
+vagy hiba van bizonyos eljárások, logikák során. Melyek javítást igényelnek.
+A harmadik amikor az eddig meglévő funkcióknak a különböző böngészőkkel való kompatibilitásának tesztelése. 
+Ezeket a lépéseket bármelyik fejlesztő végezheti és nem csak a saját részlegét tesztelheti ilyen módon.
+Az eljárás sikeres, ha különböző böngészőkben is
+megfelelően működik minden funkciók, és akkor ér véget ha minden funkciót sikeresen tesztelt.
+
+Tesztelendő funkciók:
+
+Adatbázis: 
+
+Képesnek kell lennie a kapott adatokat táblákban megjeleníteni. 
+Képesnek kell lennie a táblákban lévő adatokat kérés hatására megadnia a webes alkalmazásnak.
+Képesnek kell lennie kérés hatására a lekért adatokat megjelenítenie.
+
+Login felület:
+
+A login/regisztrációs felület elrendezésének ellenőrzése: 
+Elvárt működés: az elképzelt kinézethez képest megfelelően kell
+kinéznie, a képernyő méretétől függetlenül.
+
+Regisztrációs felület:
+
+A regisztrációs felületnek elérhetőnek kell lennie a kezdőképernyőn 
+a bejelentkezési lehetőség mellett. Amennyiben a felhasználó még nincs regisztrálva 
+az itt található gombra kattintva kell átirányítani a regisztrációs felületre. 
+Ezen felületen a megfelelő adatok megadása mellett a megerősítés gombra kattintva a felhasználó
+regisztrációjának meg kell történnie az adatbázis segítségével.
+Majd elérhetővé kell tenni a bejelentkezést a felhasználó számára.
+Hibás,ross+z formátumban megadott regisztrációs adatok megadásakor 
+hibaüzenetet kell kapjon a felhasználó.
+
+Játékok felülete:
+
+A játékok felületének képesnek kell lennie a funkcionális specifikációban megadott
+képernyőtervek szerint megvalósulnia. Minden funkcióját betöltenie.
 
 ## Telepítési terv
 Webes alkalmazás.
@@ -152,7 +196,7 @@ Mire van szükségünk ahhoz, hogy használni tudjuk, illetve min használhatjuk
 	
 - Stabil internetkapcsolat
 
-Ha rendelkezünk valamelyik femti eszközzel és azon telepített böngészővel,
+Ha rendelkezünk valamelyik fenti eszközzel és azon telepített böngészővel,
 akkor fel kell keresnünk a weboldalt, amelyet a "boredinquarantine.hu" címen érhetünk el.
 Ezt követően szükségünk van egy regisztrációra.
 Regisztráció után pedig csupán be kell jelentkeznünk.
