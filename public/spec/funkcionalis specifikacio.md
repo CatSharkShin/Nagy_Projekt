@@ -90,6 +90,7 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
 
 ### Horgászós app
 ![Használati esetek](../images/FishingScreen.png)
+![Használati esetek](../images/palinkafozo_kepernyoterv.png)
 
 ## Forgatókönyv
 
@@ -99,6 +100,8 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
     A felhasználói bejelentkezés funkció.
     A jogusultsági rendszer funkciói.
     A halászat mint játék szekció funkciói.
+    Pálinkafőzés játék szekció funkciói.
+    Looting játék szekció funkciói.
 
 ## Fogalomszótár
  Admin:

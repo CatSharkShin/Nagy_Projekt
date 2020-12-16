@@ -8,10 +8,31 @@
 
             var hours = 0;
             var minutes = 0;
-            var seconds = 0;
+            var seconds = 0;   
+
+            function Loot(boltid){
+                //alert(id);
+                var uid = getCookie("uid");
+                $.ajax({
+                    type: "POST",
+                    url: 'private/actions/async.php',
+                    dataType: 'json', // type of response data
+                    data: {
+                            action: 'loot',
+                            id: uid,
+                            boltid: boltid,
+                        },
+                    success: function (data,status,xhr) {
+                    
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) {
+                        var parsedErrorMEssage = $.parseJSON(errorMessage); 
+                        console.log('Error: ' + parsedErrorMEssage);
+                    },
+                });
+            }
 
             function Time(time, btnid) {
-                //lootfinishdate = date.GetHours() + time / 60;
 
                 distance = time * 60;
 
@@ -61,6 +82,7 @@
     </script>
         <div class="looting-container">
             <div class="items">
+                <br>
                 Items
                <table>
                 <tbody>
@@ -68,83 +90,98 @@
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 1</span>
                         </a>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 2</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 3</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 4</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 5</span>
                         </a></td>
                     </tr>
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 6</span>
                         </a>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 7</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 8</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 9</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 10</span>
                         </a></td>
                     </tr>
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 11</span>
                         </a>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 12</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 13</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 14</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'looteditem.svg'?>">
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
                         <span> looted item 15</span>
                         </a></td>
                     </tr>
@@ -152,6 +189,7 @@
                 </table>
             </div>
             <div class="looting">
+                <br>
                 Looting
                 <table>
                 <tbody>
@@ -159,111 +197,136 @@
                         <td>
                         <a>
                         <img src="<?=PATH_SVGS.'tin_can.svg'?>">
-                        <span> bolt 1</span>
+                        <br>
+                        <span> Piac (1.szint)</span>
                         <br>
                         </a>
-                        <button id="btn_loot_1" class="btn" onclick="Time(5,this.id)">loot</button>
+                        <button id="btn_loot_1" class="btn" onclick="Time(5,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
-                        <span> bolt 2</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Kisbolt (1.szint)</span>
                         <br>
                         </a>
-                        <button id="btn_loot_2" class="btn" onclick="Time(10,this.id)">loot</button>
+                        <button id="btn_loot_2" class="btn" onclick="Time(10,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
-                        <span> bolt 3</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Coop (1. szint)</span>
                         <br>
                         </a>
-                        <button id="btn_loot_3" class="btn" onclick="Time(12,this.id)">loot</button>
+                        <button id="btn_loot_3" class="btn" onclick="Time(12,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
-                        <span>bolt 4</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Spar (1. szint)</span>
                         <br>
                         </a>
-                        <button id="btn_loot_4" class="btn" onclick="Time(15,this.id)">loot</button></td>
+                        <button id="btn_loot_4" class="btn" onclick="Time(15,this.id); Loot(this.id);">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
-                        <span> bolt 5</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span>Tesco (1. szint)</span>
                         <br>
                         </a>
-                        <button id="btn_loot_5" class="btn" onclick="Time(18,this.id)">loot</button></td>
+                        <button id="btn_loot_5" class="btn" onclick="Time(18,this.id); Loot(this.id);">loot</button></td>
                     </tr>
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
-                        <span> bolt 6</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Piac (2.szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_6" class="btn" onclick="Time(20,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
-                        <span> bolt 7</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Kisbolt (2.szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_7" class="btn" onclick="Time(22,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
-                        <span> bolt 8</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Coop (2. szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_8" class="btn" onclick="Time(25,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
-                        <span> bolt 9</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Spar (2. szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_9" class="btn" onclick="Time(28,this.id); Loot(this.id);">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
-                        <span> bolt 10</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Tesco (2. szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_10" class="btn" onclick="Time(30,this.id); Loot(this.id);">loot</button></td>
                     </tr>
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
-                        <span> bolt 11</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Piac (3.szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_11" class="btn" onclick="Time(33,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop2.svg'?>">
-                        <span> bolt 12</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Kisbolt (3.szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_12" class="btn" onclick="Time(35,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop3.svg'?>">
-                        <span> bolt 13</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Coop (3. szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button>
+                        <button id="btn_loot_13" class="btn" onclick="Time(40,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop4.svg'?>">
-                        <span> bolt 14</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Spar (3. szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_14" class="btn" onclick="Time(45,this.id); Loot(this.id);">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'lootingshop5.svg'?>">
-                        <span> bolt 15</span>
+                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <br>
+                        <span> Tesco (3. szint)</span>
+                        <br>
                         </a>
-                        <button class="btn">loot</button></td>
+                        <button id="btn_loot_15" class="btn" onclick="Time(50,this.id); Loot(this.id);">loot</button></td>
                     </tr>
                 </tbody>
                 </table>
