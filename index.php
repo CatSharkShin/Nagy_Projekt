@@ -2,6 +2,7 @@
 <?php 
     require "private/config.php";
     require PATH_MANAGERS."userManager.php";
+    require PATH_MANAGERS."itemManager.php";
     require_once PATH_MANAGERS."database.php";
  ?>
 <!DOCTYPE html>
