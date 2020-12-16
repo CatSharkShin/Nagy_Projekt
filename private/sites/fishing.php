@@ -96,7 +96,7 @@
             let exp_fill = document.getElementById("exp-fill");
 
             // Segédváltozók:
-            let fishingExp = 28000; // ezt a session-ből kell majd lekérni, teszt jellegű szám
+            let fishingExp = 700; // ezt a session-ből kell majd lekérni, teszt jellegű szám
             let fishingLevel = 0;
             let expBarSegments = 0;
             let expGainedCurrentLevel = 0;
@@ -259,10 +259,11 @@
 
                 expBarSegments = diff;
                 expGainedCurrentLvl = fishingExp - min;
+                expPerCent = (expGainedCurrentLvl / expBarSegments) * 100;
                 exp_fill.innerHTML = "Segments: " + diff.toString() + " Exp to next level: " + max.toString() + "/" + expGainedCurrentLvl;
                 fishing_level.innerHTML = "Pecázási szint: " + fishingLevel.toString();
                 
-                exp_fill.style.width = `${exp_percent}%`;
+                exp_fill.style.width = `${expPerCent}%`;
             }
 
             // Szerver üzenetek a felhasználó számára:
