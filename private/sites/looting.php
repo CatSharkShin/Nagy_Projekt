@@ -89,100 +89,100 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'angler_fish.svg'?>">
                         <br>
-                        <span> looted item 1</span>
+                        <span>0</span>
                         </a>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'ballfish.svg'?>">
                         <br>
-                        <span> looted item 2</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'catfish.svg'?>">
                         <br>
-                        <span> looted item 3</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'catshark.svg'?>">
                         <br>
-                        <span> looted item 4</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'clown_fish.svg'?>">
                         <br>
-                        <span> looted item 5</span>
+                        <span>0</span>
                         </a></td>
                     </tr>
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'fish.svg'?>">
                         <br>
-                        <span> looted item 6</span>
+                        <span>0</span>
                         </a>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'fish2.svg'?>">
                         <br>
-                        <span> looted item 7</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'koi.svg'?>">
                         <br>
-                        <span> looted item 8</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'shark.svg'?>">
                         <br>
-                        <span> looted item 9</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'swordfish.svg'?>">
                         <br>
-                        <span> looted item 10</span>
+                        <span>0</span>
                         </a></td>
                     </tr>
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'peach.svg'?>">
                         <br>
-                        <span> looted item 11</span>
+                        <span>0</span>
                         </a>
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'pear.svg'?>">
                         <br>
-                        <span> looted item 12</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'plum.svg'?>">
                         <br>
-                        <span> looted item 13</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'pear.svg'?>">
                         <br>
-                        <span> looted item 14</span>
+                        <span>0</span>
                         </a></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'peach.svg'?>">
                         <br>
-                        <span> looted item 15</span>
+                        <span>0</span>
                         </a></td>
                     </tr>
                 </tbody>
@@ -196,7 +196,7 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Piac (1.szint)</span>
                         <br>
@@ -205,7 +205,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Kisbolt (1.szint)</span>
                         <br>
@@ -214,7 +214,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Coop (1. szint)</span>
                         <br>
@@ -223,7 +223,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Spar (1. szint)</span>
                         <br>
@@ -231,7 +231,7 @@
                         <button id="btn_loot_4" class="btn" onclick="Time(15,this.id); Loot(this.id);">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span>Tesco (1. szint)</span>
                         <br>
@@ -241,7 +241,7 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Piac (2.szint)</span>
                         <br>
@@ -250,7 +250,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Kisbolt (2.szint)</span>
                         <br>
@@ -259,7 +259,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Coop (2. szint)</span>
                         <br>
@@ -268,7 +268,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Spar (2. szint)</span>
                         <br>
@@ -276,7 +276,7 @@
                         <button id="btn_loot_9" class="btn" onclick="Time(28,this.id); Loot(this.id);">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Tesco (2. szint)</span>
                         <br>
@@ -286,7 +286,7 @@
                     <tr>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Piac (3.szint)</span>
                         <br>
@@ -295,7 +295,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Kisbolt (3.szint)</span>
                         <br>
@@ -304,7 +304,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Coop (3. szint)</span>
                         <br>
@@ -313,7 +313,7 @@
                         </td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Spar (3. szint)</span>
                         <br>
@@ -321,7 +321,7 @@
                         <button id="btn_loot_14" class="btn" onclick="Time(45,this.id); Loot(this.id);">loot</button></td>
                         <td>
                         <a>
-                        <img src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img src="<?=PATH_SVGS.'market.svg'?>">
                         <br>
                         <span> Tesco (3. szint)</span>
                         <br>
