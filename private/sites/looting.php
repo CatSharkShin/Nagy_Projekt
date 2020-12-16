@@ -83,7 +83,7 @@
         <div class="looting-container">
             <div class="items">
                 <br>
-                Items
+                Tárgyak
                <table>
                 <tbody>
                     <tr>
@@ -190,7 +190,7 @@
             </div>
             <div class="looting">
                 <br>
-                Looting
+                Zsákmányolás
                 <table>
                 <tbody>
                     <tr>
