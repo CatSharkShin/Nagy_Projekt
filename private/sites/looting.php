@@ -201,7 +201,7 @@
                         <span> Piac (1.szint)</span>
                         <br>
                         </a>
-                        <button id="btn_loot_1" class="btn" onclick="Time(5,this.id); Loot(this.id);">loot</button>
+                        <button id="btn_loot_1" class="btn" onclick="Time(10,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
@@ -210,7 +210,7 @@
                         <span> Kisbolt (1.szint)</span>
                         <br>
                         </a>
-                        <button id="btn_loot_2" class="btn" onclick="Time(10,this.id); Loot(this.id);">loot</button>
+                        <button id="btn_loot_2" class="btn" onclick="Time(11,this.id); Loot(this.id);">loot</button>
                         </td>
                         <td>
                         <a>
