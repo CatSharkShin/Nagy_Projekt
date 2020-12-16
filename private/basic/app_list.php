@@ -4,7 +4,7 @@
     <img src="<?=PATH_SVGS.'catfish.svg'?>"><span> Horgászat</span>
 </a>
 <a href="?p=brewing" class="app-item">
-    <img src="<?=PATH_SVGS.'brew.svg'?>"><span> Pálinkafőzés</span>
+    <img src="<?=PATH_SVGS.'brandy.svg'?>"><span> Pálinkafőzés</span>
 </a>
 <a href="?p=looting" class="app-item">
     <img src="<?=PATH_SVGS.'tin_can.svg'?>"><span> Looting</span>
