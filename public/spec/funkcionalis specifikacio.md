@@ -106,11 +106,18 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére.
     Looting játék szekció funkciói.
 
 ## Fogalomszótár
- Admin:
- A felhasználók fölött álló vezető profil
- Platform:
- A felület szakkifejezésére használt szakszó.
- Website:
- A felület neve ahol az aplikáció futni fog.
- Profil:
- A felhasználó adatlapja.
+  - Admin:
+     A felhasználók fölött álló vezető profil
+  - Platform:
+     A felület szakkifejezésére használt szakszó.
+  - Website:
+     A felület neve ahol az aplikáció futni fog.
+  - Profil:
+     A felhasználó adatlapja.
+  - RPG:
+    Role Playing Game Egy adott stílusú szerepjáték meghatározására használt kifejezés.
+ - Monetizáció:
+    A mostani játékokba beépített pénzorientáltság. Mely nem a játék élményre fúkuszál,
+ 				hanem a játékos pénzköltésére.
+ - Looting:
+    Az ilyen típusú játékok egyik eleme, a közből vagy másoktól erőszakkal elvett dolgokat jelenti.
