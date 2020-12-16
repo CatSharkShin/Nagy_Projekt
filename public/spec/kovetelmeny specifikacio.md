@@ -74,8 +74,6 @@ az élvezetre fókuszálnak.
 - (így a játékos csak egy adott helyről adott nyersanyagot tud megszerezni)
 
 
-
-
 ## Rendszerre vonatkozó törvények, szabványok, ajánlás
 ### Rendszerszabványok:
 
@@ -132,6 +130,18 @@ az élvezetre fókuszálnak.
 - **Hátrány:** Ha pay-to-win elemekkel rendelkezik a játék költekezés nélkül nem olyan élvezetes. Gambling függőséget okozhat ami komoly probléma.
 
 ## Igényelt üzleti folyamatok
+
+### Célok
+- Átlátható felhasználói felület készítése a játékhoz
+- Élvezetes játékmenet megvalósítása
+- Az aktivitás általános felpezsdítése az ügyfél website-ján
+- Nagyob, közösségre alapuló projektek lehetőségeinek megteremtése (pl.: fórum)
+
+### Előnyök
+- Új játékosbázis
+- Régi játékosok visszacsábítása a platformra
+- Új promóciós lehetőségek
+- A játék jellegéből adódóan: népszerűség internetes tartalomgyártók körében
 
 ## Követelménylista
 
