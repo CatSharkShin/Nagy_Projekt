@@ -142,6 +142,13 @@ Javascript modulok segyítségével.
 ![Adatbázis terv](../images/dbterv.png)
 
 ## Implementációs terv
+A Webes felület főként HTML, CSS, PHP és Javascript nyelvet fog tartalmazni.
+Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és
+úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság,
+és könnyebb bővítés érdekében.Egyedi eseteket leszámítva melyeknél előfordul hogy Javascript nyelvű funkciókat
+illesztünk be oldalakba a könnyebb kezelhetőség szem előtt tartása miatt.Képes lesz felhasználni a Backend részen futó
+REST szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az
+adatbázisból.
 
 ## Tesztterv
 A teszteléseink célja a teljes rendszer és annak minden játékmódja és azok minden komponensei 
@@ -211,3 +218,6 @@ Ezt követően szükségünk van egy regisztrációra.
 Regisztráció után pedig csupán be kell jelentkeznünk.
 
 ## Karbantartási terv
+Ellenőrizni kell a jövőben kiadott böngészési verziókhoz való 
+kompatibilitást és reszponzivitást. Majd ha nem valósul meg 
+kijavítani a jövőbeli böngészőkhöz is a teljes funcionalitást.
