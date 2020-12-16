@@ -110,19 +110,19 @@
             <div class="brewingitems">
                 <div class="box">
                     <a>
-                        <img id="Apricot" onclick="Apricot()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img id="Apricot" onclick="Apricot()" src="<?=PATH_SVGS.'peach.svg'?>">
                     </a>
                 </div>
                 <br>
                 <div class="box">
                      <a>
-                        <img id="Pear" onclick="Pear()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img id="Pear" onclick="Pear()" src="<?=PATH_SVGS.'pear.svg'?>">
                     </a>
                 </div>
                 <br>
                 <div class="box">
                     <a>
-                        <img id="Plum" onclick="Plum()" src="<?=PATH_SVGS.'tin_can.svg'?>">
+                        <img id="Plum" onclick="Plum()" src="<?=PATH_SVGS.'plum.svg'?>">
                     </a>
                 </div>
                 <button id="brewbtn" class="btn" onclick="Time(); playAudio();">Főzés</button>
