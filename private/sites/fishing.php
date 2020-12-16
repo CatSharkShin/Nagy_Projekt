@@ -147,16 +147,22 @@
                 let fishLevel = 0; 
 
                 // Kisebb szintű csalinál esélyek változása szintkülönbségekként (+3%, +2%, +1%, -4%, -2%) -- vice versa
-                if ((630 + lvlDiff * 30) < rnd && rnd < 1000) {
-                    fishLevel = fishingLevel - 2;
-                } else if ((340 + lvlDiff * 50) < rnd && rnd < (630 + lvlDiff * 30)) {
-                    fishLevel = fishingLevel - 1;
-                } else if ((120 + lvlDiff * 60) < rnd && rnd < (340 + lvlDiff * 50)) {
-                    fishLevel = fishingLevel;
-                } else if ((40 + lvlDiff * 20) < rnd && rnd < (120 + lvlDiff * 60)) {
-                    fishLevel = fishingLevel + 1;
+                if (fishingLevel == 1) {
+                    fishLevel = 1;
+                } else if (fishingLevel == 2) {
+                    fishLevel = 2;
                 } else {
-                    fishLevel = fishingLevel + 2;
+                    if ((630 + lvlDiff * 30) < rnd && rnd < 1000) {
+                        fishLevel = fishingLevel - 2;
+                    } else if ((340 + lvlDiff * 50) < rnd && rnd < (630 + lvlDiff * 30)) {
+                        fishLevel = fishingLevel - 1;
+                    } else if ((120 + lvlDiff * 60) < rnd && rnd < (340 + lvlDiff * 50)) {
+                        fishLevel = fishingLevel;
+                    } else if ((40 + lvlDiff * 20) < rnd && rnd < (120 + lvlDiff * 60)) {
+                        fishLevel = fishingLevel + 1;
+                    } else {
+                        fishLevel = fishingLevel + 2;
+                    }
                 }
 
                 return fishLevel;
