@@ -125,9 +125,24 @@ A webalkalmazáson belüli modulok JS-ben íródnak.
 ## Tesztterv
 
 ## Telepítési terv
-- Webes alkalmazás
-A webalkalmazás használatához csupán egy internetkapcsolattal rendelkező számítógépre vagy mobiltelefonra vagy szükségünk, melyen
-valamelyik böngésző, mint például: Google Chrome, Firefox, Safari megtalálható.
-Ha rendelkezünk böngészővel, akkor fel kell keresnünk a weboldalt, amelyet az boredinquarantine.hu címen érhetünk el.
+Webes alkalmazás.
+Mire van szükségünk ahhoz, hogy használni tudjuk, illetve min használhatjuk?
+- Számítógép
+- Mobiltelefon
+- Tablet
+- Egyéb eszköz amely képes böngésző futtatására.
+
+- Böngésző program:
+	- Google Chrome
+	- Safari
+	- Opera
+	- Mozilla Firefox
+	
+- Stabil internetkapcsolat
+
+Ha rendelkezünk valamelyik femti eszközzel és azon telepített böngészővel,
+akkor fel kell keresnünk a weboldalt, amelyet a "boredinquarantine.hu" címen érhetünk el.
+Ezt követően szükségünk van egy regisztrációra.
+Regisztráció után pedig csupán be kell jelentkeznünk.
 
 ## Karbantartási terv
