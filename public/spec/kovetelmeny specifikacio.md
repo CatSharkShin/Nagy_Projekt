@@ -40,33 +40,38 @@ az élvezetre fókuszálnak.
 
 ## Funkcionális követelmények
 	
-###Profil rendszer: 
-		Megtekinthetőek a felhasználók adatai. 
-		Játékban eltöltött ideje.
-		Adott tevékenységekben elért szintjei, eszközei. 
-		A játékos rendelkezésre álló pénze.
-###Piac rendszer: 
-		Egy-egy tevékenységhez a megfelelő tárgyak vásárlása, fejlesztése. 
-		Saját megszerzett tárgyak eladása. 
-###Halászat rendszere: 
-		Adott halak folyamatos megjelenítése. 
-		Kifogásuk szinthez kötése. 
-		Fejlődés jelzése.
-		Sikeres kifogás jelzése.
-###Pálinkafőzés rendszer:
-		3 féle pálinka elkészítése:
-			- Barack
-			- Körte
-			- Szilva
-		Sikeres pálinkafőzés jelzése
-		Hangeffektusok főzés közben
-		Főzési idő szinthez kötése
-###Looting rendszere:
-		Lehetséges nyersanyag szerő helyek megjelenítése: 
-		Bolt, mások házai, emberek az utcán, szupermarket, közintézmények.
-		Sikeres fosztogatás jelzése.
-		Adott dolgok adott helyen való megtalálhatósága. 
-		(így a játékos csak egy adott helyről adott nyersanyagot tud megszerezni)
+### Profil rendszer: 
+- Megtekinthetőek a felhasználók adatai. 
+- Játékban eltöltött ideje.
+- Adott tevékenységekben elért szintjei, eszközei. 
+- A játékos rendelkezésre álló pénze.
+
+### Piac rendszer: 
+- Egy-egy tevékenységhez a megfelelő tárgyak vásárlása, fejlesztése. 
+- Saját megszerzett tárgyak eladása. 
+
+### Halászat rendszere: 
+- Adott halak folyamatos megjelenítése. 
+- Kifogásuk szinthez kötése. 
+- Fejlődés jelzése.
+- Sikeres kifogás jelzése.
+
+### Pálinkafőzés rendszer:
+		
+#### 3 féle pálinka elkészítése:
+- Barack
+- Körte
+- Szilva
+- Sikeres pálinkafőzés jelzése
+- Hangeffektusok főzés közben
+- Főzési idő szinthez kötése
+
+### Looting rendszere:
+- Lehetséges nyersanyag szerő helyek megjelenítése: 
+- Bolt, mások házai, emberek az utcán, szupermarket, közintézmények.
+- Sikeres fosztogatás jelzése.
+- Adott dolgok adott helyen való megtalálhatósága. 
+- (így a játékos csak egy adott helyről adott nyersanyagot tud megszerezni)
 
 
 
