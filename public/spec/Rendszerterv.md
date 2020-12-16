@@ -2,7 +2,18 @@
 
 ##  A rendszer célja
 A felhasználó egy olyan rpg (role playing game, avagy szerepjáték) játékkal játszhasson, amely a tipikus magyar szokásokat és jellegzetességeket eleveníti meg különböző tevékenységek formájában.
+A felhasználónak a játék megkezdéséhez köteleőzen regisztrálnia kell.
+Regisztráció után, pedig minden alkalommal a bejelentkezés elvégzését követően kezdhet el játszani.
+Ezen alapon minden felhasználó saját profillal rendelkezik a játékban, amelyben rögzül az előrehaladása,
+így ha úgy dönt, hogy később folytatná a megkezdett játékot akkor nem vész kárba a befektetett idő.
 A felhasználónak lehetősége lesz a játék egyes elemeinek elsajátítására, amellyel az adott feladatban fejlődik és elvégzésében egyre jobb lesz.
+
+Ilyen feladat például:
+	- Halászat
+	- Pálinkafőzés
+	- Zsákmányolás
+
+A rendszer a karanténban töltött idő mókásabb eltöltését kívánja elősegíteni.
 A rendszer fejlesztése nagyrészt Javascriptben fog megvalósulni.
 
 ## Projektterv
@@ -125,9 +136,24 @@ A webalkalmazáson belüli modulok JS-ben íródnak.
 ## Tesztterv
 
 ## Telepítési terv
-- Webes alkalmazás
-A webalkalmazás használatához csupán egy internetkapcsolattal rendelkező számítógépre vagy mobiltelefonra vagy szükségünk, melyen
-valamelyik böngésző, mint például: Google Chrome, Firefox, Safari megtalálható.
-Ha rendelkezünk böngészővel, akkor fel kell keresnünk a weboldalt, amelyet az boredinquarantine.hu címen érhetünk el.
+Webes alkalmazás.
+Mire van szükségünk ahhoz, hogy használni tudjuk, illetve min használhatjuk?
+- Számítógép
+- Mobiltelefon
+- Tablet
+- Egyéb eszköz amely képes böngésző futtatására.
+
+- Böngésző program:
+	- Google Chrome
+	- Safari
+	- Opera
+	- Mozilla Firefox
+	
+- Stabil internetkapcsolat
+
+Ha rendelkezünk valamelyik femti eszközzel és azon telepített böngészővel,
+akkor fel kell keresnünk a weboldalt, amelyet a "boredinquarantine.hu" címen érhetünk el.
+Ezt követően szükségünk van egy regisztrációra.
+Regisztráció után pedig csupán be kell jelentkeznünk.
 
 ## Karbantartási terv
