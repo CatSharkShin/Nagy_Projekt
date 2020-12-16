@@ -2,7 +2,18 @@
 
 ##  A rendszer célja
 A felhasználó egy olyan rpg (role playing game, avagy szerepjáték) játékkal játszhasson, amely a tipikus magyar szokásokat és jellegzetességeket eleveníti meg különböző tevékenységek formájában.
+A felhasználónak a játék megkezdéséhez köteleőzen regisztrálnia kell.
+Regisztráció után, pedig minden alkalommal a bejelentkezés elvégzését követően kezdhet el játszani.
+Ezen alapon minden felhasználó saját profillal rendelkezik a játékban, amelyben rögzül az előrehaladása,
+így ha úgy dönt, hogy később folytatná a megkezdett játékot akkor nem vész kárba a befektetett idő.
 A felhasználónak lehetősége lesz a játék egyes elemeinek elsajátítására, amellyel az adott feladatban fejlődik és elvégzésében egyre jobb lesz.
+
+Ilyen feladat például:
+	- Halászat
+	- Pálinkafőzés
+	- Zsákmányolás
+
+A rendszer a karanténban töltött idő mókásabb eltöltését kívánja elősegíteni.
 A rendszer fejlesztése nagyrészt Javascriptben fog megvalósulni.
 
 ## Projektterv
