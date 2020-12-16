@@ -366,3 +366,19 @@ Looting design
     background-color: #30C5BB;
     grid-area: looting;
 }
+.fishing-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "levels levels levels levels"
+    "msgs msgs msgs msgs"
+    "fishing fishing fishing fishing";
+}
+.levels_area { grid-area: levels; }
+.levels_area div{
+    margin: 15px;
+}
+.msgs_area { grid-area: msgs; }
+.fishing_area { grid-area: fishing; }

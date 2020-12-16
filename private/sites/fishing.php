@@ -6,17 +6,38 @@
     <body>
 
         <!-- Alapstruktúra: -->
-        <div id="fishing_level">Fishing level</div>
-        <div id="exp_bar">Exp bar</div>
-        <div id="msg">Messages</div>
-        <button class="btn" id="fishing_button">Fishing</button>
-        <div>Fishing Rod lvl:</div>
-        <div id="fish_rod">0</div>
-        <div>Bait lvl:</div>
-        <div id="bait">0</div>
 
         <!-- Inventory: -->
-        <table>
+        
+
+        
+        <div class="fishing-container">
+            <div class="exp-bar">
+                <div class="exp-fill" id="exp-fill">
+                
+                </div>
+            </div>
+            <div class="fishing fishing-grid-container">
+                <div class="levels_area">
+                    <div>
+                        Pecabot szint: 
+                        <span id="fish_rod">0</span>
+                    </div>
+                    <div>
+                        Csali szint: 
+                        <span id="bait">0</span>
+                    </div>
+                    <div id="fishing_level">Horgászási szint</div>
+                </div>
+                <div class="msgs_area">
+                    <div id="msg">Üzenetek</div>
+                </div>
+                <div class="fishing_area">
+                    <button class="btn" id="fishing_button">Horgászat</button>
+                </div>
+            </div>
+            <div class="fishing-inventory">
+                <table>
             <tbody>
                 <tr>
                     <td>
@@ -62,23 +83,8 @@
                 </tr>
             </tbody>
         </table>
-
-        <!-- Korábbi HTML struktúra (a CSS átírásához):
-        <div class="fishing-container">
-            <div class="exp-bar">
-                <div class="exp-fill" id="exp-fill">
-                Experience bar</div>
-            </div>
-            <div class="fishing">
-                <div style="margin: auto;">
-                    Fishing stuff
-                </div>
-            </div>
-            <div class="fishing-inventory">
-                Inventory
             </div>
         </div>
-        -->
 
         <script>
             // Szükséges html elemek eltárolása változóban:
@@ -87,6 +93,7 @@
             let fishing_button = document.getElementById("fishing_button"); 
             let fish_rod = document.getElementById("fish_rod");
             let bait = document.getElementById("bait");
+            let exp_fill = document.getElementById("exp-fill");
 
             // Segédváltozók:
             let fishingExp = 28000; // ezt a session-ből kell majd lekérni, teszt jellegű szám
@@ -252,8 +259,10 @@
 
                 expBarSegments = diff;
                 expGainedCurrentLvl = fishingExp - min;
-                exp_bar.innerHTML = "Segments: " + diff.toString() + " Exp to next level: " + max.toString() + "/" + expGainedCurrentLvl;
+                exp_fill.innerHTML = "Segments: " + diff.toString() + " Exp to next level: " + max.toString() + "/" + expGainedCurrentLvl;
                 fishing_level.innerHTML = "Pecázási szint: " + fishingLevel.toString();
+                
+                exp_fill.style.width = `${exp_percent}%`;
             }
 
             // Szerver üzenetek a felhasználó számára:
