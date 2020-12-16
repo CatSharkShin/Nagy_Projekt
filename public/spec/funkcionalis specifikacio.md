@@ -20,41 +20,54 @@ legeffektívebb stratégiákra, hogy élvezze a játékát. Legtöbb játék a m
 a játékost napi kötelező pár óra játékra, hogy ezt egy habitussá tegye, így függő legyen és a cégnek 
 minél stabilabb jövedelme legyen. Ezek a stratégiák a felhasználó pénztárcáját célozzák, és így nem 
 az élvezetre fókuszálnak. 
+
 ## Követelmény lista
-1. Jogosultság: 
-    1.1 Regisztrációs felület: 
-            A felhasználó a nevének és jelszavának megadásával regisztrálja
-            magát. Ha valamelyik adat ezek közül hiányzik vagy nem
-            felel meg a követelményeknek, akkor a rendszer értesítét küld.
-    1.2  Bejelentkezési felület: 
-            A felhasználó az email címe és a jelszava
-            segítségével bejelentkezhet.
-            Ha a megadott email cím vagy jelszó nem
-            egyezik a felhasználóéval, akkor hibaüzenet jelenik meg.
-    1.3 Jogosultsági szintek:
-            Admin: Bejelentkezés regisztráció. 
-            Felhasználók módósítása törlése felülírása. 
-            Játék és minden funkciójának tesztelése.
-            Játékos/Alap felhasználó: Bejelentkezés regisztráció.
-            Teljes játékélmény minden funkciója.
-2.Modifikáció:
-    1.1 Admin modifikációk:
-            Az admin módosítani tudja a felhasználók nevét jelszavát.
-            Valamint minden játékban szerzett eredményét. Ez egyaránt használható 
-            büntetésre és jutalmazásra is.
-3.Felület:
-    3.1: Pénz: 
-            Megmutatja a játékos pénzét, hogy mire használhatja fel.
-    3.2: Profil:
-            Megmutatja a játékos profilját és minden eddig elért mesterségét és eredményét.
-    3.3: Szint:
-            Megmutatja a játékos szintjét és az ezzel járó bónuszokat.
-    3.4: Kijelentkezés:
-            Kijelentkezik a felhasználó profiljából
-    3.5: Egyes játékszekciók:
-            A játék egy egy funkciójához vezető oldalra lép.
-    3.6: Admin panel:
-            csak az admin szintű felhasználó számára jelenik meg ez a fül, a lényege, hogy az admin be tud állítani magának bizonyos szinteket és értékeket a játékon belül
+
+### Jogosultság: 
+
+#### 1.1 Regisztrációs felület: 
+- A felhasználó a nevének és jelszavának megadásával regisztrálja
+magát. Ha valamelyik adat ezek közül hiányzik vagy nem
+felel meg a követelményeknek, akkor a rendszer értesítét küld.
+
+#### 1.2  Bejelentkezési felület: 
+- A felhasználó az email címe és a jelszava
+segítségével bejelentkezhet.
+Ha a megadott email cím vagy jelszó nem
+egyezik a felhasználóéval, akkor hibaüzenet jelenik meg.
+#### 1.3 Jogosultsági szintek:
+- Admin: Bejelentkezés regisztráció. 
+Felhasználók módósítása törlése felülírása. 
+Játék és minden funkciójának tesztelése.
+Játékos/Alap felhasználó: Bejelentkezés regisztráció.
+Teljes játékélmény minden funkciója.
+
+### Modifikáció:
+    
+#### Admin modifikációk:
+- Az admin módosítani tudja a felhasználók nevét jelszavát.
+Valamint minden játékban szerzett eredményét. Ez egyaránt használható 
+büntetésre és jutalmazásra is.
+
+### Felület:
+
+#### Pénz: 
+- Megmutatja a játékos pénzét, hogy mire használhatja fel.
+
+#### Profil:
+- Megmutatja a játékos profilját és minden eddig elért mesterségét és eredményét.
+
+#### Szint:
+- Megmutatja a játékos szintjét és az ezzel járó bónuszokat.
+
+#### Kijelentkezés:
+- Kijelentkezik a felhasználó profiljából
+
+#### Egyes játékszekciók:
+- A játék egy egy funkciójához vezető oldalra lép.
+
+#### Admin panel:
+- csak az admin szintű felhasználó számára jelenik meg ez a fül, a lényege, hogy az admin be tud állítani magának bizonyos szinteket és értékeket a játékon belül
 
 ## Jelenlegi üzleti folyamatok modellje
 
