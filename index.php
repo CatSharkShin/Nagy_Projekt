@@ -14,7 +14,7 @@
         }
      ?>
     <link rel="stylesheet" type="text/css" href="<?=PATH_CSS.'style.css'?>">
-    <title>Nagy Projekt</title>
+    <title>BIQ</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="<?=PATH_JS.'functions.js'?>" type="text/javascript"></script>
     <script type="text/javascript">

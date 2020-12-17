@@ -23,7 +23,7 @@
                             boltid: boltid,
                         },
                     success: function (data,status,xhr) {
-                    
+                        document.getElementById('looting-items').innerHTML = '<?php generateInventory("fishing-inventory",getItems()); ?>';
                     },
                     error: function (jqXhr, textStatus, errorMessage) {
                         var parsedErrorMEssage = $.parseJSON(errorMessage); 
@@ -83,7 +83,7 @@
         <div class="looting-container">
             <div id="looting-items" class="items">
                 <br>
-                Items
+                Tárgyak
                 <br>
                 <?php 
                     generateInventory('looting-items',getItems());
