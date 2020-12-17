@@ -25,11 +25,11 @@
     </div>
     <div class="menu">
     <?php if(IsUserLoggedIn()) : ?>
-        <a href="index.php?p=shop" class="money">Pénz</a>
+        <span href="index.php?p=shop" class="money" disable>Pénz</span>
         <span>|</span>
-        <a href="index.php?p=profil"><?=$_SESSION['uname']?></a>
-        <span>|</span>
-        <a href="index.php?p=profil" class="level">Szint</a>
+        <span href="index.php?p=profil"><?=$_SESSION['uname']?></span>
+        <!--<span>|</span>
+        <span href="index.php?p=profil" class="level">Szint</span>-->
     <?php endif; ?>
     </div>
     <div class="login-menu">
