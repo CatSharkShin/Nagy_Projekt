@@ -145,4 +145,32 @@
             ),
         ));
     }
+    function sellItem($item_id){
+        $query = "SELECT amount,sell FROM inventory JOIN items ON inventory.item_id = items.item_id WHERE user_id = :user_id AND inventory.item_id = :item_id";
+        $params = [
+            ':user_id' => $_REQUEST['id'],
+            ':item_id' => $item_id,
+        ];
+        $record = getRecord($query, $params);
+        $money = $record['amount'] * $record['sell'];
+
+        //$query = "UPDATE inventory SET amount = 0 WHERE user_id = :user_id AND item_id = :item_id";
+        $query = "DELETE FROM inventory WHERE user_id = :user_id AND item_id = :item_id";
+        $params = [
+            ':user_id' => $_REQUEST['id'],
+            ':item_id' => $item_id,
+        ];
+        executeDML($query,$params);
+        $query = "UPDATE users SET money = money + :money WHERE user_id = :user_id";
+        $params = [
+            ':money' => $money,
+            ':user_id' => $_REQUEST['id'],
+        ];
+        executeDML($query,$params);
+        echo json_encode(array(
+            'success' => array(
+                'msg' => 'newmoney:'.$money,
+            ),
+        ));
+    }
 ?>
