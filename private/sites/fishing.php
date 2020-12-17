@@ -36,8 +36,11 @@
                     <button class="btn" id="fishing_button">Horgászat</button>
                 </div>
             </div>
-            <div class="fishing-inventory">
-                <table>
+            <div id="fishing-inventory" class="fishing-inventory">
+                <?php 
+                    generateInventory('fishing-inventory',getItems());
+                 ?>
+                <!--<table>
             <tbody>
                 <tr>
                     <td>
@@ -82,7 +85,7 @@
                     </td>
                 </tr>
             </tbody>
-        </table>
+        </table>-->
             </div>
         </div>
 
@@ -215,9 +218,33 @@
                     gainFishingExp(fishLevel);
                     displayItems();
                     serverMessage("green", "msg", fishLevel + ". szintű kifogva!");
+                    addFish(fishLevel);
                 } else {
                     serverMessage("gray", "msg", "Couldn't catch the fish...");
                 }
+            }
+            function addFish(fishLevel){
+                var uid = getCookie("uid");
+                $.ajax({
+                    type: "POST",
+                    url: 'private/actions/async.php',
+                    dataType: 'json', // type of response data
+                    data: {
+                            action: 'fishing',
+                            id: uid,
+                            fish_level: fishLevel,
+                        },
+                    success: function (data,status,xhr) {
+                        $(document).ready(function () {
+                            console.log(data);
+                        }
+                        )
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) {
+                        var parsedErrorMEssage = $.parseJSON(errorMessage); 
+                        console.log('Error: ' + parsedErrorMEssage);
+                    },
+                });
             }
 
             // Exp szerzése hal szintje alapján:
