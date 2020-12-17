@@ -99,7 +99,7 @@
             let exp_fill = document.getElementById("exp-fill");
 
             // Segédváltozók:
-            let fishingExp = 900; // ezt a session-ből kell majd lekérni, teszt jellegű szám
+            let fishingExp = 7200; // ezt a session-ből kell majd lekérni, teszt jellegű szám
             let fishingLevel = 0;
             let expBarSegments = 0;
             let expGainedCurrentLevel = 0;
