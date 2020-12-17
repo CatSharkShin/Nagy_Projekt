@@ -10,9 +10,61 @@
                 if(isset($_REQUEST['boltid']))
                     loot($_REQUEST['boltid']);
                 break;
+            case 'sell':
+                if(isset($_REQUEST['item_id']))
+                    sellItem($_REQUEST['item_id']);
+                break;
+            case 'fishing':
+                if(isset($_REQUEST['fish_level']))
+                    fishing($_REQUEST['fish_level']);
+                break;
             default:
                 errorResponse("Action not found");
                 break;
+        }
+    }
+    function fishing($fish_level){
+        $fishes=[18,16,15,11,17,14,12,19,20,13];
+        /*$fishes = [
+            1 => 18,
+            2 => 16,
+            3 => 15,
+            4 => 11,
+            5 => 17,
+            6 => 14,
+            7 => 12,
+            8 => 19,
+            9 => 20,
+            10 => 13,
+        ];*/
+        $item = [
+            'id' => $fishes[$fish_level-1],
+            'amount' => 1,
+        ];
+        //Megnézzük hogy van-e ilyen item
+        $query = "SELECT user_id FROM inventory WHERE user_id = :user_id AND item_id = :item_id";
+        $params = [
+            ':user_id' => $_REQUEST['id'],
+            ':item_id' => $item['id']
+        ];
+        $record = getRecord($query, $params);
+        //Ha nincs, hozzáadjuk, ha van növeljük
+        if(empty($record)){
+            $query = "INSERT INTO inventory(user_id,item_id,amount) VALUES(:user_id,:item_id,:amount)";
+            $params = [
+                ':user_id' => $_REQUEST['id'],
+                ':item_id' => $item['id'],
+                ':amount' => $item['amount'],
+            ];
+            echo(executeDML($query,$params));
+        }else{
+            $query = "UPDATE inventory SET amount = amount + :amount WHERE user_id = :user_id AND item_id = :item_id";
+            $params = [
+                ':user_id' => $_REQUEST['id'],
+                ':item_id' => $item['id'],
+                ':amount' => $item['amount'],
+            ];
+            echo(executeDML($query,$params));
         }
     }
     function loot($bolt_gomb_id){
