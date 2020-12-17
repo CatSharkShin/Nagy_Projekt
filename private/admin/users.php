@@ -16,7 +16,7 @@
       ];
 
       if(empty($postData['user_name']) || empty($postData['email'])) {
-        echo "Missing information!";
+        echo "Missing information!";  
       } else if(!filter_var($postData['email'], FILTER_VALIDATE_EMAIL)) {
         echo "Wrong email format!";
       }else if($postData['permission'] < 0 || $postData['permission'] > 1){
