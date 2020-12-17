@@ -50,3 +50,28 @@ function setSession() {
     });
     
 }
+function sellItem(refresh_id,item_id){
+  var uid = getCookie("uid");
+
+    $.ajax({
+        type: "POST",
+        url: 'private/actions/async.php',
+        dataType: 'json', // type of response data
+        data: {
+                action: 'sell',
+                id: uid,
+                item_id: item_id,
+            },
+        success: function (data,status,xhr) {
+            $(document).ready(function () {
+                console.log(data);
+                d.getElementById(refresh_id).innerHTML = "generateInventory('"+refresh_id+"',getItems());";
+            }
+            )
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            var parsedErrorMEssage = $.parseJSON(errorMessage); 
+            console.log('Error: ' + parsedErrorMEssage);
+        },
+    });
+}
