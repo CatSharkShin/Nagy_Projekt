@@ -81,112 +81,13 @@
             
     </script>
         <div class="looting-container">
-            <div class="items">
+            <div id="looting-items" class="items">
                 <br>
-                Tárgyak
-               <table>
-                <tbody>
-                    <tr>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'angler_fish.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a>
-                        </td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'ballfish.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'catfish.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'catshark.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'clown_fish.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'fish.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a>
-                        </td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'fish2.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'koi.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'shark.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'swordfish.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'peach.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a>
-                        </td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'pear.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'plum.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'pear.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                        <td>
-                        <a>
-                        <img src="<?=PATH_SVGS.'peach.svg'?>">
-                        <br>
-                        <span>0</span>
-                        </a></td>
-                    </tr>
-                </tbody>
-                </table>
+                Items
+                <br>
+                <?php 
+                    generateInventory('looting-items',getItems());
+                 ?>
             </div>
             <div class="looting">
                 <br>
