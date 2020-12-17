@@ -37,6 +37,7 @@ function UserLogin($email, $password) {
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(!empty($record)) {
+		setcookie("exp", 7020);
 		setcookie("uid", $record['user_id']);
 		$_SESSION['uid'] = $record['user_id'];
 		$_SESSION['uname'] = $record['user_name'];
