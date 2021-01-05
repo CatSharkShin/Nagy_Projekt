@@ -44,11 +44,17 @@ A rendszer fejlesztése nagyrészt Javascriptben fog megvalósulni.
 3. Design elkészítése
 
 ## Üzleti folyamatok modellje
-A játékokkal kapcsolatos elvárások és igények kielégítésére az ügyfél website-ja már kevésbé alkalmas, mint korábban,
-aminek következtében csökkent az aktív felhasználóinak száma. Az emberek manapság sokkal inkább érdeklődnek az RPG
-jellegű játékok felé, épp ezért a cél egy ilyen jellegű játék létrehozása, mely alkalmazkodik az eddigi üzleti folyamatokhoz: 
-van benne pénzszerzési lehetőség, illetve a régi felhasználók fiókjaiból is lehet használni a játékot, ezáltal egy újabb,
-szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére, vagy akár az előfizetés fedezésére.
+
+Felhasználó: 
+	Felhsználó -> Regisztáció -> Bejelentkezés:
+									-> Saját adatok megtekintése 
+									-> Alkalmazások használata
+
+	Admin:
+		Admin -> Regisztráció -> Bejelentkezés:
+									-> Mások adatainak kezelése, módosítása 
+									-> Alkalmazások használata
+
 ### Célok
 - Átlátható felhasználói felület készítése a játékhoz
 - Élvezetes játékmenet megvalósítása
@@ -66,22 +72,6 @@ szórakoztatóbb lehetőséget teremtve az ajándékok megszerzésére, vagy ak�
 - Új előfizetési csomagok lehetősége
 - Nagyobb profit elérése
 - A játék jellegéből adódóan: népszerűség internetes tartalomgyártók körében
-### Rendszerek
-#### Feliratkozás alapú rendszerek
-- A felhasználó fizet egy meghatározott játékidőért -> Játszik a játékkal -> A játékmodell miatt egyfajta napi szokássá fejlődik a játék -> A fizetett játékidő lejár
-- A szokás erőssége miatt nagy eséllyel megújítja a feliratkozást
-- Előny: Általában játékon belüli valutával beváltható a feliratkozás. Folytonos támogatottsága van a játéknak míg a cég reputációja megfelelő.
-- Hátrány: Nagyon drága lehet hosszú távon ha nem fektet bele elég időt a felhasználó. Egyfajta dependenciát válthat ki a játékmodell, mely kényszeríti a minden napos játékra.
-#### Megvétel alapú rendszerek
-- A felhasználó fizet az alap játékért -> Annyi ideig játszik vele ameddig kíván
-- Általában plusz tartalmat szoktak ezek a játékokhoz gyártani, melyet újabb fizetés után érhet el a felhasználó
-- Előny: Megadott ár egyszeri fizetése, előre tudjuk miért fizetünk.
-- Hátrány: A játék támogatottsága nem hosszú idejű.
-#### Ingyenes rendszerek
-- A felhasználó ingyen elérheti a játékot.
-- Monetizációra három lehetőség gyakori: kinézetek eladása, gambling, pay-to-win elemek.
-- Előny: A felhasználótól függ a költött összeg. Hosszú támogatottság a jó monetizáció miatt.
-- Hátrány: Ha pay-to-win elemekkel rendelkezik a játék költekezés nélkül nem olyan élvezetes. Gambling függőséget okozhat ami komoly probléma.
 
 ## Követelmények
 ### Funkcionális követelmények
@@ -221,3 +211,4 @@ Regisztráció után pedig csupán be kell jelentkeznünk.
 Ellenőrizni kell a jövőben kiadott böngészési verziókhoz való 
 kompatibilitást és reszponzivitást. Majd ha nem valósul meg 
 kijavítani a jövőbeli böngészőkhöz is a teljes funcionalitást.
+Valamint a játékosok visszajelzései alapján a folyamatokban kialakuló problémák kiértékelése és azok megoldására kell törekedni. A játékosok új igényei és a játék naprakész tartása érdekében folyamatos módosítások. A játék hosszútávon is magas élvezeti faktoron valóü tartása érdekében. 
